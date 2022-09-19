@@ -1,0 +1,30 @@
+type salesforce.PartyConsent {
+  searchLayouts = {
+    customTabListAdditionalFields = [
+      "Party",
+      "Action",
+      "PrivacyConsentStatus",
+      "EffectiveFrom",
+      "EffectiveTo",
+      "CaptureDate",
+      "CaptureContactPointType",
+      "LastModifiedDate",
+      "LastModifiedBy",
+    ]
+  }
+}
+type salesforce.PartyConsent {
+  searchLayouts = {
+    searchResultsAdditionalFields = [
+      "Party",
+      "Action",
+      "PrivacyConsentStatus",
+      "EffectiveFrom",
+      "EffectiveTo",
+      "CaptureDate",
+      "CaptureContactPointType",
+      "LastModifiedDate",
+      "LastModifiedBy",
+    ]
+  }
+}

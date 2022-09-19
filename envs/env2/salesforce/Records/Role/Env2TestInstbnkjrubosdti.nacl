@@ -1,0 +1,9 @@
+salesforce.Role Env2TestInstbnkjrubosdti {
+  fullName = "Env2TestInstbnkjrubosdti"
+  caseAccessLevel = "Edit"
+  contactAccessLevel = "Edit"
+  description = "Common instance"
+  mayForecastManagerShare = false
+  name = "Env2TestInstbnkjrubosdti"
+  opportunityAccessLevel = "Edit"
+}

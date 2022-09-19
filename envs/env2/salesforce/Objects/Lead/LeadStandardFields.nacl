@@ -1,0 +1,18 @@
+type salesforce.Lead {
+  salesforce.Checkbox DoNotCall {
+    apiName = "Lead.DoNotCall"
+    trackFeedHistory = false
+  }
+}
+type salesforce.Lead {
+  salesforce.Checkbox HasOptedOutOfFax {
+    apiName = "Lead.HasOptedOutOfFax"
+    trackFeedHistory = false
+  }
+}
+type salesforce.Lead {
+  salesforce.Date LastTransferDate {
+    apiName = "Lead.LastTransferDate"
+    _hidden_value = true
+  }
+}

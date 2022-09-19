@@ -1,0 +1,152 @@
+type salesforce.FinanceTransaction {
+  salesforce.Lookup DestinationEntityId {
+    referenceTo = [
+      salesforce.CreditMemo,
+      salesforce.CreditMemoInvApplication,
+      salesforce.CreditMemoLine,
+      salesforce.Env1TestObjckqvsgwelktk__c,
+      salesforce.Env1TestObjffosdslglded__c,
+      salesforce.Env1TestObjxbvqgjiztbqz__c,
+      salesforce.Invoice,
+      salesforce.InvoiceLine,
+      salesforce.NewObjectNamebegkzysdrcum__c,
+      salesforce.NewObjectNametppvyphgfznn__c,
+      salesforce.Payment,
+      salesforce.PaymentLineInvoice,
+      salesforce.Refund,
+      salesforce.RefundLinePayment,
+      salesforce.TestAddDefaultTopicsForObjects__c,
+      salesforce.TestAddElementTopicsForObjects__c,
+      salesforce.TestDiffObjckqvsgwelktk__c,
+      salesforce.TestDiffObjffosdslglded__c,
+      salesforce.TestDiffObjxbvqgjiztbqz__c,
+      salesforce.TestModifyCustomAnnotations__c,
+      salesforce.TestModifyCustom__c,
+      salesforce.TestModifyFieldAndAnnotation__c,
+      salesforce.TestObjckqvsgwelktk__c,
+      salesforce.TestObjffosdslglded__c,
+      salesforce.TestObjxbvqgjiztbqz__c,
+      salesforce.TestSyncFromAccountObjckqvsgwelktk__c,
+    ]
+  }
+}
+type salesforce.FinanceTransaction {
+  salesforce.Lookup LegalEntityId {
+    referenceTo = [
+      salesforce.Env1TestObjckqvsgwelktk__c,
+      salesforce.Env1TestObjffosdslglded__c,
+      salesforce.Env1TestObjxbvqgjiztbqz__c,
+      salesforce.LegalEntity,
+      salesforce.NewObjectNamebegkzysdrcum__c,
+      salesforce.NewObjectNametppvyphgfznn__c,
+      salesforce.TestAddDefaultTopicsForObjects__c,
+      salesforce.TestAddElementTopicsForObjects__c,
+      salesforce.TestDiffObjckqvsgwelktk__c,
+      salesforce.TestDiffObjffosdslglded__c,
+      salesforce.TestDiffObjxbvqgjiztbqz__c,
+      salesforce.TestModifyCustomAnnotations__c,
+      salesforce.TestModifyCustom__c,
+      salesforce.TestModifyFieldAndAnnotation__c,
+      salesforce.TestObjckqvsgwelktk__c,
+      salesforce.TestObjffosdslglded__c,
+      salesforce.TestObjxbvqgjiztbqz__c,
+      salesforce.TestSyncFromAccountObjckqvsgwelktk__c,
+    ]
+  }
+}
+type salesforce.FinanceTransaction {
+  salesforce.Lookup ParentReferenceEntityId {
+    referenceTo = [
+      salesforce.CreditMemo,
+      salesforce.CreditMemoInvApplication,
+      salesforce.CreditMemoLine,
+      salesforce.Env1TestObjckqvsgwelktk__c,
+      salesforce.Env1TestObjffosdslglded__c,
+      salesforce.Env1TestObjxbvqgjiztbqz__c,
+      salesforce.Invoice,
+      salesforce.InvoiceLine,
+      salesforce.NewObjectNamebegkzysdrcum__c,
+      salesforce.NewObjectNametppvyphgfznn__c,
+      salesforce.Payment,
+      salesforce.PaymentLineInvoice,
+      salesforce.Refund,
+      salesforce.RefundLinePayment,
+      salesforce.TestAddDefaultTopicsForObjects__c,
+      salesforce.TestAddElementTopicsForObjects__c,
+      salesforce.TestDiffObjckqvsgwelktk__c,
+      salesforce.TestDiffObjffosdslglded__c,
+      salesforce.TestDiffObjxbvqgjiztbqz__c,
+      salesforce.TestModifyCustomAnnotations__c,
+      salesforce.TestModifyCustom__c,
+      salesforce.TestModifyFieldAndAnnotation__c,
+      salesforce.TestObjckqvsgwelktk__c,
+      salesforce.TestObjffosdslglded__c,
+      salesforce.TestObjxbvqgjiztbqz__c,
+      salesforce.TestSyncFromAccountObjckqvsgwelktk__c,
+    ]
+  }
+}
+type salesforce.FinanceTransaction {
+  salesforce.Lookup ReferenceEntityId {
+    referenceTo = [
+      salesforce.CreditMemo,
+      salesforce.CreditMemoInvApplication,
+      salesforce.CreditMemoLine,
+      salesforce.Env1TestObjckqvsgwelktk__c,
+      salesforce.Env1TestObjffosdslglded__c,
+      salesforce.Env1TestObjxbvqgjiztbqz__c,
+      salesforce.Invoice,
+      salesforce.InvoiceLine,
+      salesforce.NewObjectNamebegkzysdrcum__c,
+      salesforce.NewObjectNametppvyphgfznn__c,
+      salesforce.Payment,
+      salesforce.PaymentLineInvoice,
+      salesforce.Refund,
+      salesforce.RefundLinePayment,
+      salesforce.TestAddDefaultTopicsForObjects__c,
+      salesforce.TestAddElementTopicsForObjects__c,
+      salesforce.TestDiffObjckqvsgwelktk__c,
+      salesforce.TestDiffObjffosdslglded__c,
+      salesforce.TestDiffObjxbvqgjiztbqz__c,
+      salesforce.TestModifyCustomAnnotations__c,
+      salesforce.TestModifyCustom__c,
+      salesforce.TestModifyFieldAndAnnotation__c,
+      salesforce.TestObjckqvsgwelktk__c,
+      salesforce.TestObjffosdslglded__c,
+      salesforce.TestObjxbvqgjiztbqz__c,
+      salesforce.TestSyncFromAccountObjckqvsgwelktk__c,
+    ]
+  }
+}
+type salesforce.FinanceTransaction {
+  salesforce.Lookup SourceEntityId {
+    referenceTo = [
+      salesforce.CreditMemo,
+      salesforce.CreditMemoInvApplication,
+      salesforce.CreditMemoLine,
+      salesforce.Env1TestObjckqvsgwelktk__c,
+      salesforce.Env1TestObjffosdslglded__c,
+      salesforce.Env1TestObjxbvqgjiztbqz__c,
+      salesforce.Invoice,
+      salesforce.InvoiceLine,
+      salesforce.NewObjectNamebegkzysdrcum__c,
+      salesforce.NewObjectNametppvyphgfznn__c,
+      salesforce.Payment,
+      salesforce.PaymentLineInvoice,
+      salesforce.Refund,
+      salesforce.RefundLinePayment,
+      salesforce.TestAddDefaultTopicsForObjects__c,
+      salesforce.TestAddElementTopicsForObjects__c,
+      salesforce.TestDiffObjckqvsgwelktk__c,
+      salesforce.TestDiffObjffosdslglded__c,
+      salesforce.TestDiffObjxbvqgjiztbqz__c,
+      salesforce.TestModifyCustomAnnotations__c,
+      salesforce.TestModifyCustom__c,
+      salesforce.TestModifyFieldAndAnnotation__c,
+      salesforce.TestObjckqvsgwelktk__c,
+      salesforce.TestObjffosdslglded__c,
+      salesforce.TestObjxbvqgjiztbqz__c,
+      salesforce.TestSyncFromAccountObjckqvsgwelktk__c,
+    ]
+  }
+}

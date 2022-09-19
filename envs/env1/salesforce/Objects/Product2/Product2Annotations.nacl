@@ -1,0 +1,3 @@
+type salesforce.Product2 {
+  externalSharingModel = "ReadWrite"
+}

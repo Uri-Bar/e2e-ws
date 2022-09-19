@@ -1,0 +1,7 @@
+salesforce.Layout UserProvAccount_User_Provisioning_Account_Layout@bsss {
+  fullName = "UserProvAccount-User Provisioning Account Layout"
+  
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+}

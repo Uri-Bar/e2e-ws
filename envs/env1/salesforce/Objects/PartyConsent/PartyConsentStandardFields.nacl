@@ -1,0 +1,21 @@
+type salesforce.PartyConsent {
+  salesforce.Unknown DoubleConsentCaptureDate {
+    apiName = "PartyConsent.DoubleConsentCaptureDate"
+    trackHistory = false
+    _hidden_value = true
+  }
+}
+type salesforce.PartyConsent {
+  salesforce.Unknown EffectiveFrom {
+    apiName = "PartyConsent.EffectiveFrom"
+    trackHistory = false
+    _hidden_value = true
+  }
+}
+type salesforce.PartyConsent {
+  salesforce.Unknown EffectiveTo {
+    apiName = "PartyConsent.EffectiveTo"
+    trackHistory = false
+    _hidden_value = true
+  }
+}

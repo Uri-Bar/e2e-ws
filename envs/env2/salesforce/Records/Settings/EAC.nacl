@@ -1,0 +1,6 @@
+salesforce.EACSettings {
+  enableEACForEveryonePref = true
+}
+salesforce.EACSettings {
+  syncInternalEvents = "false"
+}

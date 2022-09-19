@@ -1,0 +1,27 @@
+type salesforce.DuplicateRecordItem {
+  salesforce.Lookup RecordId {
+    referenceTo = [
+      salesforce.Account,
+      salesforce.Contact,
+      salesforce.Env1TestObjckqvsgwelktk__c,
+      salesforce.Env1TestObjffosdslglded__c,
+      salesforce.Env1TestObjxbvqgjiztbqz__c,
+      salesforce.Individual,
+      salesforce.Lead,
+      salesforce.NewObjectNamebegkzysdrcum__c,
+      salesforce.NewObjectNametppvyphgfznn__c,
+      salesforce.TestAddDefaultTopicsForObjects__c,
+      salesforce.TestAddElementTopicsForObjects__c,
+      salesforce.TestDiffObjckqvsgwelktk__c,
+      salesforce.TestDiffObjffosdslglded__c,
+      salesforce.TestDiffObjxbvqgjiztbqz__c,
+      salesforce.TestModifyCustomAnnotations__c,
+      salesforce.TestModifyCustom__c,
+      salesforce.TestModifyFieldAndAnnotation__c,
+      salesforce.TestObjckqvsgwelktk__c,
+      salesforce.TestObjffosdslglded__c,
+      salesforce.TestObjxbvqgjiztbqz__c,
+      salesforce.TestSyncFromAccountObjckqvsgwelktk__c,
+    ]
+  }
+}

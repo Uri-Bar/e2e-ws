@@ -1,0 +1,21 @@
+type salesforce.Case {
+  salesforce.Checkbox IsClosedOnCreate {
+    apiName = "Case.IsClosedOnCreate"
+    trackFeedHistory = false
+    trackHistory = false
+    trackTrending = false
+  }
+}
+type salesforce.Case {
+  salesforce.Lookup BusinessHoursId {
+    relationshipName = "BusinessHours"
+    referenceTo = [
+      "BusinessHours",
+    ]
+    _required = true
+    label = "Business Hours ID"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+}

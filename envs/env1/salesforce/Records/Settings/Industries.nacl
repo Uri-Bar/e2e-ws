@@ -1,0 +1,27 @@
+salesforce.IndustriesSettings {
+  appointmentDistributionOrgPref = "false"
+}
+salesforce.IndustriesSettings {
+  enableAppInviteOrgPref = "false"
+}
+salesforce.IndustriesSettings {
+  enableEventManagementOrgPref = false
+}
+salesforce.IndustriesSettings {
+  enableEventWriteOrgPref = "false"
+}
+salesforce.IndustriesSettings {
+  enableMultiResourceOrgPref = false
+}
+salesforce.IndustriesSettings {
+  enableOverbookingOrgPref = false
+}
+salesforce.IndustriesSettings {
+  enableShareSaWithArOrgPref = "false"
+}
+salesforce.IndustriesSettings {
+  enableTopicOrTemplate = "false"
+}
+salesforce.IndustriesSettings {
+  enableTopicTimeSlot = "true"
+}

@@ -1,0 +1,6 @@
+salesforce.CaseSettings {
+  defaultCaseOwner = "gilad.foyer+2@gmail.com"
+}
+salesforce.CaseSettings {
+  defaultCaseUser = "gilad.foyer+2@gmail.com"
+}

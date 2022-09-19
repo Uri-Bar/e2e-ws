@@ -1,0 +1,6 @@
+type salesforce.EngagementChannelType {
+  searchLayouts = {
+    customTabListAdditionalFields = "ContactPointType"
+    searchResultsAdditionalFields = "ContactPointType"
+  }
+}

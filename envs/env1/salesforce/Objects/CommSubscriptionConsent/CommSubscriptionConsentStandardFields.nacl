@@ -1,0 +1,8 @@
+type salesforce.CommSubscriptionConsent {
+  salesforce.Unknown EffectiveToDate {
+    apiName = "CommSubscriptionConsent.EffectiveToDate"
+    inlineHelpText = "Date when consent ends."
+    trackHistory = false
+    _hidden_value = true
+  }
+}

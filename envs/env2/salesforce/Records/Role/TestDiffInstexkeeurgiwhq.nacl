@@ -1,0 +1,9 @@
+salesforce.Role TestDiffInstexkeeurgiwhq {
+  fullName = "TestDiffInstexkeeurgiwhq"
+  caseAccessLevel = "Edit"
+  contactAccessLevel = "Edit"
+  description = "Common instance Env 2"
+  mayForecastManagerShare = false
+  name = "TestDiffInstexkeeurgiwhq"
+  opportunityAccessLevel = "Edit"
+}

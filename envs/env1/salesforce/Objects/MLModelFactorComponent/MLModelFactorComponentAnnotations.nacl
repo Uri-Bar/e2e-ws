@@ -1,0 +1,3 @@
+type salesforce.MLModelFactorComponent {
+  externalSharingModel = "ControlledByParent"
+}

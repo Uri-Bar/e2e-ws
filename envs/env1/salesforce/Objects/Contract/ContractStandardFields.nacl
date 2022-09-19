@@ -1,0 +1,19 @@
+type salesforce.Contract {
+  salesforce.Unknown Name {
+    apiName = "Contract.Name"
+    trackHistory = true
+    _hidden_value = true
+  }
+}
+type salesforce.Contract {
+  salesforce.Unknown ShippingAddress {
+    apiName = "Contract.ShippingAddress"
+    trackHistory = true
+    _hidden_value = true
+  }
+}
+type salesforce.Contract {
+  salesforce.Picklist Status {
+    valueSetName = salesforce.StandardValueSet.instance.ServiceContractApprovalStatus
+  }
+}

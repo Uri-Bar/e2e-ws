@@ -1,0 +1,72 @@
+type salesforce.Campaign {
+  salesforce.Currency HierarchyActualCost {
+    apiName = "Campaign.HierarchyActualCost"
+    _hidden_value = true
+  }
+}
+type salesforce.Campaign {
+  salesforce.Currency HierarchyAmountAllOpportunities {
+    apiName = "Campaign.HierarchyAmountAllOpportunities"
+    _hidden_value = true
+  }
+}
+type salesforce.Campaign {
+  salesforce.Currency HierarchyAmountWonOpportunities {
+    apiName = "Campaign.HierarchyAmountWonOpportunities"
+    _hidden_value = true
+  }
+}
+type salesforce.Campaign {
+  salesforce.Currency HierarchyBudgetedCost {
+    apiName = "Campaign.HierarchyBudgetedCost"
+    _hidden_value = true
+  }
+}
+type salesforce.Campaign {
+  salesforce.Currency HierarchyExpectedRevenue {
+    apiName = "Campaign.HierarchyExpectedRevenue"
+    _hidden_value = true
+  }
+}
+type salesforce.Campaign {
+  salesforce.Number HierarchyNumberOfContacts {
+    apiName = "Campaign.HierarchyNumberOfContacts"
+    _hidden_value = true
+  }
+}
+type salesforce.Campaign {
+  salesforce.Number HierarchyNumberOfConvertedLeads {
+    apiName = "Campaign.HierarchyNumberOfConvertedLeads"
+    _hidden_value = true
+  }
+}
+type salesforce.Campaign {
+  salesforce.Number HierarchyNumberOfLeads {
+    apiName = "Campaign.HierarchyNumberOfLeads"
+    _hidden_value = true
+  }
+}
+type salesforce.Campaign {
+  salesforce.Number HierarchyNumberOfOpportunities {
+    apiName = "Campaign.HierarchyNumberOfOpportunities"
+    _hidden_value = true
+  }
+}
+type salesforce.Campaign {
+  salesforce.Number HierarchyNumberOfResponses {
+    apiName = "Campaign.HierarchyNumberOfResponses"
+    _hidden_value = true
+  }
+}
+type salesforce.Campaign {
+  salesforce.Number HierarchyNumberOfWonOpportunities {
+    apiName = "Campaign.HierarchyNumberOfWonOpportunities"
+    _hidden_value = true
+  }
+}
+type salesforce.Campaign {
+  salesforce.Number HierarchyNumberSent {
+    apiName = "Campaign.HierarchyNumberSent"
+    _hidden_value = true
+  }
+}

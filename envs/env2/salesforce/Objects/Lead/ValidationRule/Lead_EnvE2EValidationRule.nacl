@@ -1,0 +1,3 @@
+salesforce.ValidationRule Lead_EnvE2EValidationRule {
+  description = "ValidationRule that should be fetched in environment operations e2e test by envId: 65778d06-a1ed-42fd-865a-ec1f086d816f"
+}

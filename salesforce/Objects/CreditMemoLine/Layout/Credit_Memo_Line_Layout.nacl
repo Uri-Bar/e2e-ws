@@ -1,0 +1,10 @@
+salesforce.Layout CreditMemoLine_Credit_Memo_Line_Layout@bsss {
+  fullName = "CreditMemoLine-Credit Memo Line Layout"
+  
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  _parent = [
+    salesforce.CreditMemoLine,
+  ]
+}

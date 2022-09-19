@@ -1,0 +1,7 @@
+salesforce.CleanDataService DataCloudGeoLocation {
+  fullName = "DataCloudGeoLocation"
+  
+  description = "Data.com Geo"
+  masterLabel = "Data.com Geo"
+  matchEngine = "DatacloudAddressMatchEngine"
+}

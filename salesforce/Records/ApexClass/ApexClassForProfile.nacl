@@ -1,0 +1,6 @@
+salesforce.ApexClass ApexClassForProfile {
+  apiVersion = 55
+  status = "Active"
+  fullName = "ApexClassForProfile"
+  content = file("salesforce/Records/ApexClass/ApexClassForProfile.cls")
+}

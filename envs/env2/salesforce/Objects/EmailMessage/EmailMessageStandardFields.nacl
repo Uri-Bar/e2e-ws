@@ -1,0 +1,38 @@
+type salesforce.EmailMessage {
+  salesforce.Lookup RelatedToId {
+    referenceTo = [
+      salesforce.Account,
+      salesforce.Asset,
+      salesforce.AssetRelationship,
+      salesforce.Campaign,
+      salesforce.Case,
+      salesforce.CommSubscriptionConsent,
+      salesforce.ContactRequest,
+      salesforce.Contract,
+      salesforce.CreditMemo,
+      salesforce.Image,
+      salesforce.Invoice,
+      salesforce.LegalEntity,
+      "ListEmail",
+      salesforce.Location,
+      salesforce.Opportunity,
+      salesforce.Order,
+      salesforce.PartyConsent,
+      salesforce.ProcessException,
+      salesforce.Product2,
+      salesforce.Solution,
+    ]
+  }
+}
+type salesforce.EmailMessage {
+  salesforce.Picklist ValidatedFromAddress {
+    valueSet = [
+      {
+        fullName = "gilad.foyer+2@gmail.com"
+        isActive = true
+        label = "Gilad Panor <gilad.foyer+2@gmail.com>"
+        default = false
+      },
+    ]
+  }
+}

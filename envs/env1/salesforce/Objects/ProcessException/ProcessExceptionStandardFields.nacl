@@ -1,0 +1,31 @@
+type salesforce.ProcessException {
+  salesforce.Lookup AttachedToId {
+    referenceTo = [
+      salesforce.CreditMemo,
+      salesforce.Env1TestObjckqvsgwelktk__c,
+      salesforce.Env1TestObjffosdslglded__c,
+      salesforce.Env1TestObjxbvqgjiztbqz__c,
+      salesforce.Invoice,
+      salesforce.NewObjectNamebegkzysdrcum__c,
+      salesforce.NewObjectNametppvyphgfznn__c,
+      salesforce.Order,
+      salesforce.OrderItem,
+      salesforce.Payment,
+      salesforce.PaymentAuthorization,
+      salesforce.Refund,
+      salesforce.ReturnOrder,
+      salesforce.TestAddDefaultTopicsForObjects__c,
+      salesforce.TestAddElementTopicsForObjects__c,
+      salesforce.TestDiffObjckqvsgwelktk__c,
+      salesforce.TestDiffObjffosdslglded__c,
+      salesforce.TestDiffObjxbvqgjiztbqz__c,
+      salesforce.TestModifyCustomAnnotations__c,
+      salesforce.TestModifyCustom__c,
+      salesforce.TestModifyFieldAndAnnotation__c,
+      salesforce.TestObjckqvsgwelktk__c,
+      salesforce.TestObjffosdslglded__c,
+      salesforce.TestObjxbvqgjiztbqz__c,
+      salesforce.TestSyncFromAccountObjckqvsgwelktk__c,
+    ]
+  }
+}

@@ -1,0 +1,3 @@
+type salesforce.LegalEntity {
+  externalSharingModel = "Private"
+}

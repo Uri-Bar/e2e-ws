@@ -1,0 +1,32 @@
+type salesforce.MessagingSession {
+  salesforce.Lookup CaseId {
+    relationshipName = "Case"
+    referenceTo = [
+      salesforce.Case,
+    ]
+    label = "Case ID"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup LeadId {
+    relationshipName = "Lead"
+    referenceTo = [
+      salesforce.Lead,
+    ]
+    label = "Lead ID"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup OpportunityId {
+    relationshipName = "Opportunity"
+    referenceTo = [
+      salesforce.Opportunity,
+    ]
+    label = "Opportunity ID"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+}

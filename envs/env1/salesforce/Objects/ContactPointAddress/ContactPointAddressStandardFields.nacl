@@ -1,0 +1,35 @@
+type salesforce.ContactPointAddress {
+  salesforce.Picklist UsageType {
+    valueSet = [
+      {
+        fullName = "Home"
+        isActive = true
+        label = "Home"
+        default = false
+      },
+      {
+        fullName = "Work"
+        isActive = true
+        label = "Work"
+        default = false
+      },
+      {
+        fullName = "Temporary"
+        isActive = true
+        label = "Temporary"
+        default = false
+      },
+      {
+        fullName = "Inactive"
+        isActive = true
+        label = "Inactive"
+        default = false
+      },
+    ]
+  }
+}
+type salesforce.ContactPointAddress {
+  salesforce.Picklist UsageType {
+    restricted = false
+  }
+}

@@ -1,0 +1,13 @@
+type salesforce.CommSubscription {
+  salesforce.Lookup DataUsePurposeId {
+    _hidden_value = true
+  }
+}
+type salesforce.CommSubscription {
+  salesforce.Unknown IsDefault {
+    apiName = "CommSubscription.IsDefault"
+    inlineHelpText = "Set this communication subscription as the default."
+    trackHistory = false
+    _hidden_value = true
+  }
+}

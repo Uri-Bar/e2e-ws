@@ -1,0 +1,9 @@
+salesforce.Role TestDiffInstesxfmctwpaga {
+  fullName = "TestDiffInstesxfmctwpaga"
+  caseAccessLevel = "Edit"
+  contactAccessLevel = "Edit"
+  description = "Common instance Env 1"
+  mayForecastManagerShare = false
+  name = "TestDiffInstesxfmctwpaga"
+  opportunityAccessLevel = "Edit"
+}

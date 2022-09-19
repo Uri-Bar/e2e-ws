@@ -1,0 +1,8 @@
+type salesforce.EngagementChannelType {
+  salesforce.Unknown ContactPointType {
+    apiName = "EngagementChannelType.ContactPointType"
+    inlineHelpText = "The contact point type record associated with the engagement channel type."
+    trackHistory = false
+    _hidden_value = true
+  }
+}

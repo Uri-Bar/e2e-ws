@@ -1,0 +1,26 @@
+type salesforce.CommonObjectNacljfsqhxknzwuc__c {
+  salesforce.Text alpha__c {
+    apiName = "CommonObjectNacljfsqhxknzwuc__c.alpha__c"
+    externalId = false
+    label = "alpha1"
+    length = 80
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Text beta__c {
+    apiName = "CommonObjectNacljfsqhxknzwuc__c.beta__c"
+    externalId = false
+    label = "beta1"
+    length = 80
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+}

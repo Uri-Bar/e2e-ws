@@ -1,0 +1,10 @@
+salesforce.Layout DigitalWallet_Digital_Wallet_Layout@bss {
+  fullName = "DigitalWallet-Digital Wallet Layout"
+  
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  _parent = [
+    salesforce.DigitalWallet,
+  ]
+}

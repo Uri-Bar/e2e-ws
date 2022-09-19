@@ -1,0 +1,9 @@
+salesforce.Role TestDiffInstacgebbgvtxat {
+  fullName = "TestDiffInstacgebbgvtxat"
+  caseAccessLevel = "Edit"
+  contactAccessLevel = "Edit"
+  description = "Common instance Env 2"
+  mayForecastManagerShare = false
+  name = "TestDiffInstacgebbgvtxat"
+  opportunityAccessLevel = "Edit"
+}

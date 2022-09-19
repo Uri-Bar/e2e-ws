@@ -1,0 +1,9 @@
+type salesforce.User {
+  salesforce.Checkbox UserPreferencesShowTerritoryTimeZoneShifts {
+    apiName = "User.UserPreferencesShowTerritoryTimeZoneShifts"
+    label = "ShowTerritoryTimeZoneShifts"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+}

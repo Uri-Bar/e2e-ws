@@ -1,0 +1,12 @@
+type salesforce.ContactPointTypeConsent {
+  salesforce.Lookup EngagementChannelTypeId {
+    relationshipName = "EngagementChannelType"
+    referenceTo = [
+      salesforce.EngagementChannelType,
+    ]
+    label = "Engagement Channel Type ID"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+}

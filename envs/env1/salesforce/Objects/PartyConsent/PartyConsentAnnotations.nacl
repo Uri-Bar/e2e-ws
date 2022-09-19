@@ -1,0 +1,29 @@
+type salesforce.PartyConsent {
+  externalSharingModel = "Private"
+}
+type salesforce.PartyConsent {
+  searchLayouts = {
+    customTabListAdditionalFields = [
+      "Party",
+      "Action",
+      "PrivacyConsentStatus",
+      "CaptureDate",
+      "CaptureContactPointType",
+      "LastModifiedDate",
+      "LastModifiedBy",
+    ]
+  }
+}
+type salesforce.PartyConsent {
+  searchLayouts = {
+    searchResultsAdditionalFields = [
+      "Party",
+      "Action",
+      "PrivacyConsentStatus",
+      "CaptureDate",
+      "CaptureContactPointType",
+      "LastModifiedDate",
+      "LastModifiedBy",
+    ]
+  }
+}

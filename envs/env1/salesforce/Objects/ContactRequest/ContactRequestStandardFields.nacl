@@ -1,0 +1,27 @@
+type salesforce.ContactRequest {
+  salesforce.Lookup WhatId {
+    referenceTo = [
+      salesforce.Account,
+      salesforce.Case,
+      salesforce.Env1TestObjckqvsgwelktk__c,
+      salesforce.Env1TestObjffosdslglded__c,
+      salesforce.Env1TestObjxbvqgjiztbqz__c,
+      salesforce.NewObjectNamebegkzysdrcum__c,
+      salesforce.NewObjectNametppvyphgfznn__c,
+      salesforce.Opportunity,
+      salesforce.TestAddDefaultTopicsForObjects__c,
+      salesforce.TestAddElementTopicsForObjects__c,
+      salesforce.TestDiffObjckqvsgwelktk__c,
+      salesforce.TestDiffObjffosdslglded__c,
+      salesforce.TestDiffObjxbvqgjiztbqz__c,
+      salesforce.TestModifyCustomAnnotations__c,
+      salesforce.TestModifyCustom__c,
+      salesforce.TestModifyFieldAndAnnotation__c,
+      salesforce.TestObjckqvsgwelktk__c,
+      salesforce.TestObjffosdslglded__c,
+      salesforce.TestObjxbvqgjiztbqz__c,
+      salesforce.TestSyncFromAccountObjckqvsgwelktk__c,
+      salesforce.WorkOrder,
+    ]
+  }
+}

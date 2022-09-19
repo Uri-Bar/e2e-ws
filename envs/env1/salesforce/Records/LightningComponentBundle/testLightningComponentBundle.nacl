@@ -1,0 +1,14 @@
+salesforce.LightningComponentBundle testLightningComponentBundle {
+  lwcResources = {
+    lwcResource = [
+      {
+        source = file("salesforce/Records/LightningComponentBundle/testLightningComponentBundle/testLightningComponentBundle.html")
+        filePath = "lwc/testLightningComponentBundle/testLightningComponentBundle.html"
+      },
+      {
+        source = file("salesforce/Records/LightningComponentBundle/testLightningComponentBundle/testLightningComponentBundle.js")
+        filePath = "lwc/testLightningComponentBundle/testLightningComponentBundle.js"
+      },
+    ]
+  }
+}

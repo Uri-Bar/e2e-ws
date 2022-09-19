@@ -1,0 +1,18 @@
+type salesforce.PartyConsent {
+  salesforce.DateTime DoubleConsentCaptureDate {
+    apiName = "PartyConsent.DoubleConsentCaptureDate"
+    trackHistory = false
+  }
+}
+type salesforce.PartyConsent {
+  salesforce.Date EffectiveFrom {
+    apiName = "PartyConsent.EffectiveFrom"
+    trackHistory = false
+  }
+}
+type salesforce.PartyConsent {
+  salesforce.Date EffectiveTo {
+    apiName = "PartyConsent.EffectiveTo"
+    trackHistory = false
+  }
+}

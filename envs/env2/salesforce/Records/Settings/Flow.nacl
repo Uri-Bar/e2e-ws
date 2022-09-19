@@ -1,0 +1,9 @@
+salesforce.FlowSettings {
+  doesFormulaEnforceDataAccess = true
+}
+salesforce.FlowSettings {
+  isAccessToInvokedApexRequired = true
+}
+salesforce.FlowSettings {
+  isTimeResumedInSameRunContext = "false"
+}

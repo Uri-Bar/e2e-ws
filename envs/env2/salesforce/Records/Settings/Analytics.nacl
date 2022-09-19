@@ -1,0 +1,3 @@
+salesforce.AnalyticsSettings {
+  enableQueryLiveConnectors = false
+}

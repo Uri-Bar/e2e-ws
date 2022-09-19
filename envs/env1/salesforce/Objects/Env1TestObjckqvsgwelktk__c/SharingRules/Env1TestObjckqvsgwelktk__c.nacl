@@ -1,0 +1,6 @@
+salesforce.SharingRules Env1TestObjckqvsgwelktk__c {
+  fullName = "Env1TestObjckqvsgwelktk__c"
+  _parent = [
+    salesforce.Env1TestObjckqvsgwelktk__c,
+  ]
+}

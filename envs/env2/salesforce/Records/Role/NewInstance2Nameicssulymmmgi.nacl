@@ -1,0 +1,9 @@
+salesforce.Role NewInstance2Nameicssulymmmgi {
+  fullName = "NewInstance2Nameicssulymmmgi"
+  caseAccessLevel = "Edit"
+  contactAccessLevel = "Edit"
+  description = "I Am Modified"
+  mayForecastManagerShare = false
+  name = "Another new Role Instance"
+  opportunityAccessLevel = "Edit"
+}

@@ -1,0 +1,15 @@
+type salesforce.MessagingSession {
+  salesforce.Lookup CaseId {
+    _hidden_value = true
+  }
+}
+type salesforce.MessagingSession {
+  salesforce.Lookup LeadId {
+    _hidden_value = true
+  }
+}
+type salesforce.MessagingSession {
+  salesforce.Lookup OpportunityId {
+    _hidden_value = true
+  }
+}

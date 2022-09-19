@@ -1,0 +1,54 @@
+type salesforce.WebStore {
+  salesforce.Unknown DefaultLanguage {
+    apiName = "WebStore.DefaultLanguage"
+    _hidden_value = true
+  }
+  salesforce.Unknown Description {
+    apiName = "WebStore.Description"
+    _hidden_value = true
+  }
+  salesforce.Unknown ExternalReference {
+    apiName = "WebStore.ExternalReference"
+    _hidden_value = true
+  }
+  salesforce.Unknown MaxValuesPerFacet {
+    apiName = "WebStore.MaxValuesPerFacet"
+    _hidden_value = true
+  }
+  salesforce.Unknown Name {
+    apiName = "WebStore.Name"
+    _hidden_value = true
+  }
+  salesforce.Picklist OrderActivationStatus {
+    apiName = "WebStore.OrderActivationStatus"
+    _hidden_value = true
+  }
+  salesforce.Unknown OrderLifeCycleType {
+    apiName = "WebStore.OrderLifeCycleType"
+    _hidden_value = true
+  }
+  salesforce.Unknown PaginationSize {
+    apiName = "WebStore.PaginationSize"
+    _hidden_value = true
+  }
+  salesforce.Unknown PricingStrategy {
+    apiName = "WebStore.PricingStrategy"
+    _hidden_value = true
+  }
+  salesforce.Unknown ProductGrouping {
+    apiName = "WebStore.ProductGrouping"
+    _hidden_value = true
+  }
+  salesforce.Lookup SortByPricebookId {
+    apiName = "WebStore.SortByPricebookId"
+    _hidden_value = true
+  }
+  salesforce.Lookup StrikethroughPricebookId {
+    apiName = "WebStore.StrikethroughPricebookId"
+    _hidden_value = true
+  }
+  salesforce.Unknown SupportedLanguages {
+    apiName = "WebStore.SupportedLanguages"
+    _hidden_value = true
+  }
+}

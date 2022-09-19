@@ -1,0 +1,305 @@
+type salesforce.WorkType {
+  salesforce.Number BlockTimeAfterAppointment {
+    apiName = "WorkType.BlockTimeAfterAppointment"
+    trackHistory = false
+    label = "Block Time After Appointment"
+    precision = 9
+    createable = true
+    updateable = true
+    scale = 0
+    unique = false
+    queryable = true
+  }
+  salesforce.Picklist BlockTimeAfterUnit {
+    apiName = "WorkType.BlockTimeAfterUnit"
+    trackHistory = false
+    valueSet = [
+      {
+        fullName = "Minutes"
+        isActive = true
+        label = "Minute(s)"
+        default = true
+      },
+      {
+        fullName = "Hours"
+        isActive = true
+        label = "Hour(s)"
+        default = false
+      },
+    ]
+    restricted = true
+    label = "Block Time After Unit"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number BlockTimeBeforeAppointment {
+    apiName = "WorkType.BlockTimeBeforeAppointment"
+    trackHistory = false
+    label = "Block Time Before Appointment"
+    precision = 9
+    createable = true
+    updateable = true
+    scale = 0
+    unique = false
+    queryable = true
+  }
+  salesforce.Picklist BlockTimeBeforeUnit {
+    apiName = "WorkType.BlockTimeBeforeUnit"
+    trackHistory = false
+    valueSet = [
+      {
+        fullName = "Minutes"
+        isActive = true
+        label = "Minute(s)"
+        default = true
+      },
+      {
+        fullName = "Hours"
+        isActive = true
+        label = "Hour(s)"
+        default = false
+      },
+    ]
+    restricted = true
+    label = "Block Time Before Unit"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist DefaultAppointmentType {
+    apiName = "WorkType.DefaultAppointmentType"
+    trackHistory = false
+    label = "Default Appointment Type"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.LongTextArea Description {
+    apiName = "WorkType.Description"
+    trackHistory = false
+    length = 32000
+    label = "Description"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist DurationType {
+    apiName = "WorkType.DurationType"
+    trackHistory = false
+    valueSet = [
+      {
+        fullName = "Hours"
+        isActive = true
+        label = "Hours"
+        default = true
+      },
+      {
+        fullName = "Minutes"
+        isActive = true
+        label = "Minutes"
+        default = false
+      },
+    ]
+    restricted = true
+    _required = true
+    label = "Duration Type"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number EstimatedDuration {
+    apiName = "WorkType.EstimatedDuration"
+    trackHistory = false
+    _required = true
+    label = "Estimated Duration"
+    precision = 18
+    scale = 2
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+  }
+  salesforce.Text Name {
+    apiName = "WorkType.Name"
+    trackHistory = false
+    length = 255
+    _required = true
+    label = "Work Type Name"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Lookup OperatingHoursId {
+    apiName = "WorkType.OperatingHoursId"
+    trackHistory = false
+    relationshipName = "OperatingHours"
+    referenceTo = [
+      salesforce.OperatingHours,
+    ]
+    label = "Operating Hour ID"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "WorkType.OwnerId"
+    trackHistory = false
+    relationshipName = "Owner"
+    referenceTo = [
+      salesforce.Group,
+      salesforce.User,
+    ]
+    label = "Owner ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist TimeFrameEndUnit {
+    apiName = "WorkType.TimeFrameEndUnit"
+    trackHistory = false
+    valueSet = [
+      {
+        fullName = "Days"
+        isActive = true
+        label = "Day(s)"
+        default = true
+      },
+      {
+        fullName = "Hours"
+        isActive = true
+        label = "Hour(s)"
+        default = false
+      },
+    ]
+    restricted = true
+    label = "Time Frame End Unit"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist TimeFrameStartUnit {
+    apiName = "WorkType.TimeFrameStartUnit"
+    trackHistory = false
+    valueSet = [
+      {
+        fullName = "Days"
+        isActive = true
+        label = "Day(s)"
+        default = true
+      },
+      {
+        fullName = "Hours"
+        isActive = true
+        label = "Hour(s)"
+        default = false
+      },
+    ]
+    restricted = true
+    label = "Time Frame Start Unit"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number TimeframeEnd {
+    apiName = "WorkType.TimeframeEnd"
+    trackHistory = false
+    label = "Timeframe End"
+    precision = 9
+    createable = true
+    updateable = true
+    scale = 0
+    unique = false
+    queryable = true
+  }
+  salesforce.Number TimeframeStart {
+    apiName = "WorkType.TimeframeStart"
+    trackHistory = false
+    label = "Timeframe Start"
+    precision = 9
+    createable = true
+    updateable = true
+    scale = 0
+    unique = false
+    queryable = true
+  }
+  serviceid Id {
+    apiName = "WorkType.Id"
+    label = "Work Type ID"
+    queryable = true
+    _hidden_value = true
+    updateable = false
+    createable = false
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "WorkType.IsDeleted"
+    defaultValue = false
+    label = "Deleted"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "WorkType.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "WorkType.CreatedById"
+    relationshipName = "CreatedBy"
+    referenceTo = [
+      salesforce.User,
+    ]
+    label = "Created By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "WorkType.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "WorkType.LastModifiedById"
+    relationshipName = "LastModifiedBy"
+    referenceTo = [
+      salesforce.User,
+    ]
+    label = "Last Modified By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "WorkType.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Number DurationInMinutes {
+    apiName = "WorkType.DurationInMinutes"
+    label = "Duration in Minutes"
+    precision = 18
+    scale = 2
+    createable = false
+    updateable = false
+    unique = false
+    queryable = true
+    _hidden_value = true
+  }
+}

@@ -1,0 +1,40 @@
+type salesforce.Asset {
+  salesforce.Picklist DigitalAssetStatus {
+    _hidden_value = true
+  }
+}
+type salesforce.Asset {
+  salesforce.Unknown ExternalIdentifier {
+    apiName = "Asset.ExternalIdentifier"
+    inlineHelpText = "ID of matching record in an external system."
+    trackHistory = false
+    _hidden_value = true
+  }
+}
+type salesforce.Asset {
+  salesforce.Unknown ManufactureDate {
+    apiName = "Asset.ManufactureDate"
+    inlineHelpText = "Date when the asset was manufactured."
+    trackHistory = false
+    _hidden_value = true
+  }
+}
+type salesforce.Asset {
+  salesforce.Unknown ProductDescription {
+    apiName = "Asset.ProductDescription"
+    _hidden_value = true
+  }
+}
+type salesforce.Asset {
+  salesforce.Picklist StatusReason {
+    _hidden_value = true
+  }
+}
+type salesforce.Asset {
+  salesforce.Unknown Uuid {
+    apiName = "Asset.Uuid"
+    inlineHelpText = "Unique string identifying the asset."
+    trackHistory = false
+    _hidden_value = true
+  }
+}

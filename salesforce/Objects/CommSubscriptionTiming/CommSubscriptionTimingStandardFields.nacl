@@ -1,0 +1,136 @@
+type salesforce.CommSubscriptionTiming {
+  salesforce.MasterDetail CommSubscriptionConsentId {
+    apiName = "CommSubscriptionTiming.CommSubscriptionConsentId"
+    inlineHelpText = "The communication subscription consent record associated with the communication subscription timing."
+    trackHistory = false
+    relationshipName = "CommSubscriptionConsent"
+    referenceTo = [
+      salesforce.CommSubscriptionConsent,
+    ]
+    _required = true
+    label = "Communication Subscription Consent ID"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  
+  
+  
+  
+  salesforce.Picklist Unit {
+    apiName = "CommSubscriptionTiming.Unit"
+    inlineHelpText = "The unit of time that works with Offset to determine the communication timing."
+    trackHistory = false
+    valueSet = [
+      {
+        fullName = "DayOfWeek"
+        isActive = true
+        label = "Day of Week"
+        default = false
+      },
+      {
+        fullName = "Hour"
+        isActive = true
+        label = "Hour"
+        default = false
+      },
+      {
+        fullName = "Day"
+        isActive = true
+        label = "Day"
+        default = false
+      },
+      {
+        fullName = "Week"
+        isActive = true
+        label = "Week"
+        default = false
+      },
+      {
+        fullName = "Month"
+        isActive = true
+        label = "Month"
+        default = false
+      },
+    ]
+    restricted = true
+    _required = true
+    label = "Unit"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  serviceid Id {
+    apiName = "CommSubscriptionTiming.Id"
+    label = "Communication Subscription Timing ID"
+    queryable = true
+    _hidden_value = true
+    updateable = false
+    createable = false
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "CommSubscriptionTiming.IsDeleted"
+    defaultValue = false
+    label = "Deleted"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.AutoNumber Name {
+    apiName = "CommSubscriptionTiming.Name"
+    label = "Name"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "CommSubscriptionTiming.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "CommSubscriptionTiming.CreatedById"
+    relationshipName = "CreatedBy"
+    referenceTo = [
+      salesforce.User,
+    ]
+    label = "Created By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "CommSubscriptionTiming.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "CommSubscriptionTiming.LastModifiedById"
+    relationshipName = "LastModifiedBy"
+    referenceTo = [
+      salesforce.User,
+    ]
+    label = "Last Modified By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "CommSubscriptionTiming.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

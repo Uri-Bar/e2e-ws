@@ -1,0 +1,59 @@
+type salesforce.BriefcaseRule {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  salesforce.BriefcaseRuleFilter briefcaseRuleFilters {
+  }
+  string filterLogic {
+  }
+  boolean isAscendingOrder {
+  }
+  string orderBy {
+    foreignKeyDomain = [
+      salesforce.CustomField,
+    ]
+  }
+  number recordLimit {
+  }
+  salesforce.BriefcaseRule relatedRules {
+  }
+  string relationshipField {
+    _restriction = {
+      enforce_value = false
+      
+    }
+    foreignKeyDomain = [
+      salesforce.CustomField,
+    ]
+  }
+  string relationshipType {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "ChildToParent",
+        "ParentToChild",
+      ]
+    }
+  }
+  string targetEntity {
+    _restriction = {
+      enforce_value = false
+      
+    }
+    foreignKeyDomain = [
+      "CustomObject",
+    ]
+  }
+  metadataType = "BriefcaseRule"
+}

@@ -1,0 +1,69 @@
+salesforce.Layout Campaign_Campaign_Layout@bs {
+  relatedLists = [
+    {
+      fields = [
+        "CAMPAIGN.NAME",
+        "CAMPAIGN.TOTAL_NUM_LEADS",
+        "CAMPAIGN.TOT_CONVERTED_LEADS",
+        "CAMPAIGN.TOT_CONTACTS",
+        "CAMPAIGN.TOT_OPPORTUNITIES",
+        "CAMPAIGN.TOT_WON_OPPORTUNITIES",
+        "TOT_AMOUNT_WON",
+        "TOT_AMOUNT_ALL",
+        "CAMPAIGN.TOT_NUM_RESPONSES",
+        "TOT_NUM_SENT",
+        "TOT_EXP_REVENUE",
+        "TOT_BUDGETED_COST",
+        "TOT_ACTUAL_COST",
+      ]
+      relatedList = "RelatedCampaignHierarchyList"
+    },
+    {
+      fields = [
+        "TASK.SUBJECT",
+        "TASK.WHO_NAME",
+        "ACTIVITY.TASK",
+        "TASK.DUE_DATE",
+        "TASK.STATUS",
+        "TASK.PRIORITY",
+        "CORE.USERS.FULL_NAME",
+      ]
+      relatedList = "RelatedActivityList"
+    },
+    {
+      fields = [
+        "TASK.SUBJECT",
+        "TASK.WHO_NAME",
+        "ACTIVITY.TASK",
+        "TASK.DUE_DATE",
+        "CORE.USERS.FULL_NAME",
+        "TASK.LAST_UPDATE",
+      ]
+      relatedList = "RelatedHistoryList"
+    },
+    {
+      relatedList = "RelatedAttachmentList"
+    },
+    {
+      fields = [
+        "OPPORTUNITY.NAME",
+        "OPPORTUNITY.STAGE_NAME",
+        "OPPORTUNITY.AMOUNT",
+        "OPPORTUNITY.CLOSE_DATE",
+      ]
+      relatedList = "RelatedOpportunityList"
+    },
+    {
+      fields = [
+        "MEMBER_TYPE",
+        "STATUS",
+        "FULL_NAME",
+        "TITLE",
+        "FIRST_NAME",
+        "LAST_NAME",
+        "COMPANY",
+      ]
+      relatedList = "RelatedCampaignMemberList"
+    },
+  ]
+}

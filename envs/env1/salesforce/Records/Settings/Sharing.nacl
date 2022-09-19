@@ -1,0 +1,12 @@
+salesforce.SharingSettings {
+  enableCommunityUserVisibility = false
+}
+salesforce.SharingSettings {
+  enableExternalSharingModel = true
+}
+salesforce.SharingSettings {
+  enablePortalUserCaseSharing = true
+}
+salesforce.SharingSettings {
+  enablePortalUserVisibility = false
+}

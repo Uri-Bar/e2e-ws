@@ -1,0 +1,26 @@
+type salesforce.NewObjectNamebegkzysdrcum__c {
+  salesforce.Text Alpha__c {
+    apiName = "NewObjectNamebegkzysdrcum__c.Alpha__c"
+    externalId = false
+    label = "updated label"
+    length = 80
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Text Modified__c {
+    apiName = "NewObjectNamebegkzysdrcum__c.Modified__c"
+    externalId = false
+    label = "Beta"
+    length = 80
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+}

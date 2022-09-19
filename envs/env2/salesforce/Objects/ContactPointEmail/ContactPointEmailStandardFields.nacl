@@ -1,0 +1,11 @@
+type salesforce.ContactPointEmail {
+  salesforce.Unknown PreferenceRank {
+    apiName = "ContactPointEmail.PreferenceRank"
+    trackHistory = false
+  }
+}
+type salesforce.ContactPointEmail {
+  salesforce.Picklist UsageType {
+    _hidden_value = true
+  }
+}

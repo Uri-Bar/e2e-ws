@@ -1,0 +1,14 @@
+type salesforce.Account {
+  salesforce.Lookup OperatingHoursId {
+    apiName = "Account.OperatingHoursId"
+    trackFeedHistory = false
+    relationshipName = "OperatingHours"
+    referenceTo = [
+      salesforce.OperatingHours,
+    ]
+    label = "Operating Hour ID"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+}

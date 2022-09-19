@@ -1,0 +1,16 @@
+type salesforce.CommSubscription {
+  salesforce.Lookup DataUsePurposeId {
+    relationshipName = "DataUsePurpose"
+    referenceTo = [
+      salesforce.DataUsePurpose,
+    ]
+    label = "Data Use Purpose ID"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  searchLayouts = {
+    customTabListAdditionalFields = "DataUsePurpose"
+    searchResultsAdditionalFields = "DataUsePurpose"
+  }
+}

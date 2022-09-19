@@ -1,0 +1,17 @@
+type salesforce.MessagingEndUser {
+  salesforce.Lookup AccountId {
+    _hidden_value = true
+  }
+}
+type salesforce.MessagingEndUser {
+  salesforce.Lookup ContactId {
+    _hidden_value = true
+  }
+}
+type salesforce.MessagingEndUser {
+  salesforce.Unknown HasInitialResponseSent {
+    apiName = "MessagingEndUser.HasInitialResponseSent"
+    trackHistory = false
+    _hidden_value = true
+  }
+}

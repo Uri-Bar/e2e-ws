@@ -1,0 +1,9 @@
+salesforce.Role TestSyncFromServiceInstwszykpitjnqc {
+  fullName = "TestSyncFromServiceInstwszykpitjnqc"
+  caseAccessLevel = "Edit"
+  contactAccessLevel = "Edit"
+  description = "This was created on the service"
+  mayForecastManagerShare = false
+  name = "TestSyncFromServiceInstwszykpitjnqc"
+  opportunityAccessLevel = "Edit"
+}

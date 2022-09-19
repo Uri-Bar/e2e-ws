@@ -1,0 +1,15 @@
+salesforce.Layout AuthorizationFormConsent_Authorization_Form_Consent_Layout@bsss {
+  fullName = "AuthorizationFormConsent-Authorization Form Consent Layout"
+  
+  relatedLists = [
+    {
+      relatedList = "RelatedEntityHistoryList"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  _parent = [
+    salesforce.AuthorizationFormConsent,
+  ]
+}

@@ -1,0 +1,26 @@
+type salesforce.TestDiffObjffosdslglded__c {
+  salesforce.Text alpha__c {
+    apiName = "TestDiffObjffosdslglded__c.alpha__c"
+    externalId = false
+    
+    length = 80
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Text beta__c {
+    apiName = "TestDiffObjffosdslglded__c.beta__c"
+    externalId = false
+    
+    length = 80
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+}

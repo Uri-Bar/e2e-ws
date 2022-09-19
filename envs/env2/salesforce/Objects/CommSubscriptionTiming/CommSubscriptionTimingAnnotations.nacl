@@ -1,0 +1,10 @@
+type salesforce.CommSubscriptionTiming {
+  searchLayouts = {
+    searchResultsAdditionalFields = [
+      "Unit",
+      "Offset",
+      "PreferredTimeStart",
+      "PreferredTimeEnd",
+    ]
+  }
+}

@@ -1,0 +1,5 @@
+type salesforce.Opportunity {
+  salesforce.Lookup ContractId {
+    _hidden_value = true
+  }
+}

@@ -1,0 +1,7 @@
+type salesforce.CommSubscription {
+  salesforce.Checkbox IsDefault {
+    apiName = "CommSubscription.IsDefault"
+    inlineHelpText = "Set this communication subscription as the default."
+    trackHistory = false
+  }
+}

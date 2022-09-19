@@ -1,0 +1,30 @@
+type salesforce.Account {
+  salesforce.Picklist CustomerPriority__c {
+    label = "1663251032880"
+  }
+}
+type salesforce.Account {
+  salesforce.Picklist gpicklist__c {
+    apiName = "Account.gpicklist__c"
+    externalId = false
+    label = "Test Fetch Global Picklist Field"
+    trackFeedHistory = false
+    valueSetName = salesforce.GlobalValueSet.instance.TestGlobalValueSet
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Geolocation location__c {
+    apiName = "Account.location__c"
+    displayLocationInDecimal = true
+    externalId = false
+    label = "Test Fetch Location Field"
+    scale = 10
+    trackFeedHistory = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

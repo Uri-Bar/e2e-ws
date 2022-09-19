@@ -1,0 +1,87 @@
+type salesforce.Case {
+  salesforce.Lookup EntitlementId {
+    apiName = "Case.EntitlementId"
+    trackFeedHistory = false
+    trackHistory = false
+    trackTrending = false
+    _hidden_value = true
+  }
+}
+type salesforce.Case {
+  salesforce.Unknown IsStopped {
+    apiName = "Case.IsStopped"
+    trackFeedHistory = false
+    trackHistory = false
+    trackTrending = false
+    _hidden_value = true
+  }
+}
+type salesforce.Case {
+  salesforce.Unknown MilestoneStatus {
+    apiName = "Case.MilestoneStatus"
+    trackTrending = false
+    _hidden_value = true
+  }
+}
+type salesforce.Case {
+  salesforce.Unknown MilestoneStatusIcon {
+    apiName = "Case.MilestoneStatusIcon"
+    trackTrending = false
+    _hidden_value = true
+  }
+}
+type salesforce.Case {
+  salesforce.Lookup ProductId {
+    apiName = "Case.ProductId"
+    trackFeedHistory = false
+    trackHistory = false
+    trackTrending = false
+    _hidden_value = true
+  }
+}
+type salesforce.Case {
+  salesforce.Lookup ServiceContractId {
+    apiName = "Case.ServiceContractId"
+    trackFeedHistory = false
+    trackHistory = false
+    trackTrending = false
+    _hidden_value = true
+  }
+}
+type salesforce.Case {
+  salesforce.Unknown SlaExitDate {
+    apiName = "Case.SlaExitDate"
+    trackTrending = false
+    _hidden_value = true
+  }
+}
+type salesforce.Case {
+  salesforce.Unknown SlaStartDate {
+    apiName = "Case.SlaStartDate"
+    trackFeedHistory = false
+    trackHistory = false
+    trackTrending = false
+    _hidden_value = true
+  }
+}
+type salesforce.Case {
+  salesforce.Unknown StopStartDate {
+    apiName = "Case.StopStartDate"
+    trackTrending = false
+    _hidden_value = true
+  }
+}
+type salesforce.Case {
+  salesforce.Lookup BusinessHoursId {
+    _hidden_value = true
+  }
+}
+type salesforce.Case {
+  salesforce.Unknown IsClosedOnCreate {
+    apiName = "Case.IsClosedOnCreate"
+    trackFeedHistory = false
+    trackHistory = false
+    trackTrending = false
+    _hidden_value = true
+  }
+}

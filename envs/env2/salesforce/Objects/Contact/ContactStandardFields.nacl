@@ -1,0 +1,18 @@
+type salesforce.Contact {
+  salesforce.Checkbox DoNotCall {
+    apiName = "Contact.DoNotCall"
+    trackFeedHistory = false
+  }
+}
+type salesforce.Contact {
+  salesforce.Checkbox HasOptedOutOfEmail {
+    apiName = "Contact.HasOptedOutOfEmail"
+    trackFeedHistory = false
+  }
+}
+type salesforce.Contact {
+  salesforce.Checkbox HasOptedOutOfFax {
+    apiName = "Contact.HasOptedOutOfFax"
+    trackFeedHistory = false
+  }
+}

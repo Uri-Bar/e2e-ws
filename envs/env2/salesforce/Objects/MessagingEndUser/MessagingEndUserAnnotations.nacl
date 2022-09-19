@@ -1,0 +1,13 @@
+type salesforce.MessagingEndUser {
+  searchLayouts = {
+    lookupPhoneDialogsAdditionalFields = [
+      "MessagingPlatformKey",
+      "MessagingChannel",
+      "MessageType",
+      "Locale",
+      "MessagingConsentStatus",
+      "CONTACT.PHONE3",
+      "CONTACT.PHONE5",
+    ]
+  }
+}

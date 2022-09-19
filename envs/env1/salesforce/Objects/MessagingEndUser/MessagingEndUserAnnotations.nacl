@@ -1,0 +1,14 @@
+type salesforce.MessagingEndUser {
+  externalSharingModel = "Private"
+}
+type salesforce.MessagingEndUser {
+  searchLayouts = {
+    lookupPhoneDialogsAdditionalFields = [
+      "MessagingPlatformKey",
+      "MessagingChannel",
+      "MessageType",
+      "Locale",
+      "MessagingConsentStatus",
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+salesforce.StandardValueSet WorkOrderStatus {
+  fullName = "WorkOrderStatus"
+  
+  sorted = false
+  
+}

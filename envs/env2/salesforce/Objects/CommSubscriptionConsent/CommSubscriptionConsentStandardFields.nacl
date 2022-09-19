@@ -1,0 +1,7 @@
+type salesforce.CommSubscriptionConsent {
+  salesforce.Date EffectiveToDate {
+    apiName = "CommSubscriptionConsent.EffectiveToDate"
+    inlineHelpText = "Date when consent ends."
+    trackHistory = false
+  }
+}

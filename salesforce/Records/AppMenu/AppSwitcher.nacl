@@ -1,0 +1,4 @@
+salesforce.AppMenu AppSwitcher {
+  fullName = "AppSwitcher"
+  
+}

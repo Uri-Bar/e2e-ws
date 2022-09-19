@@ -1,0 +1,11 @@
+type salesforce.OpportunityLineItem {
+  salesforce.Percent Discount {
+    apiName = "OpportunityLineItem.Discount"
+  }
+}
+type salesforce.OpportunityLineItem {
+  salesforce.Currency Subtotal {
+    apiName = "OpportunityLineItem.Subtotal"
+    _hidden_value = true
+  }
+}

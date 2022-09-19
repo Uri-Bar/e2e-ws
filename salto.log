@@ -1,0 +1,1497 @@
+2022-09-19T13:38:09.032Z info cli/index CLI started. Version: version 0.3.22, branch SALTO-2494_move_attachment_content_to_static_file, hash ede630bc, Node exec location: /Users/uribar/.nvm/versions/node/v14.15.3/bin/node, Salto exec location: /usr/local/bin/salto, Current dir: /Users/uribar/ws/e2e-ws
+2022-09-19T13:38:09.033Z debug cli/index OS properties - platform: darwin, release: 21.2.0, arch x64
+2022-09-19T13:38:09.033Z debug cli/index Installation ID: bdaafe78-ac62-4612-ab0c-0a3864d71f34
+2022-09-19T13:38:09.033Z info cli/index running "salto env list"
+2022-09-19T13:38:09.042Z debug cli/command_builder Running command list in path . with arguments { config: undefined, verbose: false }
+2022-09-19T13:38:09.060Z warn workspace/workspace/config_source Could not find file workspaceUser.nacl for configuration workspaceUser
+2022-09-19T13:38:09.069Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: staticFilesCache-config-cache
+2022-09-19T13:38:09.069Z debug core/local-workspace/remote_map opening connection to /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache/tmp-dbs/a3cf18b6-c958-46dc-8634-814936b0bbcd, read-only=false
+2022-09-19T13:38:09.099Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource-salto.config/adapters-elements_index
+2022-09-19T13:38:09.103Z debug core/local-workspace/remote_map cleaning tmp db a3cf18b6-c958-46dc-8634-814936b0bbcd
+2022-09-19T13:38:09.103Z debug core/local-workspace/remote_map caught a rocksdb lock error while cleaning tmp db: IO error: lock hold by current process, acquire time 1663594689 acquiring thread 13094535168: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache/tmp-dbs/a3cf18b6-c958-46dc-8634-814936b0bbcd/LOCK: No locks available
+2022-09-19T13:38:09.103Z debug core/local-workspace/remote_map opening connection to /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, read-only=false
+2022-09-19T13:38:09.106Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource-salto.config/adapters-errors
+2022-09-19T13:38:09.106Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource-salto.config/adapters-merged
+2022-09-19T13:38:09.107Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: parsedResultCache-naclFileSource-salto.config/adapters-parsed_nacl_files-metadata
+2022-09-19T13:38:09.107Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource-salto.config/adapters-referenced_index
+2022-09-19T13:38:09.107Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: parsedResultCache-naclFileSource-salto.config/adapters-parsed_nacl_files-elements
+2022-09-19T13:38:09.107Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource-salto.config/adapters-searchableNamesIndex
+2022-09-19T13:38:09.107Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: parsedResultCache-naclFileSource-salto.config/adapters-parsed_nacl_files-sourceMap
+2022-09-19T13:38:09.107Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource-salto.config/adapters-static_files_index
+2022-09-19T13:38:09.107Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: parsedResultCache-naclFileSource-salto.config/adapters-parsed_nacl_files-errors
+2022-09-19T13:38:09.107Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource-salto.config/adapters-metadata
+2022-09-19T13:38:09.108Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: parsedResultCache-naclFileSource-salto.config/adapters-parsed_nacl_files-referenced
+2022-09-19T13:38:09.108Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: parsedResultCache-naclFileSource-salto.config/adapters-parsed_nacl_files-staticFiles
+2022-09-19T13:38:09.116Z debug workspace/workspace/nacl_files/nacl_files_source building elements indices for 1 NaCl files
+2022-09-19T13:38:09.116Z debug workspace/workspace/nacl_files/nacl_files_source handle deletions of nacl files starting
+2022-09-19T13:38:09.117Z debug workspace/workspace/nacl_files/nacl_files_source handle deletions of nacl files took 1 ms
+2022-09-19T13:38:09.117Z debug workspace/workspace/nacl_files/nacl_files_source handle additions/modifications of nacl files starting
+2022-09-19T13:38:09.123Z debug workspace/workspace/nacl_files/nacl_files_source handle additions/modifications of nacl files took 6 ms
+2022-09-19T13:38:09.124Z info workspace/workspace/nacl_files/elements_cache going to merge new elements to the existing elements
+2022-09-19T13:38:09.124Z debug workspace/merger/index merged 1 elements to 1 elements [errors=0]
+2022-09-19T13:38:09.129Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: workspace-salto.config/adapters-validationErrors
+2022-09-19T13:38:09.130Z debug workspace/validator validateElements with 1 elements starting
+2022-09-19T13:38:09.130Z debug workspace/expressions resolve 1 elements starting
+2022-09-19T13:38:09.134Z debug workspace/expressions resolve handled a total of 29 elements
+2022-09-19T13:38:09.134Z debug workspace/expressions resolve 1 elements took 4 ms
+2022-09-19T13:38:09.136Z debug workspace/validator validateElements with 1 elements took 6 ms
+2022-09-19T13:38:09.139Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: staticFilesCache-envs/env1
+2022-09-19T13:38:09.139Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: staticFilesCache-envs/env2
+2022-09-19T13:38:09.139Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: staticFilesCache-common
+2022-09-19T13:38:09.141Z warn workspace/workspace/config_source Could not find file workspaceUser.nacl for configuration workspaceUser
+2022-09-19T13:38:09.141Z debug workspace/workspace/workspace Loading workspace with id: a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4
+2022-09-19T13:38:09.143Z debug cli/outputer * env1
+  env2
+2022-09-19T13:38:09.144Z debug core/local-workspace/remote_map closed connection to /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache
+2022-09-19T13:38:09.145Z debug core/local-workspace/remote_map closed temporary connection to /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache/tmp-dbs/a3cf18b6-c958-46dc-8634-814936b0bbcd
+2022-09-19T13:38:09.145Z info cli/cli ran "env list" in 112 ms
+2022-09-19T13:51:03.628Z info cli/index CLI started. Version: version 0.3.22, branch SALTO-2494_move_attachment_content_to_static_file, hash ede630bc, Node exec location: /Users/uribar/.nvm/versions/node/v14.15.3/bin/node, Salto exec location: /usr/local/bin/salto, Current dir: /Users/uribar/ws/e2e-ws
+2022-09-19T13:51:03.629Z debug cli/index OS properties - platform: darwin, release: 21.2.0, arch x64
+2022-09-19T13:51:03.629Z debug cli/index Installation ID: bdaafe78-ac62-4612-ab0c-0a3864d71f34
+2022-09-19T13:51:03.629Z info cli/index running "salto element print salesforce.Env1TestObjckqvsgwelktk__c"
+2022-09-19T13:51:03.640Z debug cli/command_builder Running command print in path . with arguments {
+  selectors: [ 'salesforce.Env1TestObjckqvsgwelktk__c', [length]: 1 ],
+  config: undefined,
+  source: 'nacl',
+  onlyValue: false,
+  env: undefined,
+  verbose: false
+}
+2022-09-19T13:51:03.657Z warn workspace/workspace/config_source Could not find file workspaceUser.nacl for configuration workspaceUser
+2022-09-19T13:51:03.665Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: staticFilesCache-config-cache
+2022-09-19T13:51:03.665Z debug core/local-workspace/remote_map opening connection to /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache/tmp-dbs/1da5d7f6-f9d3-4868-be67-7f0a690c8d79, read-only=false
+2022-09-19T13:51:03.697Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource-salto.config/adapters-elements_index
+2022-09-19T13:51:03.701Z debug core/local-workspace/remote_map cleaning tmp db 1da5d7f6-f9d3-4868-be67-7f0a690c8d79
+2022-09-19T13:51:03.701Z debug core/local-workspace/remote_map caught a rocksdb lock error while cleaning tmp db: IO error: lock hold by current process, acquire time 1663595463 acquiring thread 13104246784: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache/tmp-dbs/1da5d7f6-f9d3-4868-be67-7f0a690c8d79/LOCK: No locks available
+2022-09-19T13:51:03.701Z debug core/local-workspace/remote_map cleaning tmp db 1e19e5e2-2d45-40f1-8113-97e37efb3716
+2022-09-19T13:51:03.701Z debug core/local-workspace/remote_map caught a rocksdb lock error while cleaning tmp db: IO error: While lock file: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache/tmp-dbs/1e19e5e2-2d45-40f1-8113-97e37efb3716/LOCK: Resource temporarily unavailable
+2022-09-19T13:51:03.701Z debug core/local-workspace/remote_map opening connection to /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, read-only=false
+2022-09-19T13:51:03.705Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource-salto.config/adapters-errors
+2022-09-19T13:51:03.705Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource-salto.config/adapters-merged
+2022-09-19T13:51:03.706Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: parsedResultCache-naclFileSource-salto.config/adapters-parsed_nacl_files-metadata
+2022-09-19T13:51:03.706Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource-salto.config/adapters-referenced_index
+2022-09-19T13:51:03.706Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: parsedResultCache-naclFileSource-salto.config/adapters-parsed_nacl_files-elements
+2022-09-19T13:51:03.706Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource-salto.config/adapters-searchableNamesIndex
+2022-09-19T13:51:03.706Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: parsedResultCache-naclFileSource-salto.config/adapters-parsed_nacl_files-sourceMap
+2022-09-19T13:51:03.706Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource-salto.config/adapters-static_files_index
+2022-09-19T13:51:03.706Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: parsedResultCache-naclFileSource-salto.config/adapters-parsed_nacl_files-errors
+2022-09-19T13:51:03.706Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource-salto.config/adapters-metadata
+2022-09-19T13:51:03.707Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: parsedResultCache-naclFileSource-salto.config/adapters-parsed_nacl_files-referenced
+2022-09-19T13:51:03.707Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: parsedResultCache-naclFileSource-salto.config/adapters-parsed_nacl_files-staticFiles
+2022-09-19T13:51:03.715Z debug workspace/workspace/nacl_files/nacl_files_source building elements indices for 1 NaCl files
+2022-09-19T13:51:03.715Z debug workspace/workspace/nacl_files/nacl_files_source handle deletions of nacl files starting
+2022-09-19T13:51:03.716Z debug workspace/workspace/nacl_files/nacl_files_source handle deletions of nacl files took 1 ms
+2022-09-19T13:51:03.716Z debug workspace/workspace/nacl_files/nacl_files_source handle additions/modifications of nacl files starting
+2022-09-19T13:51:03.722Z debug workspace/workspace/nacl_files/nacl_files_source handle additions/modifications of nacl files took 6 ms
+2022-09-19T13:51:03.723Z info workspace/workspace/nacl_files/elements_cache going to merge new elements to the existing elements
+2022-09-19T13:51:03.723Z debug workspace/merger/index merged 1 elements to 1 elements [errors=0]
+2022-09-19T13:51:03.728Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: workspace-salto.config/adapters-validationErrors
+2022-09-19T13:51:03.729Z debug workspace/validator validateElements with 1 elements starting
+2022-09-19T13:51:03.729Z debug workspace/expressions resolve 1 elements starting
+2022-09-19T13:51:03.733Z debug workspace/expressions resolve handled a total of 29 elements
+2022-09-19T13:51:03.733Z debug workspace/expressions resolve 1 elements took 4 ms
+2022-09-19T13:51:03.735Z debug workspace/validator validateElements with 1 elements took 6 ms
+2022-09-19T13:51:03.738Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: staticFilesCache-envs/env1
+2022-09-19T13:51:03.738Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: staticFilesCache-envs/env2
+2022-09-19T13:51:03.738Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: staticFilesCache-common
+2022-09-19T13:51:03.740Z warn workspace/workspace/config_source Could not find file workspaceUser.nacl for configuration workspaceUser
+2022-09-19T13:51:03.740Z debug workspace/workspace/workspace Loading workspace with id: a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4
+2022-09-19T13:51:03.742Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource-envs/env1-elements_index
+2022-09-19T13:51:03.742Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource-envs/env1-errors
+2022-09-19T13:51:03.743Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource-envs/env1-merged
+2022-09-19T13:51:03.743Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: parsedResultCache-naclFileSource-envs/env1-parsed_nacl_files-metadata
+2022-09-19T13:51:03.743Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource-envs/env1-referenced_index
+2022-09-19T13:51:03.743Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: parsedResultCache-naclFileSource-envs/env1-parsed_nacl_files-elements
+2022-09-19T13:51:03.743Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource-envs/env1-searchableNamesIndex
+2022-09-19T13:51:03.743Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: parsedResultCache-naclFileSource-envs/env1-parsed_nacl_files-sourceMap
+2022-09-19T13:51:03.743Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource-envs/env1-static_files_index
+2022-09-19T13:51:03.743Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: parsedResultCache-naclFileSource-envs/env1-parsed_nacl_files-errors
+2022-09-19T13:51:03.743Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource-envs/env1-metadata
+2022-09-19T13:51:03.744Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: parsedResultCache-naclFileSource-envs/env1-parsed_nacl_files-referenced
+2022-09-19T13:51:03.744Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: parsedResultCache-naclFileSource-envs/env1-parsed_nacl_files-staticFiles
+2022-09-19T13:51:04.388Z debug workspace/workspace/nacl_files/nacl_files_source building elements indices for 469 NaCl files
+2022-09-19T13:51:04.388Z debug workspace/workspace/nacl_files/nacl_files_source handle deletions of nacl files starting
+2022-09-19T13:51:04.391Z debug workspace/workspace/nacl_files/nacl_files_source handle deletions of nacl files took 3 ms
+2022-09-19T13:51:04.391Z debug workspace/workspace/nacl_files/nacl_files_source handle additions/modifications of nacl files starting
+2022-09-19T13:51:05.558Z debug workspace/workspace/nacl_files/nacl_files_source handle additions/modifications of nacl files took 1167 ms
+2022-09-19T13:51:05.559Z info workspace/workspace/nacl_files/elements_cache going to merge new elements to the existing elements
+2022-09-19T13:51:05.611Z debug workspace/merger/index merged 567 elements to 370 elements [errors=0]
+2022-09-19T13:51:05.776Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource-envs/env2-elements_index
+2022-09-19T13:51:05.777Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource-envs/env2-errors
+2022-09-19T13:51:05.777Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource-envs/env2-merged
+2022-09-19T13:51:05.777Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: parsedResultCache-naclFileSource-envs/env2-parsed_nacl_files-metadata
+2022-09-19T13:51:05.777Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource-envs/env2-referenced_index
+2022-09-19T13:51:05.777Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: parsedResultCache-naclFileSource-envs/env2-parsed_nacl_files-elements
+2022-09-19T13:51:05.777Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource-envs/env2-searchableNamesIndex
+2022-09-19T13:51:05.777Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: parsedResultCache-naclFileSource-envs/env2-parsed_nacl_files-sourceMap
+2022-09-19T13:51:05.777Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource-envs/env2-static_files_index
+2022-09-19T13:51:05.777Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: parsedResultCache-naclFileSource-envs/env2-parsed_nacl_files-errors
+2022-09-19T13:51:05.778Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource-envs/env2-metadata
+2022-09-19T13:51:05.778Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: parsedResultCache-naclFileSource-envs/env2-parsed_nacl_files-referenced
+2022-09-19T13:51:05.778Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: parsedResultCache-naclFileSource-envs/env2-parsed_nacl_files-staticFiles
+2022-09-19T13:51:06.582Z debug workspace/workspace/nacl_files/nacl_files_source building elements indices for 837 NaCl files
+2022-09-19T13:51:06.582Z debug workspace/workspace/nacl_files/nacl_files_source handle deletions of nacl files starting
+2022-09-19T13:51:06.585Z debug workspace/workspace/nacl_files/nacl_files_source handle deletions of nacl files took 3 ms
+2022-09-19T13:51:06.586Z debug workspace/workspace/nacl_files/nacl_files_source handle additions/modifications of nacl files starting
+2022-09-19T13:51:07.946Z debug workspace/workspace/nacl_files/nacl_files_source handle additions/modifications of nacl files took 1360 ms
+2022-09-19T13:51:07.947Z info workspace/workspace/nacl_files/elements_cache going to merge new elements to the existing elements
+2022-09-19T13:51:08.008Z debug workspace/merger/index merged 894 elements to 538 elements [errors=0]
+2022-09-19T13:51:08.214Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource--elements_index
+2022-09-19T13:51:08.215Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource--errors
+2022-09-19T13:51:08.215Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource--merged
+2022-09-19T13:51:08.215Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: parsedResultCache-naclFileSource--parsed_nacl_files-metadata
+2022-09-19T13:51:08.215Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource--referenced_index
+2022-09-19T13:51:08.215Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: parsedResultCache-naclFileSource--parsed_nacl_files-elements
+2022-09-19T13:51:08.215Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource--searchableNamesIndex
+2022-09-19T13:51:08.215Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: parsedResultCache-naclFileSource--parsed_nacl_files-sourceMap
+2022-09-19T13:51:08.215Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource--static_files_index
+2022-09-19T13:51:08.216Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: parsedResultCache-naclFileSource--parsed_nacl_files-errors
+2022-09-19T13:51:08.216Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource--metadata
+2022-09-19T13:51:08.216Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: parsedResultCache-naclFileSource--parsed_nacl_files-referenced
+2022-09-19T13:51:08.216Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: parsedResultCache-naclFileSource--parsed_nacl_files-staticFiles
+2022-09-19T13:51:09.548Z debug workspace/workspace/nacl_files/nacl_files_source building elements indices for 1488 NaCl files
+2022-09-19T13:51:09.549Z debug workspace/workspace/nacl_files/nacl_files_source handle deletions of nacl files starting
+2022-09-19T13:51:09.552Z debug workspace/workspace/nacl_files/nacl_files_source handle deletions of nacl files took 3 ms
+2022-09-19T13:51:09.553Z debug workspace/workspace/nacl_files/nacl_files_source handle additions/modifications of nacl files starting
+2022-09-19T13:51:11.946Z debug workspace/workspace/nacl_files/nacl_files_source handle additions/modifications of nacl files took 2393 ms
+2022-09-19T13:51:11.948Z info workspace/workspace/nacl_files/elements_cache going to merge new elements to the existing elements
+2022-09-19T13:51:12.027Z debug workspace/merger/index merged 1683 elements to 1498 elements [errors=0]
+2022-09-19T13:51:12.487Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: multi_env-env1-merged
+2022-09-19T13:51:12.487Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: multi_env-env1-errors
+2022-09-19T13:51:12.487Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: multi_env-env2-merged
+2022-09-19T13:51:12.487Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: multi_env-env2-errors
+2022-09-19T13:51:12.488Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: multi_env-multi_env_mergeManagermerge_manager
+2022-09-19T13:51:12.489Z debug workspace/workspace/nacl_files/elements_cache Merging components: env1, COMMON_
+2022-09-19T13:51:12.489Z debug workspace/workspace/nacl_files/elements_cache Setting hash multi_env-multi_env_mergeManagermerge_manager::env1_COMMON__merged_hash to f66879bbaec2bf84861f4348d05736f75383246bf87328e23e6ff3d844b5af5e
+2022-09-19T13:51:12.550Z debug workspace/merger/index merged 1869 elements to 1692 elements [errors=0]
+2022-09-19T13:51:12.594Z debug workspace/workspace/nacl_files/elements_cache Setting env1 source hash in namespace multi_env-multi_env_mergeManagermerge_manager to f66879bbaec2bf84861f4348d05736f7
+2022-09-19T13:51:12.595Z debug workspace/workspace/nacl_files/elements_cache Setting COMMON_ source hash in namespace multi_env-multi_env_mergeManagermerge_manager to 5383246bf87328e23e6ff3d844b5af5e
+2022-09-19T13:51:12.595Z debug workspace/workspace/nacl_files/elements_cache Applying merged changes to cache.
+2022-09-19T13:51:12.944Z debug workspace/workspace/nacl_files/elements_cache Change type: add, on 1692 elements. The first 100 ids are: List<salesforce.AppMenuItem>, List<salesforce.AppProfileActionOverride>, List<salesforce.ApprovalStep>, List<salesforce.AssignmentRule>, List<salesforce.CleanRule>, List<salesforce.ComponentInstanceProperty>, List<salesforce.Country>, List<salesforce.CustomLabel>, List<salesforce.CustomValue>, List<salesforce.DefaultShortcut>, List<salesforce.DuplicateRuleMatchRule>, List<salesforce.EntitlementProcessMilestoneItem>, List<salesforce.FeedLayoutComponent>, List<salesforce.FeedLayoutFilter>, List<salesforce.FieldMapping>, List<salesforce.FieldMappingField>, List<salesforce.FieldMappingRow>, List<salesforce.FieldOverride>, List<salesforce.FieldSetItem>, List<salesforce.FileTypeDispositionAssignmentBean>, List<salesforce.FilterItem>, List<salesforce.FlowActionCallInputParameter>, List<salesforce.FlowAssignment>, List<salesforce.FlowAssignmentItem>, List<salesforce.FlowCondition>, List<salesforce.FlowConstant>, List<salesforce.FlowDecision>, List<salesforce.FlowFormula>, List<salesforce.FlowInputFieldAssignment>, List<salesforce.FlowLoop>, List<salesforce.FlowMetadataValue>, List<salesforce.FlowOutputFieldAssignment>, List<salesforce.FlowRecordCreate>, List<salesforce.FlowRecordFilter>, List<salesforce.FlowRecordLookup>, List<salesforce.FlowRecordUpdate>, List<salesforce.FlowRule>, List<salesforce.FlowVariable>, List<salesforce.ForecastingCategoryMapping>, List<salesforce.ForecastingTypeSettings>, List<salesforce.Holidays>, List<salesforce.IpRange>, List<salesforce.ItemInstance>, List<salesforce.KnowledgeCaseField>, List<salesforce.KnowledgeWorkOrderField>, List<salesforce.KnowledgeWorkOrderLineItemField>, List<salesforce.LayoutColumn>, List<salesforce.LayoutItem>, List<salesforce.LayoutSection>, List<salesforce.LightningComponentBundleObject>, List<salesforce.LightningComponentBundleSupportedFormFactor>, List<salesforce.LightningComponentBundleTargetConfig>, List<salesforce.LightningPageRegion>, List<salesforce.ListViewFilter>, List<salesforce.LwcResource>, List<salesforce.ManagedContentNodeType>, List<salesforce.MatchingRule>, List<salesforce.NotificationTypeSettings>, List<salesforce.ObjectMapping>, List<salesforce.ObjectMappingField>, List<salesforce.ObjectSearchSetting>, List<salesforce.OpportunityListFieldsLabelMapping>, List<salesforce.PackageVersion>, List<salesforce.PicklistValue>, List<salesforce.PlatformActionListItem>, List<salesforce.QuickActionLayoutColumn>, List<salesforce.QuickActionLayoutItem>, List<salesforce.QuickActionListItem>, List<salesforce.RealTimeEvent>, List<salesforce.RecordTypePicklistValue>, List<salesforce.RelatedContentItem>, List<salesforce.RelatedListItem>, List<salesforce.RuleEntry>, List<salesforce.SharingCriteriaRule>, List<salesforce.SharingGuestRule>, List<salesforce.SharingOwnerRule>, List<salesforce.SharingTerritoryRule>, List<salesforce.StandardValue>, List<salesforce.State>, List<salesforce.SummaryLayoutItem>, List<salesforce.UiFormulaCriterion>, List<salesforce.ValueSettings>, List<salesforce.WeightedSourceCategory>, List<salesforce.WorkflowActionReference>, List<salesforce.WorkflowAlert>, List<salesforce.WorkflowEmailRecipient>, List<salesforce.WorkflowFieldUpdate>, List<salesforce.WorkflowFlowAction>, List<salesforce.WorkflowKnowledgePublish>, List<salesforce.WorkflowOutboundMessage>, List<salesforce.WorkflowRule>, List<salesforce.WorkflowTask>, List<salesforce.WorkflowTimeTrigger>, List<salesforce.WorkspaceMapping>, List<salesforce.summaryFilterItems>, List<salesforce.valueSet>, List<string>, Map<salesforce.BusinessHoursEntry>, salesforce.AIApplication, salesforce.AIApplicationConfig
+2022-09-19T13:51:12.945Z debug workspace/workspace/nacl_files/elements_cache Merging components: env2, COMMON_
+2022-09-19T13:51:12.945Z debug workspace/workspace/nacl_files/elements_cache Setting hash multi_env-multi_env_mergeManagermerge_manager::env2_COMMON__merged_hash to 7f72b8c51dff2cb20bc0e54b077870ed5383246bf87328e23e6ff3d844b5af5e
+2022-09-19T13:51:13.002Z debug workspace/merger/index merged 2037 elements to 1959 elements [errors=0]
+2022-09-19T13:51:13.039Z debug workspace/workspace/nacl_files/elements_cache Setting env2 source hash in namespace multi_env-multi_env_mergeManagermerge_manager to 7f72b8c51dff2cb20bc0e54b077870ed
+2022-09-19T13:51:13.039Z debug workspace/workspace/nacl_files/elements_cache Setting COMMON_ source hash in namespace multi_env-multi_env_mergeManagermerge_manager to 5383246bf87328e23e6ff3d844b5af5e
+2022-09-19T13:51:13.040Z debug workspace/workspace/nacl_files/elements_cache Applying merged changes to cache.
+2022-09-19T13:51:13.443Z debug workspace/workspace/nacl_files/elements_cache Change type: add, on 1959 elements. The first 100 ids are: List<salesforce.AppMenuItem>, List<salesforce.AppProfileActionOverride>, List<salesforce.ApprovalStep>, List<salesforce.AssignmentRule>, List<salesforce.CleanRule>, List<salesforce.ComponentInstanceProperty>, List<salesforce.Country>, List<salesforce.CustomLabel>, List<salesforce.CustomValue>, List<salesforce.DefaultShortcut>, List<salesforce.DuplicateRuleMatchRule>, List<salesforce.FeedLayoutComponent>, List<salesforce.FeedLayoutFilter>, List<salesforce.FieldMapping>, List<salesforce.FieldMappingField>, List<salesforce.FieldMappingRow>, List<salesforce.FieldOverride>, List<salesforce.FieldSetItem>, List<salesforce.FileTypeDispositionAssignmentBean>, List<salesforce.FilterItem>, List<salesforce.FlowActionCallInputParameter>, List<salesforce.FlowAssignment>, List<salesforce.FlowAssignmentItem>, List<salesforce.FlowCondition>, List<salesforce.FlowConstant>, List<salesforce.FlowDecision>, List<salesforce.FlowFormula>, List<salesforce.FlowInputFieldAssignment>, List<salesforce.FlowLoop>, List<salesforce.FlowMetadataValue>, List<salesforce.FlowOutputFieldAssignment>, List<salesforce.FlowRecordCreate>, List<salesforce.FlowRecordFilter>, List<salesforce.FlowRecordLookup>, List<salesforce.FlowRecordUpdate>, List<salesforce.FlowRule>, List<salesforce.FlowVariable>, List<salesforce.ForecastingCategoryMapping>, List<salesforce.ForecastingTypeSettings>, List<salesforce.Holidays>, List<salesforce.IpRange>, List<salesforce.ItemInstance>, List<salesforce.KnowledgeCaseField>, List<salesforce.KnowledgeWorkOrderField>, List<salesforce.KnowledgeWorkOrderLineItemField>, List<salesforce.LayoutColumn>, List<salesforce.LayoutItem>, List<salesforce.LayoutSection>, List<salesforce.LightningComponentBundleObject>, List<salesforce.LightningComponentBundleSupportedFormFactor>, List<salesforce.LightningComponentBundleTargetConfig>, List<salesforce.LightningPageRegion>, List<salesforce.ListViewFilter>, List<salesforce.LwcResource>, List<salesforce.ManagedContentNodeType>, List<salesforce.MatchingRule>, List<salesforce.NotificationTypeSettings>, List<salesforce.ObjectMapping>, List<salesforce.ObjectMappingField>, List<salesforce.ObjectSearchSetting>, List<salesforce.OpportunityListFieldsLabelMapping>, List<salesforce.PackageVersion>, List<salesforce.PicklistValue>, List<salesforce.PlatformActionListItem>, List<salesforce.QuickActionLayoutColumn>, List<salesforce.QuickActionLayoutItem>, List<salesforce.QuickActionListItem>, List<salesforce.RealTimeEvent>, List<salesforce.RecordTypePicklistValue>, List<salesforce.RelatedContentItem>, List<salesforce.RelatedListItem>, List<salesforce.RuleEntry>, List<salesforce.SharingCriteriaRule>, List<salesforce.SharingGuestRule>, List<salesforce.SharingOwnerRule>, List<salesforce.SharingTerritoryRule>, List<salesforce.StandardValue>, List<salesforce.State>, List<salesforce.SummaryLayoutItem>, List<salesforce.UiFormulaCriterion>, List<salesforce.ValueSettings>, List<salesforce.WeightedSourceCategory>, List<salesforce.WorkflowActionReference>, List<salesforce.WorkflowAlert>, List<salesforce.WorkflowEmailRecipient>, List<salesforce.WorkflowFieldUpdate>, List<salesforce.WorkflowFlowAction>, List<salesforce.WorkflowKnowledgePublish>, List<salesforce.WorkflowOutboundMessage>, List<salesforce.WorkflowRule>, List<salesforce.WorkflowTask>, List<salesforce.WorkflowTimeTrigger>, List<salesforce.WorkspaceMapping>, List<salesforce.summaryFilterItems>, List<salesforce.valueSet>, List<string>, Map<salesforce.BusinessHoursEntry>, salesforce.AIApplication, salesforce.AIApplicationConfig, salesforce.AccessMapping
+2022-09-19T13:51:13.445Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: workspace-env1-merged
+2022-09-19T13:51:13.445Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: workspace-env1-errors
+2022-09-19T13:51:13.445Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: workspace-env1-validationErrors
+2022-09-19T13:51:13.445Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: workspace-env1-changedBy
+2022-09-19T13:51:13.446Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: workspace-env1-changedAt
+2022-09-19T13:51:13.446Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: workspace-env1-referencedStaticFiles
+2022-09-19T13:51:13.446Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: workspace-env1-referenceSources
+2022-09-19T13:51:13.446Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: workspace-env1-referenceTargets
+2022-09-19T13:51:13.446Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: workspace-env1-mapVersions
+2022-09-19T13:51:13.446Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: workspace-env2-merged
+2022-09-19T13:51:13.446Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: workspace-env2-errors
+2022-09-19T13:51:13.446Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: workspace-env2-validationErrors
+2022-09-19T13:51:13.446Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: workspace-env2-changedBy
+2022-09-19T13:51:13.446Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: workspace-env2-changedAt
+2022-09-19T13:51:13.446Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: workspace-env2-referencedStaticFiles
+2022-09-19T13:51:13.446Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: workspace-env2-referenceSources
+2022-09-19T13:51:13.447Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: workspace-env2-referenceTargets
+2022-09-19T13:51:13.447Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: workspace-env2-mapVersions
+2022-09-19T13:51:13.447Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: workspaceMergeManagermerge_manager
+2022-09-19T13:51:13.448Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: state-env1-elements
+2022-09-19T13:51:13.448Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: state-env1-path_index
+2022-09-19T13:51:13.448Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: state-env1-service_update_date
+2022-09-19T13:51:13.448Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: state-env1-salto_metadata
+2022-09-19T13:51:13.468Z debug core/local-workspace/state found different hash - loading state data (quickAccessHash=d751713988987e9331980363e24189ce stateFilesHash=2f1f5226003df4c4f79e7a4ade32718d)
+2022-09-19T13:51:14.198Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file salesforce/Records/ApexClass/ApexClassForProfile.cls to set without content
+2022-09-19T13:51:14.199Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file salesforce/Records/ApexPage/ApexPageForProfile.page to set without content
+2022-09-19T13:51:14.213Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file salesforce/Records/AuraDefinitionBundle/TestAuraDefinitionBundle/TestAuraDefinitionBundle.cmp to set without content
+2022-09-19T13:51:14.213Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file salesforce/Records/AuraDefinitionBundle/TestAuraDefinitionBundle/TestAuraDefinitionBundleController.js to set without content
+2022-09-19T13:51:14.213Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file salesforce/Records/AuraDefinitionBundle/TestAuraDefinitionBundle/TestAuraDefinitionBundle.design to set without content
+2022-09-19T13:51:14.213Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file salesforce/Records/AuraDefinitionBundle/TestAuraDefinitionBundle/TestAuraDefinitionBundle.svg to set without content
+2022-09-19T13:51:14.213Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file salesforce/Records/AuraDefinitionBundle/TestAuraDefinitionBundle/TestAuraDefinitionBundleHelper.js to set without content
+2022-09-19T13:51:14.213Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file salesforce/Records/AuraDefinitionBundle/TestAuraDefinitionBundle/TestAuraDefinitionBundle.css to set without content
+2022-09-19T13:51:14.213Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file salesforce/Records/AuraDefinitionBundle/TestAuraDefinitionBundle/TestAuraDefinitionBundle.auradoc to set without content
+2022-09-19T13:51:14.213Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file salesforce/Records/AuraDefinitionBundle/TestAuraDefinitionBundle/TestAuraDefinitionBundleRenderer.js to set without content
+2022-09-19T13:51:14.390Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file salesforce/Records/LightningComponentBundle/testLightningComponentBundle/testLightningComponentBundle.html to set without content
+2022-09-19T13:51:14.390Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file salesforce/Records/LightningComponentBundle/testLightningComponentBundle/testLightningComponentBundle.js to set without content
+2022-09-19T13:51:14.518Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file salesforce/Records/StaticResource/NewInstanceWithStaticFilebegkzysdrcum.json to set without content
+2022-09-19T13:51:14.518Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file salesforce/Records/StaticResource/NewInstanceWithStaticFiletppvyphgfznn.json to set without content
+2022-09-19T13:51:14.518Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file salesforce/Records/StaticResource/TestStaticResource.xml to set without content
+2022-09-19T13:51:17.120Z warn workspace/workspace/workspace Local state cache did not match local file system state. Resetting cache.
+2022-09-19T13:51:17.122Z debug workspace/workspace/workspace Cached hash: undefined, stateHash: 2f1f5226003df4c4f79e7a4ade32718d.
+2022-09-19T13:51:17.319Z debug workspace/workspace/workspace got 0 init hidden element changes
+2022-09-19T13:51:17.321Z debug workspace/workspace/workspace got 0 state removed element changes
+2022-09-19T13:51:17.321Z debug workspace/workspace/nacl_files/elements_cache Merging components: multi_env_element_sourceenv1, state_element_sourceenv1
+2022-09-19T13:51:17.321Z debug workspace/workspace/nacl_files/elements_cache Invalid cache: state_element_sourceenv1
+2022-09-19T13:51:17.321Z debug workspace/workspace/nacl_files/elements_cache Invalid cache merge between multi_env_element_sourceenv1 and state_element_sourceenv1
+2022-09-19T13:51:17.321Z debug workspace/workspace/nacl_files/elements_cache Prechange hash:  and update merged hash: 2f1f5226003df4c4f79e7a4ade32718d
+2022-09-19T13:51:17.321Z debug workspace/workspace/nacl_files/elements_cache Setting hash workspaceMergeManagermerge_manager::multi_env_element_sourceenv1_state_element_sourceenv1_merged_hash to f66879bbaec2bf84861f4348d05736f75383246bf87328e23e6ff3d844b5af5e2f1f5226003df4c4f79e7a4ade32718d
+2022-09-19T13:51:17.321Z warn workspace/workspace/nacl_files/elements_cache Invalid data detected in local cache workspaceMergeManager. Rebuilding cache.
+2022-09-19T13:51:19.885Z debug workspace/merger/index merged 2613 elements to 1692 elements [errors=0]
+2022-09-19T13:51:19.889Z debug workspace/workspace/nacl_files/elements_cache Setting multi_env_element_sourceenv1 source hash in namespace workspaceMergeManagermerge_manager to f66879bbaec2bf84861f4348d05736f75383246bf87328e23e6ff3d844b5af5e
+2022-09-19T13:51:19.890Z debug workspace/workspace/nacl_files/elements_cache Setting state_element_sourceenv1 source hash in namespace workspaceMergeManagermerge_manager to 2f1f5226003df4c4f79e7a4ade32718d
+2022-09-19T13:51:19.891Z debug workspace/workspace/nacl_files/elements_cache Applying merged changes to cache.
+2022-09-19T13:51:19.891Z debug workspace/workspace/nacl_files/elements_cache Clearing due to cache invalidation
+2022-09-19T13:51:20.267Z debug workspace/workspace/nacl_files/elements_cache Change type: add, on 1692 elements. The first 100 ids are: List<salesforce.AppMenuItem>, List<salesforce.AppProfileActionOverride>, List<salesforce.ApprovalStep>, List<salesforce.AssignmentRule>, List<salesforce.CleanRule>, List<salesforce.ComponentInstanceProperty>, List<salesforce.Country>, List<salesforce.CustomLabel>, List<salesforce.CustomValue>, List<salesforce.DefaultShortcut>, List<salesforce.DuplicateRuleMatchRule>, List<salesforce.EntitlementProcessMilestoneItem>, List<salesforce.FeedLayoutComponent>, List<salesforce.FeedLayoutFilter>, List<salesforce.FieldMapping>, List<salesforce.FieldMappingField>, List<salesforce.FieldMappingRow>, List<salesforce.FieldOverride>, List<salesforce.FieldSetItem>, List<salesforce.FileTypeDispositionAssignmentBean>, List<salesforce.FilterItem>, List<salesforce.FlowActionCallInputParameter>, List<salesforce.FlowAssignment>, List<salesforce.FlowAssignmentItem>, List<salesforce.FlowCondition>, List<salesforce.FlowConstant>, List<salesforce.FlowDecision>, List<salesforce.FlowFormula>, List<salesforce.FlowInputFieldAssignment>, List<salesforce.FlowLoop>, List<salesforce.FlowMetadataValue>, List<salesforce.FlowOutputFieldAssignment>, List<salesforce.FlowRecordCreate>, List<salesforce.FlowRecordFilter>, List<salesforce.FlowRecordLookup>, List<salesforce.FlowRecordUpdate>, List<salesforce.FlowRule>, List<salesforce.FlowVariable>, List<salesforce.ForecastingCategoryMapping>, List<salesforce.ForecastingTypeSettings>, List<salesforce.Holidays>, List<salesforce.IpRange>, List<salesforce.ItemInstance>, List<salesforce.KnowledgeCaseField>, List<salesforce.KnowledgeWorkOrderField>, List<salesforce.KnowledgeWorkOrderLineItemField>, List<salesforce.LayoutColumn>, List<salesforce.LayoutItem>, List<salesforce.LayoutSection>, List<salesforce.LightningComponentBundleObject>, List<salesforce.LightningComponentBundleSupportedFormFactor>, List<salesforce.LightningComponentBundleTargetConfig>, List<salesforce.LightningPageRegion>, List<salesforce.ListViewFilter>, List<salesforce.LwcResource>, List<salesforce.ManagedContentNodeType>, List<salesforce.MatchingRule>, List<salesforce.NotificationTypeSettings>, List<salesforce.ObjectMapping>, List<salesforce.ObjectMappingField>, List<salesforce.ObjectSearchSetting>, List<salesforce.OpportunityListFieldsLabelMapping>, List<salesforce.PackageVersion>, List<salesforce.PicklistValue>, List<salesforce.PlatformActionListItem>, List<salesforce.QuickActionLayoutColumn>, List<salesforce.QuickActionLayoutItem>, List<salesforce.QuickActionListItem>, List<salesforce.RealTimeEvent>, List<salesforce.RecordTypePicklistValue>, List<salesforce.RelatedContentItem>, List<salesforce.RelatedListItem>, List<salesforce.RuleEntry>, List<salesforce.SharingCriteriaRule>, List<salesforce.SharingGuestRule>, List<salesforce.SharingOwnerRule>, List<salesforce.SharingTerritoryRule>, List<salesforce.StandardValue>, List<salesforce.State>, List<salesforce.SummaryLayoutItem>, List<salesforce.UiFormulaCriterion>, List<salesforce.ValueSettings>, List<salesforce.WeightedSourceCategory>, List<salesforce.WorkflowActionReference>, List<salesforce.WorkflowAlert>, List<salesforce.WorkflowEmailRecipient>, List<salesforce.WorkflowFieldUpdate>, List<salesforce.WorkflowFlowAction>, List<salesforce.WorkflowKnowledgePublish>, List<salesforce.WorkflowOutboundMessage>, List<salesforce.WorkflowRule>, List<salesforce.WorkflowTask>, List<salesforce.WorkflowTimeTrigger>, List<salesforce.WorkspaceMapping>, List<salesforce.summaryFilterItems>, List<salesforce.valueSet>, List<string>, Map<salesforce.BusinessHoursEntry>, salesforce.AIApplication, salesforce.AIApplicationConfig
+2022-09-19T13:51:20.267Z debug workspace/workspace/changed_by_index updating changed by index starting
+2022-09-19T13:51:20.480Z info workspace/workspace/changed_by_index changed by index map is out of date, re-indexing
+2022-09-19T13:51:20.480Z info workspace/workspace/changed_by_index cache is invalid, re-indexing changed by index
+2022-09-19T13:51:20.540Z debug workspace/workspace/changed_by_index updating changed by index took 272 ms
+2022-09-19T13:51:20.541Z debug workspace/workspace/changed_at_index updating changed at index starting
+2022-09-19T13:51:20.743Z info workspace/workspace/changed_at_index changed at index map is out of date, re-indexing
+2022-09-19T13:51:20.743Z info workspace/workspace/changed_at_index cache is invalid, re-indexing changed at index
+2022-09-19T13:51:20.779Z debug workspace/workspace/changed_at_index updating changed at index took 238 ms
+2022-09-19T13:51:20.779Z debug workspace/workspace/static_files_index updating static files index starting
+2022-09-19T13:51:20.981Z info workspace/workspace/static_files_index static files index is out of date, re-indexing
+2022-09-19T13:51:20.981Z info workspace/workspace/static_files_index cache is invalid, re-indexing static files index
+2022-09-19T13:51:21.116Z debug workspace/workspace/static_files_index updating static files index took 337 ms
+2022-09-19T13:51:21.116Z debug workspace/workspace/reference_indexes updating references indexes starting
+2022-09-19T13:51:21.312Z info workspace/workspace/reference_indexes references indexes maps are out of date, re-indexing
+2022-09-19T13:51:21.313Z info workspace/workspace/reference_indexes cache is invalid, re-indexing references indexes
+2022-09-19T13:51:21.646Z debug workspace/workspace/reference_indexes updating references indexes took 529 ms
+2022-09-19T13:51:22.036Z debug workspace/validator validateElements with 1692 elements starting
+2022-09-19T13:51:22.037Z debug workspace/expressions resolve 1692 elements starting
+2022-09-19T13:51:22.194Z debug workspace/expressions resolve handled a total of 1703 elements
+2022-09-19T13:51:22.195Z debug workspace/expressions resolve 1692 elements took 158 ms
+2022-09-19T13:51:22.557Z debug workspace/validator validateElements with 1692 elements took 522 ms
+2022-09-19T13:51:22.567Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: state-env2-elements
+2022-09-19T13:51:22.567Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: state-env2-path_index
+2022-09-19T13:51:22.568Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: state-env2-service_update_date
+2022-09-19T13:51:22.568Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: state-env2-salto_metadata
+2022-09-19T13:51:22.585Z debug core/local-workspace/state found different hash - loading state data (quickAccessHash=d751713988987e9331980363e24189ce stateFilesHash=ab1db8e3654a1400a4440df918bdda8f)
+2022-09-19T13:51:23.304Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file salesforce/Records/ApexClass/ApexClassForProfile.cls to set without content
+2022-09-19T13:51:23.305Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file salesforce/Records/ApexPage/ApexPageForProfile.page to set without content
+2022-09-19T13:51:23.316Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file salesforce/Records/AuraDefinitionBundle/TestAuraDefinitionBundle/TestAuraDefinitionBundle.cmp to set without content
+2022-09-19T13:51:23.316Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file salesforce/Records/AuraDefinitionBundle/TestAuraDefinitionBundle/TestAuraDefinitionBundleHelper.js to set without content
+2022-09-19T13:51:23.316Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file salesforce/Records/AuraDefinitionBundle/TestAuraDefinitionBundle/TestAuraDefinitionBundleController.js to set without content
+2022-09-19T13:51:23.316Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file salesforce/Records/AuraDefinitionBundle/TestAuraDefinitionBundle/TestAuraDefinitionBundle.auradoc to set without content
+2022-09-19T13:51:23.316Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file salesforce/Records/AuraDefinitionBundle/TestAuraDefinitionBundle/TestAuraDefinitionBundle.css to set without content
+2022-09-19T13:51:23.316Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file salesforce/Records/AuraDefinitionBundle/TestAuraDefinitionBundle/TestAuraDefinitionBundle.design to set without content
+2022-09-19T13:51:23.316Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file salesforce/Records/AuraDefinitionBundle/TestAuraDefinitionBundle/TestAuraDefinitionBundleRenderer.js to set without content
+2022-09-19T13:51:23.316Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file salesforce/Records/AuraDefinitionBundle/TestAuraDefinitionBundle/TestAuraDefinitionBundle.svg to set without content
+2022-09-19T13:51:23.532Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file salesforce/Records/LightningComponentBundle/testLightningComponentBundle/testLightningComponentBundle.js to set without content
+2022-09-19T13:51:23.532Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file salesforce/Records/LightningComponentBundle/testLightningComponentBundle/testLightningComponentBundle.html to set without content
+2022-09-19T13:51:23.670Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file salesforce/Records/StaticResource/NewInstanceWithStaticFilevdlecpucvpua.json to set without content
+2022-09-19T13:51:23.670Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file salesforce/Records/StaticResource/NewInstanceWithStaticFilewudbdbeknwjt.json to set without content
+2022-09-19T13:51:23.670Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file salesforce/Records/StaticResource/TestStaticResource.xml to set without content
+2022-09-19T13:51:26.628Z warn workspace/workspace/workspace Local state cache did not match local file system state. Resetting cache.
+2022-09-19T13:51:26.629Z debug workspace/workspace/workspace Cached hash: undefined, stateHash: ab1db8e3654a1400a4440df918bdda8f.
+2022-09-19T13:51:26.836Z debug workspace/workspace/workspace got 0 init hidden element changes
+2022-09-19T13:51:26.837Z debug workspace/workspace/workspace got 0 state removed element changes
+2022-09-19T13:51:26.837Z debug workspace/workspace/nacl_files/elements_cache Merging components: multi_env_element_sourceenv2, state_element_sourceenv2
+2022-09-19T13:51:26.838Z debug workspace/workspace/nacl_files/elements_cache Invalid cache: state_element_sourceenv2
+2022-09-19T13:51:26.838Z debug workspace/workspace/nacl_files/elements_cache Invalid cache merge between multi_env_element_sourceenv2 and state_element_sourceenv2
+2022-09-19T13:51:26.838Z debug workspace/workspace/nacl_files/elements_cache Prechange hash:  and update merged hash: ab1db8e3654a1400a4440df918bdda8f
+2022-09-19T13:51:26.838Z debug workspace/workspace/nacl_files/elements_cache Setting hash workspaceMergeManagermerge_manager::multi_env_element_sourceenv2_state_element_sourceenv2_merged_hash to 7f72b8c51dff2cb20bc0e54b077870ed5383246bf87328e23e6ff3d844b5af5eab1db8e3654a1400a4440df918bdda8f
+2022-09-19T13:51:26.838Z warn workspace/workspace/nacl_files/elements_cache Invalid data detected in local cache workspaceMergeManager. Rebuilding cache.
+2022-09-19T13:51:30.035Z debug workspace/merger/index merged 3155 elements to 1959 elements [errors=0]
+2022-09-19T13:51:30.039Z debug workspace/workspace/nacl_files/elements_cache Setting multi_env_element_sourceenv2 source hash in namespace workspaceMergeManagermerge_manager to 7f72b8c51dff2cb20bc0e54b077870ed5383246bf87328e23e6ff3d844b5af5e
+2022-09-19T13:51:30.040Z debug workspace/workspace/nacl_files/elements_cache Setting state_element_sourceenv2 source hash in namespace workspaceMergeManagermerge_manager to ab1db8e3654a1400a4440df918bdda8f
+2022-09-19T13:51:30.040Z debug workspace/workspace/nacl_files/elements_cache Applying merged changes to cache.
+2022-09-19T13:51:30.040Z debug workspace/workspace/nacl_files/elements_cache Clearing due to cache invalidation
+2022-09-19T13:51:30.501Z debug workspace/workspace/nacl_files/elements_cache Change type: add, on 1959 elements. The first 100 ids are: List<salesforce.AppMenuItem>, List<salesforce.AppProfileActionOverride>, List<salesforce.ApprovalStep>, List<salesforce.AssignmentRule>, List<salesforce.CleanRule>, List<salesforce.ComponentInstanceProperty>, List<salesforce.Country>, List<salesforce.CustomLabel>, List<salesforce.CustomValue>, List<salesforce.DefaultShortcut>, List<salesforce.DuplicateRuleMatchRule>, List<salesforce.FeedLayoutComponent>, List<salesforce.FeedLayoutFilter>, List<salesforce.FieldMapping>, List<salesforce.FieldMappingField>, List<salesforce.FieldMappingRow>, List<salesforce.FieldOverride>, List<salesforce.FieldSetItem>, List<salesforce.FileTypeDispositionAssignmentBean>, List<salesforce.FilterItem>, List<salesforce.FlowActionCallInputParameter>, List<salesforce.FlowAssignment>, List<salesforce.FlowAssignmentItem>, List<salesforce.FlowCondition>, List<salesforce.FlowConstant>, List<salesforce.FlowDecision>, List<salesforce.FlowFormula>, List<salesforce.FlowInputFieldAssignment>, List<salesforce.FlowLoop>, List<salesforce.FlowMetadataValue>, List<salesforce.FlowOutputFieldAssignment>, List<salesforce.FlowRecordCreate>, List<salesforce.FlowRecordFilter>, List<salesforce.FlowRecordLookup>, List<salesforce.FlowRecordUpdate>, List<salesforce.FlowRule>, List<salesforce.FlowVariable>, List<salesforce.ForecastingCategoryMapping>, List<salesforce.ForecastingTypeSettings>, List<salesforce.Holidays>, List<salesforce.IpRange>, List<salesforce.ItemInstance>, List<salesforce.KnowledgeCaseField>, List<salesforce.KnowledgeWorkOrderField>, List<salesforce.KnowledgeWorkOrderLineItemField>, List<salesforce.LayoutColumn>, List<salesforce.LayoutItem>, List<salesforce.LayoutSection>, List<salesforce.LightningComponentBundleObject>, List<salesforce.LightningComponentBundleSupportedFormFactor>, List<salesforce.LightningComponentBundleTargetConfig>, List<salesforce.LightningPageRegion>, List<salesforce.ListViewFilter>, List<salesforce.LwcResource>, List<salesforce.ManagedContentNodeType>, List<salesforce.MatchingRule>, List<salesforce.NotificationTypeSettings>, List<salesforce.ObjectMapping>, List<salesforce.ObjectMappingField>, List<salesforce.ObjectSearchSetting>, List<salesforce.OpportunityListFieldsLabelMapping>, List<salesforce.PackageVersion>, List<salesforce.PicklistValue>, List<salesforce.PlatformActionListItem>, List<salesforce.QuickActionLayoutColumn>, List<salesforce.QuickActionLayoutItem>, List<salesforce.QuickActionListItem>, List<salesforce.RealTimeEvent>, List<salesforce.RecordTypePicklistValue>, List<salesforce.RelatedContentItem>, List<salesforce.RelatedListItem>, List<salesforce.RuleEntry>, List<salesforce.SharingCriteriaRule>, List<salesforce.SharingGuestRule>, List<salesforce.SharingOwnerRule>, List<salesforce.SharingTerritoryRule>, List<salesforce.StandardValue>, List<salesforce.State>, List<salesforce.SummaryLayoutItem>, List<salesforce.UiFormulaCriterion>, List<salesforce.ValueSettings>, List<salesforce.WeightedSourceCategory>, List<salesforce.WorkflowActionReference>, List<salesforce.WorkflowAlert>, List<salesforce.WorkflowEmailRecipient>, List<salesforce.WorkflowFieldUpdate>, List<salesforce.WorkflowFlowAction>, List<salesforce.WorkflowKnowledgePublish>, List<salesforce.WorkflowOutboundMessage>, List<salesforce.WorkflowRule>, List<salesforce.WorkflowTask>, List<salesforce.WorkflowTimeTrigger>, List<salesforce.WorkspaceMapping>, List<salesforce.summaryFilterItems>, List<salesforce.valueSet>, List<string>, Map<salesforce.BusinessHoursEntry>, salesforce.AIApplication, salesforce.AIApplicationConfig, salesforce.AccessMapping
+2022-09-19T13:51:30.502Z debug workspace/workspace/changed_by_index updating changed by index starting
+2022-09-19T13:51:30.723Z info workspace/workspace/changed_by_index changed by index map is out of date, re-indexing
+2022-09-19T13:51:30.723Z info workspace/workspace/changed_by_index cache is invalid, re-indexing changed by index
+2022-09-19T13:51:30.774Z debug workspace/workspace/changed_by_index updating changed by index took 271 ms
+2022-09-19T13:51:30.774Z debug workspace/workspace/changed_at_index updating changed at index starting
+2022-09-19T13:51:30.989Z info workspace/workspace/changed_at_index changed at index map is out of date, re-indexing
+2022-09-19T13:51:30.990Z info workspace/workspace/changed_at_index cache is invalid, re-indexing changed at index
+2022-09-19T13:51:31.018Z debug workspace/workspace/changed_at_index updating changed at index took 243 ms
+2022-09-19T13:51:31.018Z debug workspace/workspace/static_files_index updating static files index starting
+2022-09-19T13:51:31.240Z info workspace/workspace/static_files_index static files index is out of date, re-indexing
+2022-09-19T13:51:31.240Z info workspace/workspace/static_files_index cache is invalid, re-indexing static files index
+2022-09-19T13:51:31.386Z debug workspace/workspace/static_files_index updating static files index took 368 ms
+2022-09-19T13:51:31.386Z debug workspace/workspace/reference_indexes updating references indexes starting
+2022-09-19T13:51:31.594Z info workspace/workspace/reference_indexes references indexes maps are out of date, re-indexing
+2022-09-19T13:51:31.594Z info workspace/workspace/reference_indexes cache is invalid, re-indexing references indexes
+2022-09-19T13:51:31.949Z debug workspace/workspace/reference_indexes updating references indexes took 563 ms
+2022-09-19T13:51:32.390Z debug workspace/validator validateElements with 1959 elements starting
+2022-09-19T13:51:32.391Z debug workspace/expressions resolve 1959 elements starting
+2022-09-19T13:51:32.552Z debug workspace/expressions resolve handled a total of 1970 elements
+2022-09-19T13:51:32.553Z debug workspace/expressions resolve 1959 elements took 162 ms
+2022-09-19T13:51:32.939Z debug workspace/validator validateElements with 1959 elements took 549 ms
+2022-09-19T13:51:32.984Z debug cli/outputer salesforce.Env1TestObjckqvsgwelktk__c: type salesforce.Env1TestObjckqvsgwelktk__c {
+  annotations {
+    serviceid apiName {
+    }
+    serviceid metadataType {
+    }
+    string label {
+    }
+    hidden_string keyPrefix {
+    }
+    salesforce.ActionOverride actionOverrides {
+    }
+    string compactLayoutAssignment {
+    }
+    string description {
+    }
+    boolean enableDataTranslation {
+    }
+    boolean enableDivisions {
+    }
+    boolean enableEnhancedLookup {
+    }
+    boolean enableFeeds {
+    }
+    boolean enableHistory {
+    }
+    boolean enableLicensing {
+    }
+    boolean enablePublishStatusTracking {
+    }
+    string externalDataSource {
+    }
+    string externalName {
+    }
+    string externalRepository {
+    }
+    salesforce.HistoryRetentionPolicy historyRetentionPolicy {
+    }
+    salesforce.MktDataLakeAttributes mktDataLakeAttributes {
+    }
+    salesforce.MktDataModelAttributes mktDataModelAttributes {
+    }
+    salesforce.ProfileSearchLayouts profileSearchLayouts {
+    }
+    boolean recordTypeTrackFeedHistory {
+    }
+    boolean recordTypeTrackHistory {
+    }
+    salesforce.SearchLayouts searchLayouts {
+    }
+    salesforce.SharingRecalculation sharingRecalculations {
+    }
+    string externalSharingModel {
+    }
+    hidden_string internalId {
+    }
+    boolean allowInChatterGroups {
+    }
+    string customHelp {
+    }
+    string customHelpPage {
+    }
+    string customSettingsType {
+    }
+    string deploymentStatus {
+    }
+    boolean deprecated {
+    }
+    boolean enableActivities {
+    }
+    boolean enableBulkApi {
+    }
+    boolean enableReports {
+    }
+    boolean enableSearch {
+    }
+    boolean enableSharing {
+    }
+    boolean enableStreamingApi {
+    }
+    string gender {
+    }
+    salesforce.CustomField nameField {
+    }
+    string pluralLabel {
+    }
+    string sharingModel {
+    }
+    string startsWith {
+    }
+    string visibility {
+    }
+  }
+  salesforce.Text alpha__c {
+    internalId = "00N8d00000HEX4pEAH"
+    _service_url = "https://thattestingcompanywelove-dev-ed.lightning.force.com/lightning/setup/ObjectManager/01I8d0000003AsIEAU/FieldsAndRelationships/00N8d00000HEX4pEAH/view"
+    _created_by = "tester mctestface"
+    _created_at = "2022-08-02T15:32:21.000Z"
+    _changed_at = "2022-08-02T15:32:21.000Z"
+    _changed_by = "tester mctestface"
+    apiName = "Env1TestObjckqvsgwelktk__c.alpha__c"
+    externalId = false
+    label = "alpha"
+    length = 80
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Text beta__c {
+    internalId = "00N8d00000HEX4qEAH"
+    _service_url = "https://thattestingcompanywelove-dev-ed.lightning.force.com/lightning/setup/ObjectManager/01I8d0000003AsIEAU/FieldsAndRelationships/00N8d00000HEX4qEAH/view"
+    _created_by = "tester mctestface"
+    _created_at = "2022-08-02T15:32:21.000Z"
+    _changed_at = "2022-08-02T15:32:21.000Z"
+    _changed_by = "tester mctestface"
+    apiName = "Env1TestObjckqvsgwelktk__c.beta__c"
+    externalId = false
+    label = "beta"
+    length = 80
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  serviceid Id {
+    _service_url = "https://thattestingcompanywelove-dev-ed.lightning.force.com/lightning/setup/ObjectManager/01I8d0000003AsIEAU/FieldsAndRelationships/Id/view"
+    apiName = "Env1TestObjckqvsgwelktk__c.Id"
+    label = "Record ID"
+    queryable = true
+    _hidden_value = true
+    updateable = false
+    createable = false
+  }
+  salesforce.Lookup OwnerId {
+    _service_url = "https://thattestingcompanywelove-dev-ed.lightning.force.com/lightning/setup/ObjectManager/01I8d0000003AsIEAU/FieldsAndRelationships/Owner/view"
+    apiName = "Env1TestObjckqvsgwelktk__c.OwnerId"
+    relationshipName = "Owner"
+    referenceTo = [
+      salesforce.Group,
+      salesforce.User,
+    ]
+    label = "Owner ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    _service_url = "https://thattestingcompanywelove-dev-ed.lightning.force.com/lightning/setup/ObjectManager/01I8d0000003AsIEAU/FieldsAndRelationships/IsDeleted/view"
+    apiName = "Env1TestObjckqvsgwelktk__c.IsDeleted"
+    defaultValue = false
+    label = "Deleted"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text Name {
+    _service_url = "https://thattestingcompanywelove-dev-ed.lightning.force.com/lightning/setup/ObjectManager/01I8d0000003AsIEAU/FieldsAndRelationships/Name/view"
+    apiName = "Env1TestObjckqvsgwelktk__c.Name"
+    length = 80
+    label = "Name"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.DateTime CreatedDate {
+    _service_url = "https://thattestingcompanywelove-dev-ed.lightning.force.com/lightning/setup/ObjectManager/01I8d0000003AsIEAU/FieldsAndRelationships/CreatedDate/view"
+    apiName = "Env1TestObjckqvsgwelktk__c.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    _service_url = "https://thattestingcompanywelove-dev-ed.lightning.force.com/lightning/setup/ObjectManager/01I8d0000003AsIEAU/FieldsAndRelationships/CreatedBy/view"
+    apiName = "Env1TestObjckqvsgwelktk__c.CreatedById"
+    relationshipName = "CreatedBy"
+    referenceTo = [
+      salesforce.User,
+    ]
+    label = "Created By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    _service_url = "https://thattestingcompanywelove-dev-ed.lightning.force.com/lightning/setup/ObjectManager/01I8d0000003AsIEAU/FieldsAndRelationships/LastModifiedDate/view"
+    apiName = "Env1TestObjckqvsgwelktk__c.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    _service_url = "https://thattestingcompanywelove-dev-ed.lightning.force.com/lightning/setup/ObjectManager/01I8d0000003AsIEAU/FieldsAndRelationships/LastModifiedBy/view"
+    apiName = "Env1TestObjckqvsgwelktk__c.LastModifiedById"
+    relationshipName = "LastModifiedBy"
+    referenceTo = [
+      salesforce.User,
+    ]
+    label = "Last Modified By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    _service_url = "https://thattestingcompanywelove-dev-ed.lightning.force.com/lightning/setup/ObjectManager/01I8d0000003AsIEAU/FieldsAndRelationships/SystemModstamp/view"
+    apiName = "Env1TestObjckqvsgwelktk__c.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  keyPrefix = "a0v"
+  internalId = "01I8d0000003AsIEAU"
+  _service_url = "https://thattestingcompanywelove-dev-ed.lightning.force.com/lightning/setup/ObjectManager/01I8d0000003AsIEAU/Details/view"
+  _created_by = "tester mctestface"
+  _created_at = "2022-08-02T15:32:20.000Z"
+  _changed_at = "2022-08-02T15:32:20.000Z"
+  _changed_by = "tester mctestface"
+  apiName = "Env1TestObjckqvsgwelktk__c"
+  metadataType = "CustomObject"
+  label = "Env1TestObjckqvsgwelktk"
+  actionOverrides = [
+    {
+      actionName = "Accept"
+      type = "Default"
+    },
+    {
+      actionName = "Accept"
+      formFactor = "Large"
+      type = "Default"
+    },
+    {
+      actionName = "Accept"
+      formFactor = "Small"
+      type = "Default"
+    },
+    {
+      actionName = "CancelEdit"
+      type = "Default"
+    },
+    {
+      actionName = "CancelEdit"
+      formFactor = "Large"
+      type = "Default"
+    },
+    {
+      actionName = "CancelEdit"
+      formFactor = "Small"
+      type = "Default"
+    },
+    {
+      actionName = "Clone"
+      type = "Default"
+    },
+    {
+      actionName = "Clone"
+      formFactor = "Large"
+      type = "Default"
+    },
+    {
+      actionName = "Clone"
+      formFactor = "Small"
+      type = "Default"
+    },
+    {
+      actionName = "Delete"
+      type = "Default"
+    },
+    {
+      actionName = "Delete"
+      formFactor = "Large"
+      type = "Default"
+    },
+    {
+      actionName = "Delete"
+      formFactor = "Small"
+      type = "Default"
+    },
+    {
+      actionName = "Edit"
+      type = "Default"
+    },
+    {
+      actionName = "Edit"
+      formFactor = "Large"
+      type = "Default"
+    },
+    {
+      actionName = "Edit"
+      formFactor = "Small"
+      type = "Default"
+    },
+    {
+      actionName = "List"
+      type = "Default"
+    },
+    {
+      actionName = "List"
+      formFactor = "Large"
+      type = "Default"
+    },
+    {
+      actionName = "List"
+      formFactor = "Small"
+      type = "Default"
+    },
+    {
+      actionName = "New"
+      type = "Default"
+    },
+    {
+      actionName = "New"
+      formFactor = "Large"
+      type = "Default"
+    },
+    {
+      actionName = "New"
+      formFactor = "Small"
+      type = "Default"
+    },
+    {
+      actionName = "SaveEdit"
+      type = "Default"
+    },
+    {
+      actionName = "SaveEdit"
+      formFactor = "Large"
+      type = "Default"
+    },
+    {
+      actionName = "SaveEdit"
+      formFactor = "Small"
+      type = "Default"
+    },
+    {
+      actionName = "Tab"
+      type = "Default"
+    },
+    {
+      actionName = "Tab"
+      formFactor = "Large"
+      type = "Default"
+    },
+    {
+      actionName = "Tab"
+      formFactor = "Small"
+      type = "Default"
+    },
+    {
+      actionName = "View"
+      type = "Default"
+    },
+    {
+      actionName = "View"
+      formFactor = "Large"
+      type = "Default"
+    },
+    {
+      actionName = "View"
+      formFactor = "Small"
+      type = "Default"
+    },
+  ]
+  allowInChatterGroups = false
+  compactLayoutAssignment = "SYSTEM"
+  deploymentStatus = "Deployed"
+  enableActivities = false
+  enableBulkApi = true
+  enableFeeds = false
+  enableHistory = false
+  enableLicensing = false
+  enableReports = false
+  enableSearch = false
+  enableSharing = true
+  enableStreamingApi = true
+  externalSharingModel = "Private"
+  nameField = {
+    label = "Name"
+    type = "Text"
+  }
+  pluralLabel = "Env1TestObjckqvsgwelktks"
+  sharingModel = "ReadWrite"
+  visibility = "Public"
+  topicsForObjects = {
+    enableTopics = false
+  }
+}
+
+2022-09-19T13:51:32.988Z debug core/local-workspace/remote_map closed connection to /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache
+2022-09-19T13:51:32.993Z debug core/local-workspace/remote_map closed temporary connection to /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache/tmp-dbs/1da5d7f6-f9d3-4868-be67-7f0a690c8d79
+2022-09-19T13:51:32.994Z info cli/cli ran "element print salesforce.Env1TestObjckqvsgwelktk__c" in 29365 ms
+2022-09-19T14:04:18.750Z info cli/index CLI started. Version: version 0.3.22, branch SALTO-2494_move_attachment_content_to_static_file, hash ede630bc, Node exec location: /Users/uribar/.nvm/versions/node/v14.15.3/bin/node, Salto exec location: /usr/local/bin/salto, Current dir: /Users/uribar/ws/e2e-ws
+2022-09-19T14:04:18.751Z debug cli/index OS properties - platform: darwin, release: 21.2.0, arch x64
+2022-09-19T14:04:18.752Z debug cli/index Installation ID: bdaafe78-ac62-4612-ab0c-0a3864d71f34
+2022-09-19T14:04:18.752Z info cli/index running "salto element print NewObjectNamebegkzysdrcum__c"
+2022-09-19T14:04:18.762Z debug cli/command_builder Running command print in path . with arguments {
+  selectors: [ 'NewObjectNamebegkzysdrcum__c', [length]: 1 ],
+  config: undefined,
+  source: 'nacl',
+  onlyValue: false,
+  env: undefined,
+  verbose: false
+}
+2022-09-19T14:04:18.779Z warn workspace/workspace/config_source Could not find file workspaceUser.nacl for configuration workspaceUser
+2022-09-19T14:04:18.787Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: staticFilesCache-config-cache
+2022-09-19T14:04:18.787Z debug core/local-workspace/remote_map opening connection to /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache/tmp-dbs/0f84eecf-d0eb-4f42-a455-c5f15a325133, read-only=false
+2022-09-19T14:04:18.818Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource-salto.config/adapters-elements_index
+2022-09-19T14:04:18.822Z debug core/local-workspace/remote_map cleaning tmp db 0f84eecf-d0eb-4f42-a455-c5f15a325133
+2022-09-19T14:04:18.823Z debug core/local-workspace/remote_map caught a rocksdb lock error while cleaning tmp db: IO error: lock hold by current process, acquire time 1663596258 acquiring thread 13105946624: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache/tmp-dbs/0f84eecf-d0eb-4f42-a455-c5f15a325133/LOCK: No locks available
+2022-09-19T14:04:18.823Z debug core/local-workspace/remote_map cleaning tmp db 1e19e5e2-2d45-40f1-8113-97e37efb3716
+2022-09-19T14:04:18.823Z debug core/local-workspace/remote_map caught a rocksdb lock error while cleaning tmp db: IO error: While lock file: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache/tmp-dbs/1e19e5e2-2d45-40f1-8113-97e37efb3716/LOCK: Resource temporarily unavailable
+2022-09-19T14:04:18.823Z debug core/local-workspace/remote_map opening connection to /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, read-only=false
+2022-09-19T14:04:18.827Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource-salto.config/adapters-errors
+2022-09-19T14:04:18.827Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource-salto.config/adapters-merged
+2022-09-19T14:04:18.827Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: parsedResultCache-naclFileSource-salto.config/adapters-parsed_nacl_files-metadata
+2022-09-19T14:04:18.827Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource-salto.config/adapters-referenced_index
+2022-09-19T14:04:18.828Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: parsedResultCache-naclFileSource-salto.config/adapters-parsed_nacl_files-elements
+2022-09-19T14:04:18.828Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource-salto.config/adapters-searchableNamesIndex
+2022-09-19T14:04:18.828Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: parsedResultCache-naclFileSource-salto.config/adapters-parsed_nacl_files-sourceMap
+2022-09-19T14:04:18.828Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource-salto.config/adapters-static_files_index
+2022-09-19T14:04:18.828Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: parsedResultCache-naclFileSource-salto.config/adapters-parsed_nacl_files-errors
+2022-09-19T14:04:18.828Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource-salto.config/adapters-metadata
+2022-09-19T14:04:18.828Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: parsedResultCache-naclFileSource-salto.config/adapters-parsed_nacl_files-referenced
+2022-09-19T14:04:18.828Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: parsedResultCache-naclFileSource-salto.config/adapters-parsed_nacl_files-staticFiles
+2022-09-19T14:04:18.837Z debug workspace/workspace/nacl_files/nacl_files_source building elements indices for 1 NaCl files
+2022-09-19T14:04:18.837Z debug workspace/workspace/nacl_files/nacl_files_source handle deletions of nacl files starting
+2022-09-19T14:04:18.837Z debug workspace/workspace/nacl_files/nacl_files_source handle deletions of nacl files took 0 ms
+2022-09-19T14:04:18.837Z debug workspace/workspace/nacl_files/nacl_files_source handle additions/modifications of nacl files starting
+2022-09-19T14:04:18.844Z debug workspace/workspace/nacl_files/nacl_files_source handle additions/modifications of nacl files took 7 ms
+2022-09-19T14:04:18.845Z info workspace/workspace/nacl_files/elements_cache going to merge new elements to the existing elements
+2022-09-19T14:04:18.845Z debug workspace/merger/index merged 1 elements to 1 elements [errors=0]
+2022-09-19T14:04:18.849Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: workspace-salto.config/adapters-validationErrors
+2022-09-19T14:04:18.850Z debug workspace/validator validateElements with 1 elements starting
+2022-09-19T14:04:18.850Z debug workspace/expressions resolve 1 elements starting
+2022-09-19T14:04:18.854Z debug workspace/expressions resolve handled a total of 29 elements
+2022-09-19T14:04:18.854Z debug workspace/expressions resolve 1 elements took 4 ms
+2022-09-19T14:04:18.856Z debug workspace/validator validateElements with 1 elements took 6 ms
+2022-09-19T14:04:18.858Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: staticFilesCache-envs/env1
+2022-09-19T14:04:18.858Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: staticFilesCache-envs/env2
+2022-09-19T14:04:18.859Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: staticFilesCache-common
+2022-09-19T14:04:18.861Z warn workspace/workspace/config_source Could not find file workspaceUser.nacl for configuration workspaceUser
+2022-09-19T14:04:18.861Z debug workspace/workspace/workspace Loading workspace with id: a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4
+2022-09-19T14:04:18.863Z debug cli/outputer [1m[31m[1mError: Failed to created element ID filters for: NewObjectNamebegkzysdrcum__c. Invalid Regex provided.[1m[39m[22m
+
+2022-09-19T14:04:18.864Z debug core/local-workspace/remote_map closed connection to /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache
+2022-09-19T14:04:18.865Z debug core/local-workspace/remote_map closed temporary connection to /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache/tmp-dbs/0f84eecf-d0eb-4f42-a455-c5f15a325133
+2022-09-19T14:04:18.865Z info cli/cli ran "element print NewObjectNamebegkzysdrcum__c" in 113 ms
+2022-09-19T14:04:30.165Z info cli/index CLI started. Version: version 0.3.22, branch SALTO-2494_move_attachment_content_to_static_file, hash ede630bc, Node exec location: /Users/uribar/.nvm/versions/node/v14.15.3/bin/node, Salto exec location: /usr/local/bin/salto, Current dir: /Users/uribar/ws/e2e-ws
+2022-09-19T14:04:30.166Z debug cli/index OS properties - platform: darwin, release: 21.2.0, arch x64
+2022-09-19T14:04:30.166Z debug cli/index Installation ID: bdaafe78-ac62-4612-ab0c-0a3864d71f34
+2022-09-19T14:04:30.166Z info cli/index running "salto element print NewObjectNamebegkzysdrcum__c"
+2022-09-19T14:04:30.181Z debug cli/command_builder Running command print in path . with arguments {
+  selectors: [ 'NewObjectNamebegkzysdrcum__c', [length]: 1 ],
+  config: undefined,
+  source: 'nacl',
+  onlyValue: false,
+  env: undefined,
+  verbose: false
+}
+2022-09-19T14:04:30.191Z warn workspace/workspace/config_source Could not find file workspaceUser.nacl for configuration workspaceUser
+2022-09-19T14:04:30.199Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource-salto.config/adapters-elements_index
+2022-09-19T14:04:30.199Z debug core/local-workspace/remote_map opening connection to /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache/tmp-dbs/b0c8be3c-22ac-404e-b2e2-47f76d20b51e, read-only=false
+2022-09-19T14:04:30.222Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: staticFilesCache-config-cache
+2022-09-19T14:04:30.226Z debug core/local-workspace/remote_map cleaning tmp db 1e19e5e2-2d45-40f1-8113-97e37efb3716
+2022-09-19T14:04:30.227Z debug core/local-workspace/remote_map caught a rocksdb lock error while cleaning tmp db: IO error: While lock file: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache/tmp-dbs/1e19e5e2-2d45-40f1-8113-97e37efb3716/LOCK: Resource temporarily unavailable
+2022-09-19T14:04:30.227Z debug core/local-workspace/remote_map cleaning tmp db b0c8be3c-22ac-404e-b2e2-47f76d20b51e
+2022-09-19T14:04:30.227Z debug core/local-workspace/remote_map caught a rocksdb lock error while cleaning tmp db: IO error: lock hold by current process, acquire time 1663596270 acquiring thread 13103681536: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache/tmp-dbs/b0c8be3c-22ac-404e-b2e2-47f76d20b51e/LOCK: No locks available
+2022-09-19T14:04:30.227Z debug core/local-workspace/remote_map opening connection to /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, read-only=false
+2022-09-19T14:04:30.230Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource-salto.config/adapters-errors
+2022-09-19T14:04:30.230Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource-salto.config/adapters-merged
+2022-09-19T14:04:30.231Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: parsedResultCache-naclFileSource-salto.config/adapters-parsed_nacl_files-metadata
+2022-09-19T14:04:30.231Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource-salto.config/adapters-referenced_index
+2022-09-19T14:04:30.231Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: parsedResultCache-naclFileSource-salto.config/adapters-parsed_nacl_files-elements
+2022-09-19T14:04:30.231Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource-salto.config/adapters-searchableNamesIndex
+2022-09-19T14:04:30.231Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: parsedResultCache-naclFileSource-salto.config/adapters-parsed_nacl_files-sourceMap
+2022-09-19T14:04:30.231Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource-salto.config/adapters-static_files_index
+2022-09-19T14:04:30.232Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: parsedResultCache-naclFileSource-salto.config/adapters-parsed_nacl_files-errors
+2022-09-19T14:04:30.232Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource-salto.config/adapters-metadata
+2022-09-19T14:04:30.232Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: parsedResultCache-naclFileSource-salto.config/adapters-parsed_nacl_files-referenced
+2022-09-19T14:04:30.232Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: parsedResultCache-naclFileSource-salto.config/adapters-parsed_nacl_files-staticFiles
+2022-09-19T14:04:30.241Z debug workspace/workspace/nacl_files/nacl_files_source building elements indices for 1 NaCl files
+2022-09-19T14:04:30.241Z debug workspace/workspace/nacl_files/nacl_files_source handle deletions of nacl files starting
+2022-09-19T14:04:30.241Z debug workspace/workspace/nacl_files/nacl_files_source handle deletions of nacl files took 0 ms
+2022-09-19T14:04:30.241Z debug workspace/workspace/nacl_files/nacl_files_source handle additions/modifications of nacl files starting
+2022-09-19T14:04:30.248Z debug workspace/workspace/nacl_files/nacl_files_source handle additions/modifications of nacl files took 7 ms
+2022-09-19T14:04:30.248Z info workspace/workspace/nacl_files/elements_cache going to merge new elements to the existing elements
+2022-09-19T14:04:30.249Z debug workspace/merger/index merged 1 elements to 1 elements [errors=0]
+2022-09-19T14:04:30.253Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: workspace-salto.config/adapters-validationErrors
+2022-09-19T14:04:30.254Z debug workspace/validator validateElements with 1 elements starting
+2022-09-19T14:04:30.254Z debug workspace/expressions resolve 1 elements starting
+2022-09-19T14:04:30.258Z debug workspace/expressions resolve handled a total of 29 elements
+2022-09-19T14:04:30.258Z debug workspace/expressions resolve 1 elements took 4 ms
+2022-09-19T14:04:30.259Z debug workspace/validator validateElements with 1 elements took 5 ms
+2022-09-19T14:04:30.262Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: staticFilesCache-envs/env1
+2022-09-19T14:04:30.262Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: staticFilesCache-envs/env2
+2022-09-19T14:04:30.262Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: staticFilesCache-common
+2022-09-19T14:04:30.265Z warn workspace/workspace/config_source Could not find file workspaceUser.nacl for configuration workspaceUser
+2022-09-19T14:04:30.265Z debug workspace/workspace/workspace Loading workspace with id: a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4
+2022-09-19T14:04:30.266Z debug cli/outputer [1m[31m[1mError: Failed to created element ID filters for: NewObjectNamebegkzysdrcum__c. Invalid Regex provided.[1m[39m[22m
+
+2022-09-19T14:04:30.267Z debug core/local-workspace/remote_map closed connection to /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache
+2022-09-19T14:04:30.268Z debug core/local-workspace/remote_map closed temporary connection to /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache/tmp-dbs/b0c8be3c-22ac-404e-b2e2-47f76d20b51e
+2022-09-19T14:04:30.268Z info cli/cli ran "element print NewObjectNamebegkzysdrcum__c" in 102 ms
+2022-09-19T14:04:38.451Z info cli/index CLI started. Version: version 0.3.22, branch SALTO-2494_move_attachment_content_to_static_file, hash ede630bc, Node exec location: /Users/uribar/.nvm/versions/node/v14.15.3/bin/node, Salto exec location: /usr/local/bin/salto, Current dir: /Users/uribar/ws/e2e-ws
+2022-09-19T14:04:38.451Z debug cli/index OS properties - platform: darwin, release: 21.2.0, arch x64
+2022-09-19T14:04:38.452Z debug cli/index Installation ID: bdaafe78-ac62-4612-ab0c-0a3864d71f34
+2022-09-19T14:04:38.452Z info cli/index running "salto element print salesforce.NewObjectNamebegkzysdrcum__c"
+2022-09-19T14:04:38.466Z debug cli/command_builder Running command print in path . with arguments {
+  selectors: [ 'salesforce.NewObjectNamebegkzysdrcum__c', [length]: 1 ],
+  config: undefined,
+  source: 'nacl',
+  onlyValue: false,
+  env: undefined,
+  verbose: false
+}
+2022-09-19T14:04:38.477Z warn workspace/workspace/config_source Could not find file workspaceUser.nacl for configuration workspaceUser
+2022-09-19T14:04:38.485Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: staticFilesCache-config-cache
+2022-09-19T14:04:38.485Z debug core/local-workspace/remote_map opening connection to /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache/tmp-dbs/d8fa26da-61a4-4650-8c95-f5d9bff24adc, read-only=false
+2022-09-19T14:04:38.508Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource-salto.config/adapters-elements_index
+2022-09-19T14:04:38.513Z debug core/local-workspace/remote_map cleaning tmp db 1e19e5e2-2d45-40f1-8113-97e37efb3716
+2022-09-19T14:04:38.513Z debug core/local-workspace/remote_map caught a rocksdb lock error while cleaning tmp db: IO error: While lock file: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache/tmp-dbs/1e19e5e2-2d45-40f1-8113-97e37efb3716/LOCK: Resource temporarily unavailable
+2022-09-19T14:04:38.513Z debug core/local-workspace/remote_map cleaning tmp db d8fa26da-61a4-4650-8c95-f5d9bff24adc
+2022-09-19T14:04:38.513Z debug core/local-workspace/remote_map caught a rocksdb lock error while cleaning tmp db: IO error: lock hold by current process, acquire time 1663596278 acquiring thread 13095133184: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache/tmp-dbs/d8fa26da-61a4-4650-8c95-f5d9bff24adc/LOCK: No locks available
+2022-09-19T14:04:38.513Z debug core/local-workspace/remote_map opening connection to /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, read-only=false
+2022-09-19T14:04:38.517Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource-salto.config/adapters-errors
+2022-09-19T14:04:38.517Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource-salto.config/adapters-merged
+2022-09-19T14:04:38.517Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: parsedResultCache-naclFileSource-salto.config/adapters-parsed_nacl_files-metadata
+2022-09-19T14:04:38.517Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource-salto.config/adapters-referenced_index
+2022-09-19T14:04:38.518Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: parsedResultCache-naclFileSource-salto.config/adapters-parsed_nacl_files-elements
+2022-09-19T14:04:38.518Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource-salto.config/adapters-searchableNamesIndex
+2022-09-19T14:04:38.518Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: parsedResultCache-naclFileSource-salto.config/adapters-parsed_nacl_files-sourceMap
+2022-09-19T14:04:38.518Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource-salto.config/adapters-static_files_index
+2022-09-19T14:04:38.518Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: parsedResultCache-naclFileSource-salto.config/adapters-parsed_nacl_files-errors
+2022-09-19T14:04:38.518Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource-salto.config/adapters-metadata
+2022-09-19T14:04:38.518Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: parsedResultCache-naclFileSource-salto.config/adapters-parsed_nacl_files-referenced
+2022-09-19T14:04:38.518Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: parsedResultCache-naclFileSource-salto.config/adapters-parsed_nacl_files-staticFiles
+2022-09-19T14:04:38.527Z debug workspace/workspace/nacl_files/nacl_files_source building elements indices for 1 NaCl files
+2022-09-19T14:04:38.527Z debug workspace/workspace/nacl_files/nacl_files_source handle deletions of nacl files starting
+2022-09-19T14:04:38.527Z debug workspace/workspace/nacl_files/nacl_files_source handle deletions of nacl files took 0 ms
+2022-09-19T14:04:38.528Z debug workspace/workspace/nacl_files/nacl_files_source handle additions/modifications of nacl files starting
+2022-09-19T14:04:38.534Z debug workspace/workspace/nacl_files/nacl_files_source handle additions/modifications of nacl files took 6 ms
+2022-09-19T14:04:38.535Z info workspace/workspace/nacl_files/elements_cache going to merge new elements to the existing elements
+2022-09-19T14:04:38.535Z debug workspace/merger/index merged 1 elements to 1 elements [errors=0]
+2022-09-19T14:04:38.539Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: workspace-salto.config/adapters-validationErrors
+2022-09-19T14:04:38.540Z debug workspace/validator validateElements with 1 elements starting
+2022-09-19T14:04:38.541Z debug workspace/expressions resolve 1 elements starting
+2022-09-19T14:04:38.544Z debug workspace/expressions resolve handled a total of 29 elements
+2022-09-19T14:04:38.544Z debug workspace/expressions resolve 1 elements took 3 ms
+2022-09-19T14:04:38.546Z debug workspace/validator validateElements with 1 elements took 6 ms
+2022-09-19T14:04:38.549Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: staticFilesCache-envs/env1
+2022-09-19T14:04:38.549Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: staticFilesCache-envs/env2
+2022-09-19T14:04:38.549Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: staticFilesCache-common
+2022-09-19T14:04:38.551Z warn workspace/workspace/config_source Could not find file workspaceUser.nacl for configuration workspaceUser
+2022-09-19T14:04:38.551Z debug workspace/workspace/workspace Loading workspace with id: a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4
+2022-09-19T14:04:38.553Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource-envs/env1-elements_index
+2022-09-19T14:04:38.553Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource-envs/env1-errors
+2022-09-19T14:04:38.553Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource-envs/env1-merged
+2022-09-19T14:04:38.553Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: parsedResultCache-naclFileSource-envs/env1-parsed_nacl_files-metadata
+2022-09-19T14:04:38.554Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource-envs/env1-referenced_index
+2022-09-19T14:04:38.554Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: parsedResultCache-naclFileSource-envs/env1-parsed_nacl_files-elements
+2022-09-19T14:04:38.554Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource-envs/env1-searchableNamesIndex
+2022-09-19T14:04:38.554Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: parsedResultCache-naclFileSource-envs/env1-parsed_nacl_files-sourceMap
+2022-09-19T14:04:38.554Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource-envs/env1-static_files_index
+2022-09-19T14:04:38.554Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: parsedResultCache-naclFileSource-envs/env1-parsed_nacl_files-errors
+2022-09-19T14:04:38.554Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource-envs/env1-metadata
+2022-09-19T14:04:38.554Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: parsedResultCache-naclFileSource-envs/env1-parsed_nacl_files-referenced
+2022-09-19T14:04:38.554Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: parsedResultCache-naclFileSource-envs/env1-parsed_nacl_files-staticFiles
+2022-09-19T14:04:39.184Z debug workspace/workspace/nacl_files/nacl_files_source building elements indices for 469 NaCl files
+2022-09-19T14:04:39.185Z debug workspace/workspace/nacl_files/nacl_files_source handle deletions of nacl files starting
+2022-09-19T14:04:39.187Z debug workspace/workspace/nacl_files/nacl_files_source handle deletions of nacl files took 2 ms
+2022-09-19T14:04:39.187Z debug workspace/workspace/nacl_files/nacl_files_source handle additions/modifications of nacl files starting
+2022-09-19T14:04:40.243Z debug workspace/workspace/nacl_files/nacl_files_source handle additions/modifications of nacl files took 1056 ms
+2022-09-19T14:04:40.245Z info workspace/workspace/nacl_files/elements_cache going to merge new elements to the existing elements
+2022-09-19T14:04:40.294Z debug workspace/merger/index merged 567 elements to 370 elements [errors=0]
+2022-09-19T14:04:40.450Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource-envs/env2-elements_index
+2022-09-19T14:04:40.450Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource-envs/env2-errors
+2022-09-19T14:04:40.450Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource-envs/env2-merged
+2022-09-19T14:04:40.451Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: parsedResultCache-naclFileSource-envs/env2-parsed_nacl_files-metadata
+2022-09-19T14:04:40.451Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource-envs/env2-referenced_index
+2022-09-19T14:04:40.451Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: parsedResultCache-naclFileSource-envs/env2-parsed_nacl_files-elements
+2022-09-19T14:04:40.451Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource-envs/env2-searchableNamesIndex
+2022-09-19T14:04:40.451Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: parsedResultCache-naclFileSource-envs/env2-parsed_nacl_files-sourceMap
+2022-09-19T14:04:40.451Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource-envs/env2-static_files_index
+2022-09-19T14:04:40.451Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: parsedResultCache-naclFileSource-envs/env2-parsed_nacl_files-errors
+2022-09-19T14:04:40.451Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource-envs/env2-metadata
+2022-09-19T14:04:40.452Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: parsedResultCache-naclFileSource-envs/env2-parsed_nacl_files-referenced
+2022-09-19T14:04:40.452Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: parsedResultCache-naclFileSource-envs/env2-parsed_nacl_files-staticFiles
+2022-09-19T14:04:41.247Z debug workspace/workspace/nacl_files/nacl_files_source building elements indices for 837 NaCl files
+2022-09-19T14:04:41.248Z debug workspace/workspace/nacl_files/nacl_files_source handle deletions of nacl files starting
+2022-09-19T14:04:41.250Z debug workspace/workspace/nacl_files/nacl_files_source handle deletions of nacl files took 2 ms
+2022-09-19T14:04:41.251Z debug workspace/workspace/nacl_files/nacl_files_source handle additions/modifications of nacl files starting
+2022-09-19T14:04:42.557Z debug workspace/workspace/nacl_files/nacl_files_source handle additions/modifications of nacl files took 1306 ms
+2022-09-19T14:04:42.559Z info workspace/workspace/nacl_files/elements_cache going to merge new elements to the existing elements
+2022-09-19T14:04:42.618Z debug workspace/merger/index merged 894 elements to 538 elements [errors=0]
+2022-09-19T14:04:42.821Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource--elements_index
+2022-09-19T14:04:42.821Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource--errors
+2022-09-19T14:04:42.822Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource--merged
+2022-09-19T14:04:42.822Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: parsedResultCache-naclFileSource--parsed_nacl_files-metadata
+2022-09-19T14:04:42.822Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource--referenced_index
+2022-09-19T14:04:42.822Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: parsedResultCache-naclFileSource--parsed_nacl_files-elements
+2022-09-19T14:04:42.822Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource--searchableNamesIndex
+2022-09-19T14:04:42.822Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: parsedResultCache-naclFileSource--parsed_nacl_files-sourceMap
+2022-09-19T14:04:42.822Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource--static_files_index
+2022-09-19T14:04:42.823Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: naclFileSource--metadata
+2022-09-19T14:04:42.823Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: parsedResultCache-naclFileSource--parsed_nacl_files-errors
+2022-09-19T14:04:42.823Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: parsedResultCache-naclFileSource--parsed_nacl_files-referenced
+2022-09-19T14:04:42.823Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: parsedResultCache-naclFileSource--parsed_nacl_files-staticFiles
+2022-09-19T14:04:44.167Z debug workspace/workspace/nacl_files/nacl_files_source building elements indices for 1488 NaCl files
+2022-09-19T14:04:44.168Z debug workspace/workspace/nacl_files/nacl_files_source handle deletions of nacl files starting
+2022-09-19T14:04:44.171Z debug workspace/workspace/nacl_files/nacl_files_source handle deletions of nacl files took 3 ms
+2022-09-19T14:04:44.171Z debug workspace/workspace/nacl_files/nacl_files_source handle additions/modifications of nacl files starting
+2022-09-19T14:04:46.516Z debug workspace/workspace/nacl_files/nacl_files_source handle additions/modifications of nacl files took 2345 ms
+2022-09-19T14:04:46.519Z info workspace/workspace/nacl_files/elements_cache going to merge new elements to the existing elements
+2022-09-19T14:04:46.597Z debug workspace/merger/index merged 1683 elements to 1498 elements [errors=0]
+2022-09-19T14:04:47.046Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: multi_env-env1-merged
+2022-09-19T14:04:47.046Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: multi_env-env1-errors
+2022-09-19T14:04:47.046Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: multi_env-env2-merged
+2022-09-19T14:04:47.046Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: multi_env-env2-errors
+2022-09-19T14:04:47.047Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: multi_env-multi_env_mergeManagermerge_manager
+2022-09-19T14:04:47.047Z debug workspace/workspace/nacl_files/elements_cache Merging components: env1, COMMON_
+2022-09-19T14:04:47.047Z debug workspace/workspace/nacl_files/elements_cache Setting hash multi_env-multi_env_mergeManagermerge_manager::env1_COMMON__merged_hash to f66879bbaec2bf84861f4348d05736f75383246bf87328e23e6ff3d844b5af5e
+2022-09-19T14:04:47.099Z debug workspace/merger/index merged 1869 elements to 1692 elements [errors=0]
+2022-09-19T14:04:47.141Z debug workspace/workspace/nacl_files/elements_cache Setting env1 source hash in namespace multi_env-multi_env_mergeManagermerge_manager to f66879bbaec2bf84861f4348d05736f7
+2022-09-19T14:04:47.142Z debug workspace/workspace/nacl_files/elements_cache Setting COMMON_ source hash in namespace multi_env-multi_env_mergeManagermerge_manager to 5383246bf87328e23e6ff3d844b5af5e
+2022-09-19T14:04:47.143Z debug workspace/workspace/nacl_files/elements_cache Applying merged changes to cache.
+2022-09-19T14:04:47.484Z debug workspace/workspace/nacl_files/elements_cache Change type: add, on 1692 elements. The first 100 ids are: List<salesforce.AppMenuItem>, List<salesforce.AppProfileActionOverride>, List<salesforce.ApprovalStep>, List<salesforce.AssignmentRule>, List<salesforce.CleanRule>, List<salesforce.ComponentInstanceProperty>, List<salesforce.Country>, List<salesforce.CustomLabel>, List<salesforce.CustomValue>, List<salesforce.DefaultShortcut>, List<salesforce.DuplicateRuleMatchRule>, List<salesforce.EntitlementProcessMilestoneItem>, List<salesforce.FeedLayoutComponent>, List<salesforce.FeedLayoutFilter>, List<salesforce.FieldMapping>, List<salesforce.FieldMappingField>, List<salesforce.FieldMappingRow>, List<salesforce.FieldOverride>, List<salesforce.FieldSetItem>, List<salesforce.FileTypeDispositionAssignmentBean>, List<salesforce.FilterItem>, List<salesforce.FlowActionCallInputParameter>, List<salesforce.FlowAssignment>, List<salesforce.FlowAssignmentItem>, List<salesforce.FlowCondition>, List<salesforce.FlowConstant>, List<salesforce.FlowDecision>, List<salesforce.FlowFormula>, List<salesforce.FlowInputFieldAssignment>, List<salesforce.FlowLoop>, List<salesforce.FlowMetadataValue>, List<salesforce.FlowOutputFieldAssignment>, List<salesforce.FlowRecordCreate>, List<salesforce.FlowRecordFilter>, List<salesforce.FlowRecordLookup>, List<salesforce.FlowRecordUpdate>, List<salesforce.FlowRule>, List<salesforce.FlowVariable>, List<salesforce.ForecastingCategoryMapping>, List<salesforce.ForecastingTypeSettings>, List<salesforce.Holidays>, List<salesforce.IpRange>, List<salesforce.ItemInstance>, List<salesforce.KnowledgeCaseField>, List<salesforce.KnowledgeWorkOrderField>, List<salesforce.KnowledgeWorkOrderLineItemField>, List<salesforce.LayoutColumn>, List<salesforce.LayoutItem>, List<salesforce.LayoutSection>, List<salesforce.LightningComponentBundleObject>, List<salesforce.LightningComponentBundleSupportedFormFactor>, List<salesforce.LightningComponentBundleTargetConfig>, List<salesforce.LightningPageRegion>, List<salesforce.ListViewFilter>, List<salesforce.LwcResource>, List<salesforce.ManagedContentNodeType>, List<salesforce.MatchingRule>, List<salesforce.NotificationTypeSettings>, List<salesforce.ObjectMapping>, List<salesforce.ObjectMappingField>, List<salesforce.ObjectSearchSetting>, List<salesforce.OpportunityListFieldsLabelMapping>, List<salesforce.PackageVersion>, List<salesforce.PicklistValue>, List<salesforce.PlatformActionListItem>, List<salesforce.QuickActionLayoutColumn>, List<salesforce.QuickActionLayoutItem>, List<salesforce.QuickActionListItem>, List<salesforce.RealTimeEvent>, List<salesforce.RecordTypePicklistValue>, List<salesforce.RelatedContentItem>, List<salesforce.RelatedListItem>, List<salesforce.RuleEntry>, List<salesforce.SharingCriteriaRule>, List<salesforce.SharingGuestRule>, List<salesforce.SharingOwnerRule>, List<salesforce.SharingTerritoryRule>, List<salesforce.StandardValue>, List<salesforce.State>, List<salesforce.SummaryLayoutItem>, List<salesforce.UiFormulaCriterion>, List<salesforce.ValueSettings>, List<salesforce.WeightedSourceCategory>, List<salesforce.WorkflowActionReference>, List<salesforce.WorkflowAlert>, List<salesforce.WorkflowEmailRecipient>, List<salesforce.WorkflowFieldUpdate>, List<salesforce.WorkflowFlowAction>, List<salesforce.WorkflowKnowledgePublish>, List<salesforce.WorkflowOutboundMessage>, List<salesforce.WorkflowRule>, List<salesforce.WorkflowTask>, List<salesforce.WorkflowTimeTrigger>, List<salesforce.WorkspaceMapping>, List<salesforce.summaryFilterItems>, List<salesforce.valueSet>, List<string>, Map<salesforce.BusinessHoursEntry>, salesforce.AIApplication, salesforce.AIApplicationConfig
+2022-09-19T14:04:47.485Z debug workspace/workspace/nacl_files/elements_cache Merging components: env2, COMMON_
+2022-09-19T14:04:47.485Z debug workspace/workspace/nacl_files/elements_cache Setting hash multi_env-multi_env_mergeManagermerge_manager::env2_COMMON__merged_hash to 7f72b8c51dff2cb20bc0e54b077870ed5383246bf87328e23e6ff3d844b5af5e
+2022-09-19T14:04:47.542Z debug workspace/merger/index merged 2037 elements to 1959 elements [errors=0]
+2022-09-19T14:04:47.579Z debug workspace/workspace/nacl_files/elements_cache Setting env2 source hash in namespace multi_env-multi_env_mergeManagermerge_manager to 7f72b8c51dff2cb20bc0e54b077870ed
+2022-09-19T14:04:47.579Z debug workspace/workspace/nacl_files/elements_cache Setting COMMON_ source hash in namespace multi_env-multi_env_mergeManagermerge_manager to 5383246bf87328e23e6ff3d844b5af5e
+2022-09-19T14:04:47.581Z debug workspace/workspace/nacl_files/elements_cache Applying merged changes to cache.
+2022-09-19T14:04:47.980Z debug workspace/workspace/nacl_files/elements_cache Change type: add, on 1959 elements. The first 100 ids are: List<salesforce.AppMenuItem>, List<salesforce.AppProfileActionOverride>, List<salesforce.ApprovalStep>, List<salesforce.AssignmentRule>, List<salesforce.CleanRule>, List<salesforce.ComponentInstanceProperty>, List<salesforce.Country>, List<salesforce.CustomLabel>, List<salesforce.CustomValue>, List<salesforce.DefaultShortcut>, List<salesforce.DuplicateRuleMatchRule>, List<salesforce.FeedLayoutComponent>, List<salesforce.FeedLayoutFilter>, List<salesforce.FieldMapping>, List<salesforce.FieldMappingField>, List<salesforce.FieldMappingRow>, List<salesforce.FieldOverride>, List<salesforce.FieldSetItem>, List<salesforce.FileTypeDispositionAssignmentBean>, List<salesforce.FilterItem>, List<salesforce.FlowActionCallInputParameter>, List<salesforce.FlowAssignment>, List<salesforce.FlowAssignmentItem>, List<salesforce.FlowCondition>, List<salesforce.FlowConstant>, List<salesforce.FlowDecision>, List<salesforce.FlowFormula>, List<salesforce.FlowInputFieldAssignment>, List<salesforce.FlowLoop>, List<salesforce.FlowMetadataValue>, List<salesforce.FlowOutputFieldAssignment>, List<salesforce.FlowRecordCreate>, List<salesforce.FlowRecordFilter>, List<salesforce.FlowRecordLookup>, List<salesforce.FlowRecordUpdate>, List<salesforce.FlowRule>, List<salesforce.FlowVariable>, List<salesforce.ForecastingCategoryMapping>, List<salesforce.ForecastingTypeSettings>, List<salesforce.Holidays>, List<salesforce.IpRange>, List<salesforce.ItemInstance>, List<salesforce.KnowledgeCaseField>, List<salesforce.KnowledgeWorkOrderField>, List<salesforce.KnowledgeWorkOrderLineItemField>, List<salesforce.LayoutColumn>, List<salesforce.LayoutItem>, List<salesforce.LayoutSection>, List<salesforce.LightningComponentBundleObject>, List<salesforce.LightningComponentBundleSupportedFormFactor>, List<salesforce.LightningComponentBundleTargetConfig>, List<salesforce.LightningPageRegion>, List<salesforce.ListViewFilter>, List<salesforce.LwcResource>, List<salesforce.ManagedContentNodeType>, List<salesforce.MatchingRule>, List<salesforce.NotificationTypeSettings>, List<salesforce.ObjectMapping>, List<salesforce.ObjectMappingField>, List<salesforce.ObjectSearchSetting>, List<salesforce.OpportunityListFieldsLabelMapping>, List<salesforce.PackageVersion>, List<salesforce.PicklistValue>, List<salesforce.PlatformActionListItem>, List<salesforce.QuickActionLayoutColumn>, List<salesforce.QuickActionLayoutItem>, List<salesforce.QuickActionListItem>, List<salesforce.RealTimeEvent>, List<salesforce.RecordTypePicklistValue>, List<salesforce.RelatedContentItem>, List<salesforce.RelatedListItem>, List<salesforce.RuleEntry>, List<salesforce.SharingCriteriaRule>, List<salesforce.SharingGuestRule>, List<salesforce.SharingOwnerRule>, List<salesforce.SharingTerritoryRule>, List<salesforce.StandardValue>, List<salesforce.State>, List<salesforce.SummaryLayoutItem>, List<salesforce.UiFormulaCriterion>, List<salesforce.ValueSettings>, List<salesforce.WeightedSourceCategory>, List<salesforce.WorkflowActionReference>, List<salesforce.WorkflowAlert>, List<salesforce.WorkflowEmailRecipient>, List<salesforce.WorkflowFieldUpdate>, List<salesforce.WorkflowFlowAction>, List<salesforce.WorkflowKnowledgePublish>, List<salesforce.WorkflowOutboundMessage>, List<salesforce.WorkflowRule>, List<salesforce.WorkflowTask>, List<salesforce.WorkflowTimeTrigger>, List<salesforce.WorkspaceMapping>, List<salesforce.summaryFilterItems>, List<salesforce.valueSet>, List<string>, Map<salesforce.BusinessHoursEntry>, salesforce.AIApplication, salesforce.AIApplicationConfig, salesforce.AccessMapping
+2022-09-19T14:04:47.982Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: workspace-env1-merged
+2022-09-19T14:04:47.982Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: workspace-env1-errors
+2022-09-19T14:04:47.982Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: workspace-env1-validationErrors
+2022-09-19T14:04:47.982Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: workspace-env1-changedBy
+2022-09-19T14:04:47.982Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: workspace-env1-changedAt
+2022-09-19T14:04:47.983Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: workspace-env1-referencedStaticFiles
+2022-09-19T14:04:47.983Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: workspace-env1-referenceSources
+2022-09-19T14:04:47.983Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: workspace-env1-referenceTargets
+2022-09-19T14:04:47.983Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: workspace-env1-mapVersions
+2022-09-19T14:04:47.983Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: workspace-env2-merged
+2022-09-19T14:04:47.983Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: workspace-env2-errors
+2022-09-19T14:04:47.983Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: workspace-env2-validationErrors
+2022-09-19T14:04:47.983Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: workspace-env2-changedBy
+2022-09-19T14:04:47.984Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: workspace-env2-changedAt
+2022-09-19T14:04:47.984Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: workspace-env2-referencedStaticFiles
+2022-09-19T14:04:47.984Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: workspace-env2-referenceSources
+2022-09-19T14:04:47.984Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: workspace-env2-referenceTargets
+2022-09-19T14:04:47.984Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: workspace-env2-mapVersions
+2022-09-19T14:04:47.984Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: workspaceMergeManagermerge_manager
+2022-09-19T14:04:47.985Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: state-env1-elements
+2022-09-19T14:04:47.985Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: state-env1-path_index
+2022-09-19T14:04:47.985Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: state-env1-service_update_date
+2022-09-19T14:04:47.985Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: state-env1-salto_metadata
+2022-09-19T14:04:48.006Z debug core/local-workspace/state found different hash - loading state data (quickAccessHash=d751713988987e9331980363e24189ce stateFilesHash=2f1f5226003df4c4f79e7a4ade32718d)
+2022-09-19T14:04:48.704Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file salesforce/Records/ApexClass/ApexClassForProfile.cls to set without content
+2022-09-19T14:04:48.706Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file salesforce/Records/ApexPage/ApexPageForProfile.page to set without content
+2022-09-19T14:04:48.719Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file salesforce/Records/AuraDefinitionBundle/TestAuraDefinitionBundle/TestAuraDefinitionBundle.cmp to set without content
+2022-09-19T14:04:48.719Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file salesforce/Records/AuraDefinitionBundle/TestAuraDefinitionBundle/TestAuraDefinitionBundleController.js to set without content
+2022-09-19T14:04:48.719Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file salesforce/Records/AuraDefinitionBundle/TestAuraDefinitionBundle/TestAuraDefinitionBundle.design to set without content
+2022-09-19T14:04:48.719Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file salesforce/Records/AuraDefinitionBundle/TestAuraDefinitionBundle/TestAuraDefinitionBundle.svg to set without content
+2022-09-19T14:04:48.719Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file salesforce/Records/AuraDefinitionBundle/TestAuraDefinitionBundle/TestAuraDefinitionBundleHelper.js to set without content
+2022-09-19T14:04:48.719Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file salesforce/Records/AuraDefinitionBundle/TestAuraDefinitionBundle/TestAuraDefinitionBundle.css to set without content
+2022-09-19T14:04:48.719Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file salesforce/Records/AuraDefinitionBundle/TestAuraDefinitionBundle/TestAuraDefinitionBundle.auradoc to set without content
+2022-09-19T14:04:48.719Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file salesforce/Records/AuraDefinitionBundle/TestAuraDefinitionBundle/TestAuraDefinitionBundleRenderer.js to set without content
+2022-09-19T14:04:48.889Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file salesforce/Records/LightningComponentBundle/testLightningComponentBundle/testLightningComponentBundle.html to set without content
+2022-09-19T14:04:48.889Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file salesforce/Records/LightningComponentBundle/testLightningComponentBundle/testLightningComponentBundle.js to set without content
+2022-09-19T14:04:49.022Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file salesforce/Records/StaticResource/NewInstanceWithStaticFilebegkzysdrcum.json to set without content
+2022-09-19T14:04:49.022Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file salesforce/Records/StaticResource/NewInstanceWithStaticFiletppvyphgfznn.json to set without content
+2022-09-19T14:04:49.022Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file salesforce/Records/StaticResource/TestStaticResource.xml to set without content
+2022-09-19T14:04:51.580Z warn workspace/workspace/workspace Local state cache did not match local file system state. Resetting cache.
+2022-09-19T14:04:51.581Z debug workspace/workspace/workspace Cached hash: undefined, stateHash: 2f1f5226003df4c4f79e7a4ade32718d.
+2022-09-19T14:04:51.765Z debug workspace/workspace/workspace got 0 init hidden element changes
+2022-09-19T14:04:51.766Z debug workspace/workspace/workspace got 0 state removed element changes
+2022-09-19T14:04:51.766Z debug workspace/workspace/nacl_files/elements_cache Merging components: multi_env_element_sourceenv1, state_element_sourceenv1
+2022-09-19T14:04:51.766Z debug workspace/workspace/nacl_files/elements_cache Invalid cache: state_element_sourceenv1
+2022-09-19T14:04:51.766Z debug workspace/workspace/nacl_files/elements_cache Invalid cache merge between multi_env_element_sourceenv1 and state_element_sourceenv1
+2022-09-19T14:04:51.766Z debug workspace/workspace/nacl_files/elements_cache Prechange hash:  and update merged hash: 2f1f5226003df4c4f79e7a4ade32718d
+2022-09-19T14:04:51.767Z debug workspace/workspace/nacl_files/elements_cache Setting hash workspaceMergeManagermerge_manager::multi_env_element_sourceenv1_state_element_sourceenv1_merged_hash to f66879bbaec2bf84861f4348d05736f75383246bf87328e23e6ff3d844b5af5e2f1f5226003df4c4f79e7a4ade32718d
+2022-09-19T14:04:51.767Z warn workspace/workspace/nacl_files/elements_cache Invalid data detected in local cache workspaceMergeManager. Rebuilding cache.
+2022-09-19T14:04:54.209Z debug workspace/merger/index merged 2613 elements to 1692 elements [errors=0]
+2022-09-19T14:04:54.212Z debug workspace/workspace/nacl_files/elements_cache Setting multi_env_element_sourceenv1 source hash in namespace workspaceMergeManagermerge_manager to f66879bbaec2bf84861f4348d05736f75383246bf87328e23e6ff3d844b5af5e
+2022-09-19T14:04:54.213Z debug workspace/workspace/nacl_files/elements_cache Setting state_element_sourceenv1 source hash in namespace workspaceMergeManagermerge_manager to 2f1f5226003df4c4f79e7a4ade32718d
+2022-09-19T14:04:54.213Z debug workspace/workspace/nacl_files/elements_cache Applying merged changes to cache.
+2022-09-19T14:04:54.213Z debug workspace/workspace/nacl_files/elements_cache Clearing due to cache invalidation
+2022-09-19T14:04:54.579Z debug workspace/workspace/nacl_files/elements_cache Change type: add, on 1692 elements. The first 100 ids are: List<salesforce.AppMenuItem>, List<salesforce.AppProfileActionOverride>, List<salesforce.ApprovalStep>, List<salesforce.AssignmentRule>, List<salesforce.CleanRule>, List<salesforce.ComponentInstanceProperty>, List<salesforce.Country>, List<salesforce.CustomLabel>, List<salesforce.CustomValue>, List<salesforce.DefaultShortcut>, List<salesforce.DuplicateRuleMatchRule>, List<salesforce.EntitlementProcessMilestoneItem>, List<salesforce.FeedLayoutComponent>, List<salesforce.FeedLayoutFilter>, List<salesforce.FieldMapping>, List<salesforce.FieldMappingField>, List<salesforce.FieldMappingRow>, List<salesforce.FieldOverride>, List<salesforce.FieldSetItem>, List<salesforce.FileTypeDispositionAssignmentBean>, List<salesforce.FilterItem>, List<salesforce.FlowActionCallInputParameter>, List<salesforce.FlowAssignment>, List<salesforce.FlowAssignmentItem>, List<salesforce.FlowCondition>, List<salesforce.FlowConstant>, List<salesforce.FlowDecision>, List<salesforce.FlowFormula>, List<salesforce.FlowInputFieldAssignment>, List<salesforce.FlowLoop>, List<salesforce.FlowMetadataValue>, List<salesforce.FlowOutputFieldAssignment>, List<salesforce.FlowRecordCreate>, List<salesforce.FlowRecordFilter>, List<salesforce.FlowRecordLookup>, List<salesforce.FlowRecordUpdate>, List<salesforce.FlowRule>, List<salesforce.FlowVariable>, List<salesforce.ForecastingCategoryMapping>, List<salesforce.ForecastingTypeSettings>, List<salesforce.Holidays>, List<salesforce.IpRange>, List<salesforce.ItemInstance>, List<salesforce.KnowledgeCaseField>, List<salesforce.KnowledgeWorkOrderField>, List<salesforce.KnowledgeWorkOrderLineItemField>, List<salesforce.LayoutColumn>, List<salesforce.LayoutItem>, List<salesforce.LayoutSection>, List<salesforce.LightningComponentBundleObject>, List<salesforce.LightningComponentBundleSupportedFormFactor>, List<salesforce.LightningComponentBundleTargetConfig>, List<salesforce.LightningPageRegion>, List<salesforce.ListViewFilter>, List<salesforce.LwcResource>, List<salesforce.ManagedContentNodeType>, List<salesforce.MatchingRule>, List<salesforce.NotificationTypeSettings>, List<salesforce.ObjectMapping>, List<salesforce.ObjectMappingField>, List<salesforce.ObjectSearchSetting>, List<salesforce.OpportunityListFieldsLabelMapping>, List<salesforce.PackageVersion>, List<salesforce.PicklistValue>, List<salesforce.PlatformActionListItem>, List<salesforce.QuickActionLayoutColumn>, List<salesforce.QuickActionLayoutItem>, List<salesforce.QuickActionListItem>, List<salesforce.RealTimeEvent>, List<salesforce.RecordTypePicklistValue>, List<salesforce.RelatedContentItem>, List<salesforce.RelatedListItem>, List<salesforce.RuleEntry>, List<salesforce.SharingCriteriaRule>, List<salesforce.SharingGuestRule>, List<salesforce.SharingOwnerRule>, List<salesforce.SharingTerritoryRule>, List<salesforce.StandardValue>, List<salesforce.State>, List<salesforce.SummaryLayoutItem>, List<salesforce.UiFormulaCriterion>, List<salesforce.ValueSettings>, List<salesforce.WeightedSourceCategory>, List<salesforce.WorkflowActionReference>, List<salesforce.WorkflowAlert>, List<salesforce.WorkflowEmailRecipient>, List<salesforce.WorkflowFieldUpdate>, List<salesforce.WorkflowFlowAction>, List<salesforce.WorkflowKnowledgePublish>, List<salesforce.WorkflowOutboundMessage>, List<salesforce.WorkflowRule>, List<salesforce.WorkflowTask>, List<salesforce.WorkflowTimeTrigger>, List<salesforce.WorkspaceMapping>, List<salesforce.summaryFilterItems>, List<salesforce.valueSet>, List<string>, Map<salesforce.BusinessHoursEntry>, salesforce.AIApplication, salesforce.AIApplicationConfig
+2022-09-19T14:04:54.580Z debug workspace/workspace/changed_by_index updating changed by index starting
+2022-09-19T14:04:54.789Z info workspace/workspace/changed_by_index changed by index map is out of date, re-indexing
+2022-09-19T14:04:54.789Z info workspace/workspace/changed_by_index cache is invalid, re-indexing changed by index
+2022-09-19T14:04:54.843Z debug workspace/workspace/changed_by_index updating changed by index took 262 ms
+2022-09-19T14:04:54.844Z debug workspace/workspace/changed_at_index updating changed at index starting
+2022-09-19T14:04:55.031Z info workspace/workspace/changed_at_index changed at index map is out of date, re-indexing
+2022-09-19T14:04:55.031Z info workspace/workspace/changed_at_index cache is invalid, re-indexing changed at index
+2022-09-19T14:04:55.050Z debug workspace/workspace/changed_at_index updating changed at index took 206 ms
+2022-09-19T14:04:55.050Z debug workspace/workspace/static_files_index updating static files index starting
+2022-09-19T14:04:55.227Z info workspace/workspace/static_files_index static files index is out of date, re-indexing
+2022-09-19T14:04:55.227Z info workspace/workspace/static_files_index cache is invalid, re-indexing static files index
+2022-09-19T14:04:55.349Z debug workspace/workspace/static_files_index updating static files index took 298 ms
+2022-09-19T14:04:55.350Z debug workspace/workspace/reference_indexes updating references indexes starting
+2022-09-19T14:04:55.524Z info workspace/workspace/reference_indexes references indexes maps are out of date, re-indexing
+2022-09-19T14:04:55.524Z info workspace/workspace/reference_indexes cache is invalid, re-indexing references indexes
+2022-09-19T14:04:55.832Z debug workspace/workspace/reference_indexes updating references indexes took 482 ms
+2022-09-19T14:04:56.190Z debug workspace/validator validateElements with 1692 elements starting
+2022-09-19T14:04:56.191Z debug workspace/expressions resolve 1692 elements starting
+2022-09-19T14:04:56.343Z debug workspace/expressions resolve handled a total of 1703 elements
+2022-09-19T14:04:56.344Z debug workspace/expressions resolve 1692 elements took 153 ms
+2022-09-19T14:04:56.719Z debug workspace/validator validateElements with 1692 elements took 529 ms
+2022-09-19T14:04:56.727Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: state-env2-elements
+2022-09-19T14:04:56.728Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: state-env2-path_index
+2022-09-19T14:04:56.728Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: state-env2-service_update_date
+2022-09-19T14:04:56.728Z debug core/local-workspace/remote_map creating remote map for loc: /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache, namespace: state-env2-salto_metadata
+2022-09-19T14:04:56.745Z debug core/local-workspace/state found different hash - loading state data (quickAccessHash=d751713988987e9331980363e24189ce stateFilesHash=ab1db8e3654a1400a4440df918bdda8f)
+2022-09-19T14:04:57.431Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file salesforce/Records/ApexClass/ApexClassForProfile.cls to set without content
+2022-09-19T14:04:57.431Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file salesforce/Records/ApexPage/ApexPageForProfile.page to set without content
+2022-09-19T14:04:57.442Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file salesforce/Records/AuraDefinitionBundle/TestAuraDefinitionBundle/TestAuraDefinitionBundle.cmp to set without content
+2022-09-19T14:04:57.442Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file salesforce/Records/AuraDefinitionBundle/TestAuraDefinitionBundle/TestAuraDefinitionBundleHelper.js to set without content
+2022-09-19T14:04:57.442Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file salesforce/Records/AuraDefinitionBundle/TestAuraDefinitionBundle/TestAuraDefinitionBundleController.js to set without content
+2022-09-19T14:04:57.442Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file salesforce/Records/AuraDefinitionBundle/TestAuraDefinitionBundle/TestAuraDefinitionBundle.auradoc to set without content
+2022-09-19T14:04:57.442Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file salesforce/Records/AuraDefinitionBundle/TestAuraDefinitionBundle/TestAuraDefinitionBundle.css to set without content
+2022-09-19T14:04:57.442Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file salesforce/Records/AuraDefinitionBundle/TestAuraDefinitionBundle/TestAuraDefinitionBundle.design to set without content
+2022-09-19T14:04:57.442Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file salesforce/Records/AuraDefinitionBundle/TestAuraDefinitionBundle/TestAuraDefinitionBundleRenderer.js to set without content
+2022-09-19T14:04:57.442Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file salesforce/Records/AuraDefinitionBundle/TestAuraDefinitionBundle/TestAuraDefinitionBundle.svg to set without content
+2022-09-19T14:04:57.639Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file salesforce/Records/LightningComponentBundle/testLightningComponentBundle/testLightningComponentBundle.js to set without content
+2022-09-19T14:04:57.639Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file salesforce/Records/LightningComponentBundle/testLightningComponentBundle/testLightningComponentBundle.html to set without content
+2022-09-19T14:04:57.756Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file salesforce/Records/StaticResource/NewInstanceWithStaticFilevdlecpucvpua.json to set without content
+2022-09-19T14:04:57.756Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file salesforce/Records/StaticResource/NewInstanceWithStaticFilewudbdbeknwjt.json to set without content
+2022-09-19T14:04:57.756Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file salesforce/Records/StaticResource/TestStaticResource.xml to set without content
+2022-09-19T14:05:00.483Z warn workspace/workspace/workspace Local state cache did not match local file system state. Resetting cache.
+2022-09-19T14:05:00.484Z debug workspace/workspace/workspace Cached hash: undefined, stateHash: ab1db8e3654a1400a4440df918bdda8f.
+2022-09-19T14:05:00.683Z debug workspace/workspace/workspace got 0 init hidden element changes
+2022-09-19T14:05:00.684Z debug workspace/workspace/workspace got 0 state removed element changes
+2022-09-19T14:05:00.684Z debug workspace/workspace/nacl_files/elements_cache Merging components: multi_env_element_sourceenv2, state_element_sourceenv2
+2022-09-19T14:05:00.684Z debug workspace/workspace/nacl_files/elements_cache Invalid cache: state_element_sourceenv2
+2022-09-19T14:05:00.684Z debug workspace/workspace/nacl_files/elements_cache Invalid cache merge between multi_env_element_sourceenv2 and state_element_sourceenv2
+2022-09-19T14:05:00.684Z debug workspace/workspace/nacl_files/elements_cache Prechange hash:  and update merged hash: ab1db8e3654a1400a4440df918bdda8f
+2022-09-19T14:05:00.684Z debug workspace/workspace/nacl_files/elements_cache Setting hash workspaceMergeManagermerge_manager::multi_env_element_sourceenv2_state_element_sourceenv2_merged_hash to 7f72b8c51dff2cb20bc0e54b077870ed5383246bf87328e23e6ff3d844b5af5eab1db8e3654a1400a4440df918bdda8f
+2022-09-19T14:05:00.684Z warn workspace/workspace/nacl_files/elements_cache Invalid data detected in local cache workspaceMergeManager. Rebuilding cache.
+2022-09-19T14:05:03.544Z debug workspace/merger/index merged 3155 elements to 1959 elements [errors=0]
+2022-09-19T14:05:03.548Z debug workspace/workspace/nacl_files/elements_cache Setting multi_env_element_sourceenv2 source hash in namespace workspaceMergeManagermerge_manager to 7f72b8c51dff2cb20bc0e54b077870ed5383246bf87328e23e6ff3d844b5af5e
+2022-09-19T14:05:03.549Z debug workspace/workspace/nacl_files/elements_cache Setting state_element_sourceenv2 source hash in namespace workspaceMergeManagermerge_manager to ab1db8e3654a1400a4440df918bdda8f
+2022-09-19T14:05:03.550Z debug workspace/workspace/nacl_files/elements_cache Applying merged changes to cache.
+2022-09-19T14:05:03.550Z debug workspace/workspace/nacl_files/elements_cache Clearing due to cache invalidation
+2022-09-19T14:05:03.991Z debug workspace/workspace/nacl_files/elements_cache Change type: add, on 1959 elements. The first 100 ids are: List<salesforce.AppMenuItem>, List<salesforce.AppProfileActionOverride>, List<salesforce.ApprovalStep>, List<salesforce.AssignmentRule>, List<salesforce.CleanRule>, List<salesforce.ComponentInstanceProperty>, List<salesforce.Country>, List<salesforce.CustomLabel>, List<salesforce.CustomValue>, List<salesforce.DefaultShortcut>, List<salesforce.DuplicateRuleMatchRule>, List<salesforce.FeedLayoutComponent>, List<salesforce.FeedLayoutFilter>, List<salesforce.FieldMapping>, List<salesforce.FieldMappingField>, List<salesforce.FieldMappingRow>, List<salesforce.FieldOverride>, List<salesforce.FieldSetItem>, List<salesforce.FileTypeDispositionAssignmentBean>, List<salesforce.FilterItem>, List<salesforce.FlowActionCallInputParameter>, List<salesforce.FlowAssignment>, List<salesforce.FlowAssignmentItem>, List<salesforce.FlowCondition>, List<salesforce.FlowConstant>, List<salesforce.FlowDecision>, List<salesforce.FlowFormula>, List<salesforce.FlowInputFieldAssignment>, List<salesforce.FlowLoop>, List<salesforce.FlowMetadataValue>, List<salesforce.FlowOutputFieldAssignment>, List<salesforce.FlowRecordCreate>, List<salesforce.FlowRecordFilter>, List<salesforce.FlowRecordLookup>, List<salesforce.FlowRecordUpdate>, List<salesforce.FlowRule>, List<salesforce.FlowVariable>, List<salesforce.ForecastingCategoryMapping>, List<salesforce.ForecastingTypeSettings>, List<salesforce.Holidays>, List<salesforce.IpRange>, List<salesforce.ItemInstance>, List<salesforce.KnowledgeCaseField>, List<salesforce.KnowledgeWorkOrderField>, List<salesforce.KnowledgeWorkOrderLineItemField>, List<salesforce.LayoutColumn>, List<salesforce.LayoutItem>, List<salesforce.LayoutSection>, List<salesforce.LightningComponentBundleObject>, List<salesforce.LightningComponentBundleSupportedFormFactor>, List<salesforce.LightningComponentBundleTargetConfig>, List<salesforce.LightningPageRegion>, List<salesforce.ListViewFilter>, List<salesforce.LwcResource>, List<salesforce.ManagedContentNodeType>, List<salesforce.MatchingRule>, List<salesforce.NotificationTypeSettings>, List<salesforce.ObjectMapping>, List<salesforce.ObjectMappingField>, List<salesforce.ObjectSearchSetting>, List<salesforce.OpportunityListFieldsLabelMapping>, List<salesforce.PackageVersion>, List<salesforce.PicklistValue>, List<salesforce.PlatformActionListItem>, List<salesforce.QuickActionLayoutColumn>, List<salesforce.QuickActionLayoutItem>, List<salesforce.QuickActionListItem>, List<salesforce.RealTimeEvent>, List<salesforce.RecordTypePicklistValue>, List<salesforce.RelatedContentItem>, List<salesforce.RelatedListItem>, List<salesforce.RuleEntry>, List<salesforce.SharingCriteriaRule>, List<salesforce.SharingGuestRule>, List<salesforce.SharingOwnerRule>, List<salesforce.SharingTerritoryRule>, List<salesforce.StandardValue>, List<salesforce.State>, List<salesforce.SummaryLayoutItem>, List<salesforce.UiFormulaCriterion>, List<salesforce.ValueSettings>, List<salesforce.WeightedSourceCategory>, List<salesforce.WorkflowActionReference>, List<salesforce.WorkflowAlert>, List<salesforce.WorkflowEmailRecipient>, List<salesforce.WorkflowFieldUpdate>, List<salesforce.WorkflowFlowAction>, List<salesforce.WorkflowKnowledgePublish>, List<salesforce.WorkflowOutboundMessage>, List<salesforce.WorkflowRule>, List<salesforce.WorkflowTask>, List<salesforce.WorkflowTimeTrigger>, List<salesforce.WorkspaceMapping>, List<salesforce.summaryFilterItems>, List<salesforce.valueSet>, List<string>, Map<salesforce.BusinessHoursEntry>, salesforce.AIApplication, salesforce.AIApplicationConfig, salesforce.AccessMapping
+2022-09-19T14:05:03.992Z debug workspace/workspace/changed_by_index updating changed by index starting
+2022-09-19T14:05:04.197Z info workspace/workspace/changed_by_index changed by index map is out of date, re-indexing
+2022-09-19T14:05:04.198Z info workspace/workspace/changed_by_index cache is invalid, re-indexing changed by index
+2022-09-19T14:05:04.243Z debug workspace/workspace/changed_by_index updating changed by index took 250 ms
+2022-09-19T14:05:04.243Z debug workspace/workspace/changed_at_index updating changed at index starting
+2022-09-19T14:05:04.448Z info workspace/workspace/changed_at_index changed at index map is out of date, re-indexing
+2022-09-19T14:05:04.448Z info workspace/workspace/changed_at_index cache is invalid, re-indexing changed at index
+2022-09-19T14:05:04.473Z debug workspace/workspace/changed_at_index updating changed at index took 230 ms
+2022-09-19T14:05:04.474Z debug workspace/workspace/static_files_index updating static files index starting
+2022-09-19T14:05:04.681Z info workspace/workspace/static_files_index static files index is out of date, re-indexing
+2022-09-19T14:05:04.682Z info workspace/workspace/static_files_index cache is invalid, re-indexing static files index
+2022-09-19T14:05:04.820Z debug workspace/workspace/static_files_index updating static files index took 346 ms
+2022-09-19T14:05:04.821Z debug workspace/workspace/reference_indexes updating references indexes starting
+2022-09-19T14:05:05.025Z info workspace/workspace/reference_indexes references indexes maps are out of date, re-indexing
+2022-09-19T14:05:05.025Z info workspace/workspace/reference_indexes cache is invalid, re-indexing references indexes
+2022-09-19T14:05:05.358Z debug workspace/workspace/reference_indexes updating references indexes took 536 ms
+2022-09-19T14:05:05.760Z debug workspace/validator validateElements with 1959 elements starting
+2022-09-19T14:05:05.760Z debug workspace/expressions resolve 1959 elements starting
+2022-09-19T14:05:05.921Z debug workspace/expressions resolve handled a total of 1970 elements
+2022-09-19T14:05:05.923Z debug workspace/expressions resolve 1959 elements took 163 ms
+2022-09-19T14:05:06.299Z debug workspace/validator validateElements with 1959 elements took 539 ms
+2022-09-19T14:05:06.343Z debug cli/outputer salesforce.NewObjectNamebegkzysdrcum__c: type salesforce.NewObjectNamebegkzysdrcum__c {
+  annotations {
+    serviceid apiName {
+    }
+    serviceid metadataType {
+    }
+    string label {
+    }
+    hidden_string keyPrefix {
+    }
+    salesforce.ActionOverride actionOverrides {
+    }
+    string compactLayoutAssignment {
+    }
+    string description {
+    }
+    boolean enableDataTranslation {
+    }
+    boolean enableDivisions {
+    }
+    boolean enableEnhancedLookup {
+    }
+    boolean enableFeeds {
+    }
+    boolean enableHistory {
+    }
+    boolean enableLicensing {
+    }
+    boolean enablePublishStatusTracking {
+    }
+    string externalDataSource {
+    }
+    string externalName {
+    }
+    string externalRepository {
+    }
+    salesforce.HistoryRetentionPolicy historyRetentionPolicy {
+    }
+    salesforce.MktDataLakeAttributes mktDataLakeAttributes {
+    }
+    salesforce.MktDataModelAttributes mktDataModelAttributes {
+    }
+    salesforce.ProfileSearchLayouts profileSearchLayouts {
+    }
+    boolean recordTypeTrackFeedHistory {
+    }
+    boolean recordTypeTrackHistory {
+    }
+    salesforce.SearchLayouts searchLayouts {
+    }
+    salesforce.SharingRecalculation sharingRecalculations {
+    }
+    string externalSharingModel {
+    }
+    hidden_string internalId {
+    }
+    boolean allowInChatterGroups {
+    }
+    string customHelp {
+    }
+    string customHelpPage {
+    }
+    string customSettingsType {
+    }
+    string deploymentStatus {
+    }
+    boolean deprecated {
+    }
+    boolean enableActivities {
+    }
+    boolean enableBulkApi {
+    }
+    boolean enableReports {
+    }
+    boolean enableSearch {
+    }
+    boolean enableSharing {
+    }
+    boolean enableStreamingApi {
+    }
+    string gender {
+    }
+    salesforce.CustomField nameField {
+    }
+    string pluralLabel {
+    }
+    string sharingModel {
+    }
+    string startsWith {
+    }
+    string visibility {
+    }
+  }
+  salesforce.Text Alpha__c {
+    internalId = "00N8d00000Eas38EAB"
+    _service_url = "https://thattestingcompanywelove-dev-ed.lightning.force.com/lightning/setup/ObjectManager/01I8d0000002he3EAA/FieldsAndRelationships/00N8d00000Eas38EAB/view"
+    _created_by = "tester mctestface"
+    _created_at = "2022-06-08T10:50:37.000Z"
+    _changed_at = "2022-06-08T10:52:01.000Z"
+    _changed_by = "tester mctestface"
+    apiName = "NewObjectNamebegkzysdrcum__c.Alpha__c"
+    externalId = false
+    label = "updated label"
+    length = 80
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Text Modified__c {
+    internalId = "00N8d00000Eas3DEAR"
+    _service_url = "https://thattestingcompanywelove-dev-ed.lightning.force.com/lightning/setup/ObjectManager/01I8d0000002he3EAA/FieldsAndRelationships/00N8d00000Eas3DEAR/view"
+    _created_by = "tester mctestface"
+    _created_at = "2022-06-08T10:50:53.000Z"
+    _changed_at = "2022-06-08T10:50:53.000Z"
+    _changed_by = "tester mctestface"
+    apiName = "NewObjectNamebegkzysdrcum__c.Modified__c"
+    externalId = false
+    label = "Beta"
+    length = 80
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  serviceid Id {
+    _service_url = "https://thattestingcompanywelove-dev-ed.lightning.force.com/lightning/setup/ObjectManager/01I8d0000002he3EAA/FieldsAndRelationships/Id/view"
+    apiName = "NewObjectNamebegkzysdrcum__c.Id"
+    label = "Record ID"
+    queryable = true
+    _hidden_value = true
+    updateable = false
+    createable = false
+  }
+  salesforce.Lookup OwnerId {
+    _service_url = "https://thattestingcompanywelove-dev-ed.lightning.force.com/lightning/setup/ObjectManager/01I8d0000002he3EAA/FieldsAndRelationships/Owner/view"
+    apiName = "NewObjectNamebegkzysdrcum__c.OwnerId"
+    relationshipName = "Owner"
+    referenceTo = [
+      salesforce.Group,
+      salesforce.User,
+    ]
+    label = "Owner ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    _service_url = "https://thattestingcompanywelove-dev-ed.lightning.force.com/lightning/setup/ObjectManager/01I8d0000002he3EAA/FieldsAndRelationships/IsDeleted/view"
+    apiName = "NewObjectNamebegkzysdrcum__c.IsDeleted"
+    defaultValue = false
+    label = "Deleted"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text Name {
+    _service_url = "https://thattestingcompanywelove-dev-ed.lightning.force.com/lightning/setup/ObjectManager/01I8d0000002he3EAA/FieldsAndRelationships/Name/view"
+    apiName = "NewObjectNamebegkzysdrcum__c.Name"
+    length = 80
+    label = "Name"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.DateTime CreatedDate {
+    _service_url = "https://thattestingcompanywelove-dev-ed.lightning.force.com/lightning/setup/ObjectManager/01I8d0000002he3EAA/FieldsAndRelationships/CreatedDate/view"
+    apiName = "NewObjectNamebegkzysdrcum__c.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    _service_url = "https://thattestingcompanywelove-dev-ed.lightning.force.com/lightning/setup/ObjectManager/01I8d0000002he3EAA/FieldsAndRelationships/CreatedBy/view"
+    apiName = "NewObjectNamebegkzysdrcum__c.CreatedById"
+    relationshipName = "CreatedBy"
+    referenceTo = [
+      salesforce.User,
+    ]
+    label = "Created By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    _service_url = "https://thattestingcompanywelove-dev-ed.lightning.force.com/lightning/setup/ObjectManager/01I8d0000002he3EAA/FieldsAndRelationships/LastModifiedDate/view"
+    apiName = "NewObjectNamebegkzysdrcum__c.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    _service_url = "https://thattestingcompanywelove-dev-ed.lightning.force.com/lightning/setup/ObjectManager/01I8d0000002he3EAA/FieldsAndRelationships/LastModifiedBy/view"
+    apiName = "NewObjectNamebegkzysdrcum__c.LastModifiedById"
+    relationshipName = "LastModifiedBy"
+    referenceTo = [
+      salesforce.User,
+    ]
+    label = "Last Modified By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    _service_url = "https://thattestingcompanywelove-dev-ed.lightning.force.com/lightning/setup/ObjectManager/01I8d0000002he3EAA/FieldsAndRelationships/SystemModstamp/view"
+    apiName = "NewObjectNamebegkzysdrcum__c.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  keyPrefix = "a0U"
+  internalId = "01I8d0000002he3EAA"
+  _service_url = "https://thattestingcompanywelove-dev-ed.lightning.force.com/lightning/setup/ObjectManager/01I8d0000002he3EAA/Details/view"
+  _created_by = "tester mctestface"
+  _created_at = "2022-06-08T10:50:36.000Z"
+  _changed_at = "2022-06-08T10:50:55.000Z"
+  _changed_by = "tester mctestface"
+  apiName = "NewObjectNamebegkzysdrcum__c"
+  metadataType = "CustomObject"
+  label = "NewObjectNamebegkzysdrcum"
+  actionOverrides = [
+    {
+      actionName = "Accept"
+      type = "Default"
+    },
+    {
+      actionName = "Accept"
+      formFactor = "Large"
+      type = "Default"
+    },
+    {
+      actionName = "Accept"
+      formFactor = "Small"
+      type = "Default"
+    },
+    {
+      actionName = "CancelEdit"
+      type = "Default"
+    },
+    {
+      actionName = "CancelEdit"
+      formFactor = "Large"
+      type = "Default"
+    },
+    {
+      actionName = "CancelEdit"
+      formFactor = "Small"
+      type = "Default"
+    },
+    {
+      actionName = "Clone"
+      type = "Default"
+    },
+    {
+      actionName = "Clone"
+      formFactor = "Large"
+      type = "Default"
+    },
+    {
+      actionName = "Clone"
+      formFactor = "Small"
+      type = "Default"
+    },
+    {
+      actionName = "Delete"
+      type = "Default"
+    },
+    {
+      actionName = "Delete"
+      formFactor = "Large"
+      type = "Default"
+    },
+    {
+      actionName = "Delete"
+      formFactor = "Small"
+      type = "Default"
+    },
+    {
+      actionName = "Edit"
+      type = "Default"
+    },
+    {
+      actionName = "Edit"
+      formFactor = "Large"
+      type = "Default"
+    },
+    {
+      actionName = "Edit"
+      formFactor = "Small"
+      type = "Default"
+    },
+    {
+      actionName = "List"
+      type = "Default"
+    },
+    {
+      actionName = "List"
+      formFactor = "Large"
+      type = "Default"
+    },
+    {
+      actionName = "List"
+      formFactor = "Small"
+      type = "Default"
+    },
+    {
+      actionName = "New"
+      type = "Default"
+    },
+    {
+      actionName = "New"
+      formFactor = "Large"
+      type = "Default"
+    },
+    {
+      actionName = "New"
+      formFactor = "Small"
+      type = "Default"
+    },
+    {
+      actionName = "SaveEdit"
+      type = "Default"
+    },
+    {
+      actionName = "SaveEdit"
+      formFactor = "Large"
+      type = "Default"
+    },
+    {
+      actionName = "SaveEdit"
+      formFactor = "Small"
+      type = "Default"
+    },
+    {
+      actionName = "Tab"
+      type = "Default"
+    },
+    {
+      actionName = "Tab"
+      formFactor = "Large"
+      type = "Default"
+    },
+    {
+      actionName = "Tab"
+      formFactor = "Small"
+      type = "Default"
+    },
+    {
+      actionName = "View"
+      type = "Default"
+    },
+    {
+      actionName = "View"
+      formFactor = "Large"
+      type = "Default"
+    },
+    {
+      actionName = "View"
+      formFactor = "Small"
+      type = "Default"
+    },
+  ]
+  allowInChatterGroups = false
+  compactLayoutAssignment = "SYSTEM"
+  deploymentStatus = "Deployed"
+  enableActivities = false
+  enableBulkApi = true
+  enableFeeds = false
+  enableHistory = false
+  enableLicensing = false
+  enableReports = false
+  enableSearch = false
+  enableSharing = true
+  enableStreamingApi = true
+  externalSharingModel = "Private"
+  nameField = {
+    label = "Name"
+    type = "Text"
+  }
+  pluralLabel = "NewObjectNamebegkzysdrcums"
+  sharingModel = "ReadWrite"
+  visibility = "Public"
+  topicsForObjects = {
+    enableTopics = false
+  }
+}
+
+2022-09-19T14:05:06.346Z debug core/local-workspace/remote_map closed connection to /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache
+2022-09-19T14:05:06.350Z debug core/local-workspace/remote_map closed temporary connection to /Users/uribar/.salto/a0a576a2-5cfb-4ab9-ae39-f04d66f9bea4/cache/tmp-dbs/d8fa26da-61a4-4650-8c95-f5d9bff24adc
+2022-09-19T14:05:06.350Z info cli/cli ran "element print salesforce.NewObjectNamebegkzysdrcum__c" in 27898 ms

@@ -1,0 +1,262 @@
+type salesforce.Shift {
+  salesforce.Text BackgroundColor {
+    apiName = "Shift.BackgroundColor"
+    inlineHelpText = "Set a background color to highlight shifts in the schedule view."
+    trackHistory = false
+    length = 7
+    label = "Background Color"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.DateTime EndTime {
+    apiName = "Shift.EndTime"
+    trackHistory = false
+    _required = true
+    label = "End Time"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Label {
+    apiName = "Shift.Label"
+    trackHistory = false
+    length = 255
+    label = "Label"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "Shift.OwnerId"
+    trackHistory = false
+    relationshipName = "Owner"
+    referenceTo = [
+      salesforce.Group,
+      salesforce.User,
+    ]
+    label = "Owner ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup ServiceResourceId {
+    apiName = "Shift.ServiceResourceId"
+    trackHistory = false
+    relationshipName = "ServiceResource"
+    referenceTo = [
+      salesforce.ServiceResource,
+    ]
+    label = "Service Resource ID"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup ServiceTerritoryId {
+    apiName = "Shift.ServiceTerritoryId"
+    trackHistory = false
+    relationshipName = "ServiceTerritory"
+    referenceTo = [
+      salesforce.ServiceTerritory,
+    ]
+    label = "Service Territory ID"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime StartTime {
+    apiName = "Shift.StartTime"
+    trackHistory = false
+    _required = true
+    label = "Start Time"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist Status {
+    apiName = "Shift.Status"
+    trackHistory = false
+    valueSet = [
+      {
+        fullName = "Tentative"
+        isActive = true
+        label = "Tentative"
+        default = true
+      },
+      {
+        fullName = "Published"
+        isActive = true
+        label = "Published"
+        default = false
+      },
+      {
+        fullName = "Confirmed"
+        isActive = true
+        label = "Confirmed"
+        default = false
+      },
+    ]
+    restricted = false
+    _required = true
+    label = "Status"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist StatusCategory {
+    apiName = "Shift.StatusCategory"
+    trackHistory = false
+    valueSet = [
+      {
+        fullName = "Tentative"
+        isActive = true
+        label = "Tentative"
+        default = false
+      },
+      {
+        fullName = "Published"
+        isActive = true
+        label = "Published"
+        default = false
+      },
+      {
+        fullName = "Confirmed"
+        isActive = true
+        label = "Confirmed"
+        default = false
+      },
+    ]
+    restricted = true
+    label = "Status Category"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist TimeSlotType {
+    apiName = "Shift.TimeSlotType"
+    trackHistory = false
+    valueSet = [
+      {
+        fullName = "Normal"
+        isActive = true
+        label = "Normal"
+        default = true
+      },
+      {
+        fullName = "Extended"
+        isActive = true
+        label = "Extended"
+        default = false
+      },
+    ]
+    restricted = true
+    _required = true
+    label = "Time Slot Type"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup WorkTypeGroupId {
+    apiName = "Shift.WorkTypeGroupId"
+    trackHistory = false
+    relationshipName = "WorkTypeGroup"
+    referenceTo = [
+      salesforce.WorkTypeGroup,
+    ]
+    label = "Work Type Group ID"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup WorkTypeId {
+    apiName = "Shift.WorkTypeId"
+    trackHistory = false
+    relationshipName = "WorkType"
+    referenceTo = [
+      salesforce.WorkType,
+    ]
+    label = "Work Type ID"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  serviceid Id {
+    apiName = "Shift.Id"
+    label = "Shift ID"
+    queryable = true
+    _hidden_value = true
+    updateable = false
+    createable = false
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "Shift.IsDeleted"
+    defaultValue = false
+    label = "Deleted"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.AutoNumber ShiftNumber {
+    apiName = "Shift.ShiftNumber"
+    label = "Shift Number"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "Shift.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "Shift.CreatedById"
+    relationshipName = "CreatedBy"
+    referenceTo = [
+      salesforce.User,
+    ]
+    label = "Created By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "Shift.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "Shift.LastModifiedById"
+    relationshipName = "LastModifiedBy"
+    referenceTo = [
+      salesforce.User,
+    ]
+    label = "Last Modified By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "Shift.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

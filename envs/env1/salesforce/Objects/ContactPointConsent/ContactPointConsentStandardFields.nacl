@@ -1,0 +1,5 @@
+type salesforce.ContactPointConsent {
+  salesforce.Lookup EngagementChannelTypeId {
+    _hidden_value = true
+  }
+}

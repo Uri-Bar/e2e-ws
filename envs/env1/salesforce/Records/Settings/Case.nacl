@@ -1,0 +1,6 @@
+salesforce.CaseSettings {
+  defaultCaseOwner = "testermctestface2@gmail.com"
+}
+salesforce.CaseSettings {
+  defaultCaseUser = "testermctestface2@gmail.com"
+}

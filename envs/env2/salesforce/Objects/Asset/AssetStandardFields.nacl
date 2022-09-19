@@ -1,0 +1,115 @@
+type salesforce.Asset {
+  salesforce.Text ExternalIdentifier {
+    apiName = "Asset.ExternalIdentifier"
+    inlineHelpText = "ID of matching record in an external system."
+    trackHistory = false
+  }
+}
+type salesforce.Asset {
+  salesforce.Date ManufactureDate {
+    apiName = "Asset.ManufactureDate"
+    inlineHelpText = "Date when the asset was manufactured."
+    trackHistory = false
+  }
+}
+type salesforce.Asset {
+  salesforce.Text ProductDescription {
+    apiName = "Asset.ProductDescription"
+    _hidden_value = true
+  }
+}
+type salesforce.Asset {
+  salesforce.Text Uuid {
+    apiName = "Asset.Uuid"
+    inlineHelpText = "Unique string identifying the asset."
+    trackHistory = false
+  }
+}
+type salesforce.Asset {
+  salesforce.Picklist DigitalAssetStatus {
+    valueSet = [
+      {
+        fullName = "On"
+        isActive = true
+        label = "On"
+        default = false
+      },
+      {
+        fullName = "Off"
+        isActive = true
+        label = "Off"
+        default = false
+      },
+      {
+        fullName = "Warning"
+        isActive = true
+        label = "Warning"
+        default = false
+      },
+      {
+        fullName = "Error"
+        isActive = true
+        label = "Error"
+        default = false
+      },
+    ]
+    restricted = false
+    label = "Digital Asset Status"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist ProductFamily {
+    restricted = false
+    label = "Product Family"
+    createable = false
+    updateable = false
+    queryable = true
+    valueSetName = salesforce.StandardValueSet.instance.Product2Family
+  }
+  salesforce.Picklist StatusReason {
+    valueSet = [
+      {
+        fullName = "Online"
+        isActive = true
+        label = "Online"
+        default = false
+      },
+      {
+        fullName = "Paused"
+        isActive = true
+        label = "Paused"
+        default = false
+      },
+      {
+        fullName = "Standby"
+        isActive = true
+        label = "Standby"
+        default = false
+      },
+      {
+        fullName = "Offline"
+        isActive = true
+        label = "Offline"
+        default = false
+      },
+      {
+        fullName = "Not Ready"
+        isActive = true
+        label = "Not Ready"
+        default = false
+      },
+      {
+        fullName = "Off"
+        isActive = true
+        label = "Off"
+        default = false
+      },
+    ]
+    restricted = false
+    label = "Status Reason"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+}

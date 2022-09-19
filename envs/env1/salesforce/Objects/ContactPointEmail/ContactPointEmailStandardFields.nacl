@@ -1,0 +1,68 @@
+type salesforce.ContactPointEmail {
+  salesforce.Number PreferenceRank {
+    apiName = "ContactPointEmail.PreferenceRank"
+    trackHistory = false
+    label = "Preference Rank"
+    precision = 9
+    createable = true
+    updateable = true
+    scale = 0
+    unique = false
+    queryable = true
+  }
+}
+type salesforce.ContactPointEmail {
+  salesforce.Picklist UsageType {
+    valueSet = [
+      {
+        fullName = "Home"
+        isActive = true
+        label = "Home"
+        default = false
+      },
+      {
+        fullName = "Work"
+        isActive = true
+        label = "Work"
+        default = false
+      },
+      {
+        fullName = "Temporary"
+        isActive = true
+        label = "Temporary"
+        default = false
+      },
+      {
+        fullName = "Inactive"
+        isActive = true
+        label = "Inactive"
+        default = false
+      },
+    ]
+  }
+}
+type salesforce.ContactPointEmail {
+  salesforce.Picklist UsageType {
+    restricted = false
+  }
+}
+type salesforce.ContactPointEmail {
+  salesforce.Picklist UsageType {
+    label = "Usage Type"
+  }
+}
+type salesforce.ContactPointEmail {
+  salesforce.Picklist UsageType {
+    createable = true
+  }
+}
+type salesforce.ContactPointEmail {
+  salesforce.Picklist UsageType {
+    updateable = true
+  }
+}
+type salesforce.ContactPointEmail {
+  salesforce.Picklist UsageType {
+    queryable = true
+  }
+}

@@ -1,0 +1,57 @@
+salesforce.Layout Campaign_Campaign_Layout@bs {
+  relatedLists = [
+    {
+      fields = [
+        "CAMPAIGN.NAME",
+      ]
+      relatedList = "RelatedCampaignHierarchyList"
+    },
+    {
+      fields = [
+        "TASK.SUBJECT",
+        "TASK.WHO_NAME",
+        "ACTIVITY.TASK",
+        "TASK.DUE_DATE",
+        "TASK.STATUS",
+        "TASK.PRIORITY",
+        "CORE.USERS.FULL_NAME",
+      ]
+      relatedList = "RelatedActivityList"
+    },
+    {
+      fields = [
+        "TASK.SUBJECT",
+        "TASK.WHO_NAME",
+        "ACTIVITY.TASK",
+        "TASK.DUE_DATE",
+        "CORE.USERS.FULL_NAME",
+        "TASK.LAST_UPDATE",
+      ]
+      relatedList = "RelatedHistoryList"
+    },
+    {
+      relatedList = "RelatedAttachmentList"
+    },
+    {
+      fields = [
+        "OPPORTUNITY.NAME",
+        "OPPORTUNITY.STAGE_NAME",
+        "OPPORTUNITY.AMOUNT",
+        "OPPORTUNITY.CLOSE_DATE",
+      ]
+      relatedList = "RelatedOpportunityList"
+    },
+    {
+      fields = [
+        "MEMBER_TYPE",
+        "STATUS",
+        "FULL_NAME",
+        "TITLE",
+        "FIRST_NAME",
+        "LAST_NAME",
+        "COMPANY",
+      ]
+      relatedList = "RelatedCampaignMemberList"
+    },
+  ]
+}

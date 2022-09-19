@@ -1,0 +1,10 @@
+salesforce.Layout Invoice_Invoice_Layout@bs {
+  fullName = "Invoice-Invoice Layout"
+  
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  _parent = [
+    salesforce.Invoice,
+  ]
+}

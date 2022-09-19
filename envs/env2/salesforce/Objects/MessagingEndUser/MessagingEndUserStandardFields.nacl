@@ -1,0 +1,28 @@
+type salesforce.MessagingEndUser {
+  salesforce.Checkbox HasInitialResponseSent {
+    apiName = "MessagingEndUser.HasInitialResponseSent"
+    trackHistory = false
+  }
+}
+type salesforce.MessagingEndUser {
+  salesforce.Lookup AccountId {
+    relationshipName = "Account"
+    referenceTo = [
+      salesforce.Account,
+    ]
+    label = "Account ID"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup ContactId {
+    relationshipName = "Contact"
+    referenceTo = [
+      salesforce.Contact,
+    ]
+    label = "Contact ID"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+}

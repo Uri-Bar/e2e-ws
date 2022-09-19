@@ -1,0 +1,25 @@
+salesforce.ConnectedApp SaltoApp721 {
+  fullName = "SaltoApp721"
+  contactEmail = "mockEmail@salto.io"
+  description = "Salto oauth app"
+  label = "SaltoApp721"
+  oauthConfig = {
+    callbackUrl = "http://localhost:8080"
+    consumerKey = "3MVG9xB_D1giir9pcPTUQDA3nAWvxSzmhpcnxjgLf7x5aUAVz4ToNURCxlBXqFz0VbWjGaeK1tIF1Mp4rmYd1"
+    isAdminApproved = false
+    isConsumerSecretOptional = false
+    isIntrospectAllTokens = false
+    isSecretRequiredForRefreshToken = false
+    scopes = [
+      "Basic",
+      "Api",
+      "Web",
+      "Full",
+      "RefreshToken",
+    ]
+  }
+  oauthPolicy = {
+    ipRelaxation = "ENFORCE"
+    refreshTokenPolicy = "infinite"
+  }
+}

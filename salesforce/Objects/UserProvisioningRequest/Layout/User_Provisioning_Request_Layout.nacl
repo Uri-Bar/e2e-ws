@@ -1,0 +1,10 @@
+salesforce.Layout UserProvisioningRequest_User_Provisioning_Request_Layout@bsss {
+  fullName = "UserProvisioningRequest-User Provisioning Request Layout"
+  
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  _parent = [
+    salesforce.UserProvisioningRequest,
+  ]
+}

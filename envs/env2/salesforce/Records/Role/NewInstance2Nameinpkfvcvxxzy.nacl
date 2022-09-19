@@ -1,0 +1,9 @@
+salesforce.Role NewInstance2Nameinpkfvcvxxzy {
+  fullName = "NewInstance2Nameinpkfvcvxxzy"
+  caseAccessLevel = "Edit"
+  contactAccessLevel = "Edit"
+  description = "I Am Modified"
+  mayForecastManagerShare = false
+  name = "Another new Role Instance"
+  opportunityAccessLevel = "Edit"
+}

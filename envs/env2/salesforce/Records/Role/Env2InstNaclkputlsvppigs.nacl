@@ -1,0 +1,9 @@
+salesforce.Role Env2InstNaclkputlsvppigs {
+  fullName = "Env2InstNaclkputlsvppigs"
+  caseAccessLevel = "Edit"
+  contactAccessLevel = "Edit"
+  description = "Env2 from Nacl"
+  mayForecastManagerShare = false
+  name = "Env2InstNaclkputlsvppigs"
+  opportunityAccessLevel = "Edit"
+}

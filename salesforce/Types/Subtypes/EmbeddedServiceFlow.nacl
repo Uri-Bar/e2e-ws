@@ -1,0 +1,40 @@
+type salesforce.EmbeddedServiceFlow {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string flow {
+    _restriction = {
+      enforce_value = false
+      
+    }
+    foreignKeyDomain = [
+      "FlowDefinition",
+    ]
+  }
+  string flowType {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "FL_Flow",
+        "FS_CancelAppointment",
+        "FS_ModifyAppointment",
+        "FS_NewAppointment",
+        "LA_Survey",
+      ]
+    }
+  }
+  boolean isAuthenticationRequired {
+  }
+  metadataType = "EmbeddedServiceFlow"
+}

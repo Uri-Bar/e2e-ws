@@ -1,0 +1,6 @@
+salesforce.SharingRules Env1TestObjxbvqgjiztbqz__c {
+  fullName = "Env1TestObjxbvqgjiztbqz__c"
+  _parent = [
+    salesforce.Env1TestObjxbvqgjiztbqz__c,
+  ]
+}

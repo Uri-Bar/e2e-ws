@@ -1,0 +1,6 @@
+salesforce.SharingRules NewObjectNametppvyphgfznn__c {
+  fullName = "NewObjectNametppvyphgfznn__c"
+  _parent = [
+    salesforce.NewObjectNametppvyphgfznn__c,
+  ]
+}

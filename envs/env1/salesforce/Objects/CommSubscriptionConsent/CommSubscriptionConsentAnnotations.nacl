@@ -1,0 +1,25 @@
+type salesforce.CommSubscriptionConsent {
+  externalSharingModel = "Private"
+}
+type salesforce.CommSubscriptionConsent {
+  searchLayouts = {
+    customTabListAdditionalFields = [
+      "ConsentGiver",
+      "ContactPoint",
+      "EffectiveFromDate",
+      "ConsentCapturedDateTime",
+      "ConsentCapturedSource",
+    ]
+  }
+}
+type salesforce.CommSubscriptionConsent {
+  searchLayouts = {
+    searchResultsAdditionalFields = [
+      "ConsentGiver",
+      "ContactPoint",
+      "EffectiveFromDate",
+      "ConsentCapturedDateTime",
+      "ConsentCapturedSource",
+    ]
+  }
+}

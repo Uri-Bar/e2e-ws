@@ -1,0 +1,9 @@
+salesforce.Role Env1InstNacldljdcmhzyzer {
+  fullName = "Env1InstNacldljdcmhzyzer"
+  caseAccessLevel = "Edit"
+  contactAccessLevel = "Edit"
+  description = "Env1 from Nacl"
+  mayForecastManagerShare = false
+  name = "Env1InstNacldljdcmhzyzer"
+  opportunityAccessLevel = "Edit"
+}

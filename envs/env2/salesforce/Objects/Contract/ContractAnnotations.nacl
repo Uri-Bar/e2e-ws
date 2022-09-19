@@ -1,0 +1,41 @@
+type salesforce.Contract {
+  searchLayouts = {
+    customTabListAdditionalFields = [
+      "CONTRACT.CONTRACT_NUMBER",
+      "CONTRACT.NAME",
+      "SALES.ACCOUNT.NAME",
+      "CONTRACT.STATUS",
+    ]
+  }
+}
+type salesforce.Contract {
+  searchLayouts = {
+    lookupDialogsAdditionalFields = [
+      "CONTRACT.CONTRACT_NUMBER",
+      "CONTRACT.NAME",
+      "CORE.USERS.ALIAS",
+    ]
+  }
+}
+type salesforce.Contract {
+  searchLayouts = {
+    lookupPhoneDialogsAdditionalFields = [
+      "CONTRACT.CONTRACT_NUMBER",
+      "CONTRACT.NAME",
+      "CORE.USERS.ALIAS",
+    ]
+  }
+}
+type salesforce.Contract {
+  searchLayouts = {
+    searchResultsAdditionalFields = [
+      "CONTRACT.CONTRACT_NUMBER",
+      "CONTRACT.NAME",
+      "SALES.ACCOUNT.NAME",
+      "CONTRACT.STATUS",
+      "CONTRACT.START_DATE",
+      "CONTRACT.END_DATE",
+      "CONTRACT_TERM",
+    ]
+  }
+}

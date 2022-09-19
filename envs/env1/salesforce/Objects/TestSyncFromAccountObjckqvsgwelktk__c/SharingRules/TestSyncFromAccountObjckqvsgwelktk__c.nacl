@@ -1,0 +1,6 @@
+salesforce.SharingRules TestSyncFromAccountObjckqvsgwelktk__c {
+  fullName = "TestSyncFromAccountObjckqvsgwelktk__c"
+  _parent = [
+    salesforce.TestSyncFromAccountObjckqvsgwelktk__c,
+  ]
+}

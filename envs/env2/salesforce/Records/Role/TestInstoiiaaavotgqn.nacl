@@ -1,0 +1,9 @@
+salesforce.Role TestInstoiiaaavotgqn {
+  fullName = "TestInstoiiaaavotgqn"
+  caseAccessLevel = "Edit"
+  contactAccessLevel = "Edit"
+  description = "Common instance"
+  mayForecastManagerShare = false
+  name = "TestInstoiiaaavotgqn"
+  opportunityAccessLevel = "Edit"
+}

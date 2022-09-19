@@ -1,0 +1,5 @@
+type salesforce.Order {
+  salesforce.Lookup OpportunityId {
+    _hidden_value = true
+  }
+}

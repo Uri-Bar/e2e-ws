@@ -1,0 +1,14 @@
+salesforce.IndustriesSettings {
+  fullName = "Industries"
+  
+  enableAccountScoreEnabled = "false"
+  
+  
+  
+  
+  
+  
+  
+  
+  rlaEditIfAccHasEdit = "false"
+}

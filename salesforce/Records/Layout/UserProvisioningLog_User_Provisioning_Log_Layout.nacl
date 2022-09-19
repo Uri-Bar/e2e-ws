@@ -1,0 +1,7 @@
+salesforce.Layout UserProvisioningLog_User_Provisioning_Log_Layout@bsss {
+  fullName = "UserProvisioningLog-User Provisioning Log Layout"
+  
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+}

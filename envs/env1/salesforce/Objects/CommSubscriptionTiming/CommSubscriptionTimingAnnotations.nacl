@@ -1,0 +1,13 @@
+type salesforce.CommSubscriptionTiming {
+  externalSharingModel = "ControlledByParent"
+}
+type salesforce.CommSubscriptionTiming {
+  searchLayouts = {
+    customTabListAdditionalFields = "Unit"
+  }
+}
+type salesforce.CommSubscriptionTiming {
+  searchLayouts = {
+    searchResultsAdditionalFields = "Unit"
+  }
+}

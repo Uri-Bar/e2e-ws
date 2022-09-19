@@ -1,0 +1,112 @@
+salesforce.ForecastingSettings {
+  fullName = "Forecasting"
+  defaultToPersonalCurrency = false
+  enableForecasts = false
+  forecastingCategoryMappings = [
+    {
+      forecastingItemCategoryApiName = "commitonly"
+      weightedSourceCategories = [
+        {
+          sourceCategoryApiName = "commit"
+          weight = 1
+        },
+      ]
+    },
+    {
+      forecastingItemCategoryApiName = "closedonly"
+      weightedSourceCategories = [
+        {
+          sourceCategoryApiName = "closed"
+          weight = 1
+        },
+      ]
+    },
+    {
+      forecastingItemCategoryApiName = "openpipeline"
+      weightedSourceCategories = [
+        {
+          sourceCategoryApiName = "pipeline"
+          weight = 1
+        },
+        {
+          sourceCategoryApiName = "commit"
+          weight = 1
+        },
+        {
+          sourceCategoryApiName = "best case"
+          weight = 1
+        },
+      ]
+    },
+    {
+      forecastingItemCategoryApiName = "omittedonly"
+      weightedSourceCategories = [
+        {
+          sourceCategoryApiName = "omitted"
+          weight = 1
+        },
+      ]
+    },
+    {
+      forecastingItemCategoryApiName = "bestcaseforecast"
+      weightedSourceCategories = [
+        {
+          sourceCategoryApiName = "closed"
+          weight = 1
+        },
+        {
+          sourceCategoryApiName = "commit"
+          weight = 1
+        },
+        {
+          sourceCategoryApiName = "best case"
+          weight = 1
+        },
+      ]
+    },
+    {
+      forecastingItemCategoryApiName = "pipelineonly"
+      weightedSourceCategories = [
+        {
+          sourceCategoryApiName = "pipeline"
+          weight = 1
+        },
+      ]
+    },
+    {
+      forecastingItemCategoryApiName = "commitforecast"
+      weightedSourceCategories = [
+        {
+          sourceCategoryApiName = "closed"
+          weight = 1
+        },
+        {
+          sourceCategoryApiName = "commit"
+          weight = 1
+        },
+      ]
+    },
+    {
+      forecastingItemCategoryApiName = "bestcaseonly"
+      weightedSourceCategories = [
+        {
+          sourceCategoryApiName = "best case"
+          weight = 1
+        },
+      ]
+    },
+  ]
+  
+  globalAdjustmentsSettings = {
+    enableAdjustments = false
+    enableOwnerAdjustments = false
+  }
+  globalForecastRangeSettings = {
+    beginning = 0
+    displaying = 6
+    periodType = "Month"
+  }
+  globalQuotasSettings = {
+    showQuotas = false
+  }
+}

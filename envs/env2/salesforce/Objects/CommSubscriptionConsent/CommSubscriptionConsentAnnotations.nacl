@@ -1,0 +1,24 @@
+type salesforce.CommSubscriptionConsent {
+  searchLayouts = {
+    customTabListAdditionalFields = [
+      "ConsentGiver",
+      "ContactPoint",
+      "EffectiveFromDate",
+      "EffectiveToDate",
+      "ConsentCapturedDateTime",
+      "ConsentCapturedSource",
+    ]
+  }
+}
+type salesforce.CommSubscriptionConsent {
+  searchLayouts = {
+    searchResultsAdditionalFields = [
+      "ConsentGiver",
+      "ContactPoint",
+      "EffectiveFromDate",
+      "EffectiveToDate",
+      "ConsentCapturedDateTime",
+      "ConsentCapturedSource",
+    ]
+  }
+}

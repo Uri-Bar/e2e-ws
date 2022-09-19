@@ -1,0 +1,12 @@
+type salesforce.OpportunityLineItem {
+  salesforce.Unknown Discount {
+    apiName = "OpportunityLineItem.Discount"
+    _hidden_value = true
+  }
+}
+type salesforce.OpportunityLineItem {
+  salesforce.Unknown Subtotal {
+    apiName = "OpportunityLineItem.Subtotal"
+    _hidden_value = true
+  }
+}

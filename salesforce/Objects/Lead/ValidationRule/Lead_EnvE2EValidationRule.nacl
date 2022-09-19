@@ -1,0 +1,10 @@
+salesforce.ValidationRule Lead_EnvE2EValidationRule {
+  fullName = "Lead.EnvE2EValidationRule"
+  active = false
+  
+  errorConditionFormula = "false"
+  errorMessage = "Error Message!"
+  _parent = [
+    salesforce.Lead,
+  ]
+}

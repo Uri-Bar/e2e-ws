@@ -1,0 +1,12 @@
+type salesforce.Order {
+  salesforce.Lookup OpportunityId {
+    relationshipName = "Opportunity"
+    referenceTo = [
+      salesforce.Opportunity,
+    ]
+    label = "Opportunity ID"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+}

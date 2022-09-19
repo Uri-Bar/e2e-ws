@@ -1,0 +1,9 @@
+salesforce.Role TestSyncFromAccountInstdydpajmpjetk {
+  fullName = "TestSyncFromAccountInstdydpajmpjetk"
+  caseAccessLevel = "Edit"
+  contactAccessLevel = "Edit"
+  description = "This was created on the account"
+  mayForecastManagerShare = false
+  name = "TestSyncFromAccountInstdydpajmpjetk"
+  opportunityAccessLevel = "Edit"
+}

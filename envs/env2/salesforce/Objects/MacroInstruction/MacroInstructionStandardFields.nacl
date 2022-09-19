@@ -1,0 +1,2220 @@
+type salesforce.MacroInstruction {
+  salesforce.Picklist Target {
+    valueSet = [
+      {
+        fullName = "Field.Account.Industry"
+        isActive = true
+        label = "Industry"
+        default = false
+      },
+      {
+        fullName = "Field.Account.Name"
+        isActive = true
+        label = "Account Name"
+        default = false
+      },
+      {
+        fullName = "Field.Account.Name.begin"
+        isActive = true
+        label = "Account Name"
+        default = false
+      },
+      {
+        fullName = "Field.Account.Name.end"
+        isActive = true
+        label = "Account Name"
+        default = false
+      },
+      {
+        fullName = "Field.Account.Phone"
+        isActive = true
+        label = "Phone"
+        default = false
+      },
+      {
+        fullName = "Field.Account.Type"
+        isActive = true
+        label = "Type"
+        default = false
+      },
+      {
+        fullName = "Field.Account.Website"
+        isActive = true
+        label = "Website"
+        default = false
+      },
+      {
+        fullName = "Field.Case.ContactId"
+        isActive = true
+        label = "Contact Name"
+        default = false
+      },
+      {
+        fullName = "Field.Case.Description"
+        isActive = true
+        label = "Description"
+        default = false
+      },
+      {
+        fullName = "Field.Case.Description.begin"
+        isActive = true
+        label = "Description"
+        default = false
+      },
+      {
+        fullName = "Field.Case.Description.cursor"
+        isActive = true
+        label = "Description"
+        default = false
+      },
+      {
+        fullName = "Field.Case.Description.end"
+        isActive = true
+        label = "Description"
+        default = false
+      },
+      {
+        fullName = "Field.Case.OwnerId"
+        isActive = true
+        label = "Case Owner"
+        default = false
+      },
+      {
+        fullName = "Field.Case.ParentId"
+        isActive = true
+        label = "Parent Case"
+        default = false
+      },
+      {
+        fullName = "Field.Case.Priority"
+        isActive = true
+        label = "Priority"
+        default = false
+      },
+      {
+        fullName = "Field.Case.Status"
+        isActive = true
+        label = "Status"
+        default = false
+      },
+      {
+        fullName = "Field.Case.Subject"
+        isActive = true
+        label = "Subject"
+        default = false
+      },
+      {
+        fullName = "Field.Case.Subject.begin"
+        isActive = true
+        label = "Subject"
+        default = false
+      },
+      {
+        fullName = "Field.Case.Subject.end"
+        isActive = true
+        label = "Subject"
+        default = false
+      },
+      {
+        fullName = "Field.CollaborationGroup.CanHaveGuests"
+        isActive = true
+        label = "Allow customers"
+        default = false
+      },
+      {
+        fullName = "Field.CollaborationGroup.CollaborationType"
+        isActive = true
+        label = "Access Type"
+        default = false
+      },
+      {
+        fullName = "Field.CollaborationGroup.Description"
+        isActive = true
+        label = "Description"
+        default = false
+      },
+      {
+        fullName = "Field.CollaborationGroup.Description.begin"
+        isActive = true
+        label = "Description"
+        default = false
+      },
+      {
+        fullName = "Field.CollaborationGroup.Description.cursor"
+        isActive = true
+        label = "Description"
+        default = false
+      },
+      {
+        fullName = "Field.CollaborationGroup.Description.end"
+        isActive = true
+        label = "Description"
+        default = false
+      },
+      {
+        fullName = "Field.CollaborationGroup.Name"
+        isActive = true
+        label = "Name"
+        default = false
+      },
+      {
+        fullName = "Field.CollaborationGroup.Name.begin"
+        isActive = true
+        label = "Name"
+        default = false
+      },
+      {
+        fullName = "Field.CollaborationGroup.Name.end"
+        isActive = true
+        label = "Name"
+        default = false
+      },
+      {
+        fullName = "Field.CollaborationGroupMember.CollaborationGroupId"
+        isActive = true
+        label = "Group"
+        default = false
+      },
+      {
+        fullName = "Field.CollaborationGroupMember.CollaborationRole"
+        isActive = true
+        label = "Group Member Role"
+        default = false
+      },
+      {
+        fullName = "Field.CollaborationGroupMember.MemberId"
+        isActive = true
+        label = "Member"
+        default = false
+      },
+      {
+        fullName = "Field.CollaborationGroupRecord.CollaborationGroupId"
+        isActive = true
+        label = "Group"
+        default = false
+      },
+      {
+        fullName = "Field.CollaborationGroupRecord.RecordId"
+        isActive = true
+        label = "Record"
+        default = false
+      },
+      {
+        fullName = "Field.Contact.AccountId"
+        isActive = true
+        label = "Account Name"
+        default = false
+      },
+      {
+        fullName = "Field.Contact.Email"
+        isActive = true
+        label = "Email"
+        default = false
+      },
+      {
+        fullName = "Field.Contact.FirstName"
+        isActive = true
+        label = "First Name"
+        default = false
+      },
+      {
+        fullName = "Field.Contact.FirstName.begin"
+        isActive = true
+        label = "First Name"
+        default = false
+      },
+      {
+        fullName = "Field.Contact.FirstName.end"
+        isActive = true
+        label = "First Name"
+        default = false
+      },
+      {
+        fullName = "Field.Contact.LastName"
+        isActive = true
+        label = "Last Name"
+        default = false
+      },
+      {
+        fullName = "Field.Contact.LastName.begin"
+        isActive = true
+        label = "Last Name"
+        default = false
+      },
+      {
+        fullName = "Field.Contact.LastName.end"
+        isActive = true
+        label = "Last Name"
+        default = false
+      },
+      {
+        fullName = "Field.Contact.Phone"
+        isActive = true
+        label = "Phone"
+        default = false
+      },
+      {
+        fullName = "Field.Contact.Salutation"
+        isActive = true
+        label = "Salutation"
+        default = false
+      },
+      {
+        fullName = "Field.Contact.Title"
+        isActive = true
+        label = "Title"
+        default = false
+      },
+      {
+        fullName = "Field.Contact.Title.begin"
+        isActive = true
+        label = "Title"
+        default = false
+      },
+      {
+        fullName = "Field.Contact.Title.end"
+        isActive = true
+        label = "Title"
+        default = false
+      },
+      {
+        fullName = "Field.Event.EndDateTime"
+        isActive = true
+        label = "End"
+        default = false
+      },
+      {
+        fullName = "Field.Event.IsAllDayEvent"
+        isActive = true
+        label = "All-Day Event"
+        default = false
+      },
+      {
+        fullName = "Field.Event.Location"
+        isActive = true
+        label = "Location"
+        default = false
+      },
+      {
+        fullName = "Field.Event.Location.begin"
+        isActive = true
+        label = "Location"
+        default = false
+      },
+      {
+        fullName = "Field.Event.Location.end"
+        isActive = true
+        label = "Location"
+        default = false
+      },
+      {
+        fullName = "Field.Event.OwnerId"
+        isActive = true
+        label = "Assigned To"
+        default = false
+      },
+      {
+        fullName = "Field.Event.StartDateTime"
+        isActive = true
+        label = "Start"
+        default = false
+      },
+      {
+        fullName = "Field.Event.Subject"
+        isActive = true
+        label = "Subject"
+        default = false
+      },
+      {
+        fullName = "Field.Event.WhatId"
+        isActive = true
+        label = "Related To"
+        default = false
+      },
+      {
+        fullName = "Field.Event.WhoId"
+        isActive = true
+        label = "Name"
+        default = false
+      },
+      {
+        fullName = "Field.Lead.Company"
+        isActive = true
+        label = "Company"
+        default = false
+      },
+      {
+        fullName = "Field.Lead.Company.begin"
+        isActive = true
+        label = "Company"
+        default = false
+      },
+      {
+        fullName = "Field.Lead.Company.end"
+        isActive = true
+        label = "Company"
+        default = false
+      },
+      {
+        fullName = "Field.Lead.Email"
+        isActive = true
+        label = "Email"
+        default = false
+      },
+      {
+        fullName = "Field.Lead.FirstName"
+        isActive = true
+        label = "First Name"
+        default = false
+      },
+      {
+        fullName = "Field.Lead.FirstName.begin"
+        isActive = true
+        label = "First Name"
+        default = false
+      },
+      {
+        fullName = "Field.Lead.FirstName.end"
+        isActive = true
+        label = "First Name"
+        default = false
+      },
+      {
+        fullName = "Field.Lead.LastName"
+        isActive = true
+        label = "Last Name"
+        default = false
+      },
+      {
+        fullName = "Field.Lead.LastName.begin"
+        isActive = true
+        label = "Last Name"
+        default = false
+      },
+      {
+        fullName = "Field.Lead.LastName.end"
+        isActive = true
+        label = "Last Name"
+        default = false
+      },
+      {
+        fullName = "Field.Lead.Phone"
+        isActive = true
+        label = "Phone"
+        default = false
+      },
+      {
+        fullName = "Field.Lead.Salutation"
+        isActive = true
+        label = "Salutation"
+        default = false
+      },
+      {
+        fullName = "Field.Lead.Title"
+        isActive = true
+        label = "Title"
+        default = false
+      },
+      {
+        fullName = "Field.Lead.Title.begin"
+        isActive = true
+        label = "Title"
+        default = false
+      },
+      {
+        fullName = "Field.Lead.Title.end"
+        isActive = true
+        label = "Title"
+        default = false
+      },
+      {
+        fullName = "Field.MessagingEndUser.MessagingConsentStatus"
+        isActive = true
+        label = "Messaging Consent Status"
+        default = false
+      },
+      {
+        fullName = "Field.MessagingEndUser.Name"
+        isActive = true
+        label = "Messaging User Name"
+        default = false
+      },
+      {
+        fullName = "Field.MessagingEndUser.Name.begin"
+        isActive = true
+        label = "Messaging User Name"
+        default = false
+      },
+      {
+        fullName = "Field.MessagingEndUser.Name.end"
+        isActive = true
+        label = "Messaging User Name"
+        default = false
+      },
+      {
+        fullName = "Field.Note.Body"
+        isActive = true
+        label = "Body"
+        default = false
+      },
+      {
+        fullName = "Field.Note.Body.begin"
+        isActive = true
+        label = "Body"
+        default = false
+      },
+      {
+        fullName = "Field.Note.Body.cursor"
+        isActive = true
+        label = "Body"
+        default = false
+      },
+      {
+        fullName = "Field.Note.Body.end"
+        isActive = true
+        label = "Body"
+        default = false
+      },
+      {
+        fullName = "Field.Note.IsPrivate"
+        isActive = true
+        label = "Private"
+        default = false
+      },
+      {
+        fullName = "Field.Note.Title"
+        isActive = true
+        label = "Title"
+        default = false
+      },
+      {
+        fullName = "Field.Note.Title.begin"
+        isActive = true
+        label = "Title"
+        default = false
+      },
+      {
+        fullName = "Field.Note.Title.end"
+        isActive = true
+        label = "Title"
+        default = false
+      },
+      {
+        fullName = "Field.Opportunity.AccountId"
+        isActive = true
+        label = "Account Name"
+        default = false
+      },
+      {
+        fullName = "Field.Opportunity.Amount"
+        isActive = true
+        label = "Amount"
+        default = false
+      },
+      {
+        fullName = "Field.Opportunity.CloseDate"
+        isActive = true
+        label = "Close Date"
+        default = false
+      },
+      {
+        fullName = "Field.Opportunity.Name"
+        isActive = true
+        label = "Opportunity Name"
+        default = false
+      },
+      {
+        fullName = "Field.Opportunity.Name.begin"
+        isActive = true
+        label = "Opportunity Name"
+        default = false
+      },
+      {
+        fullName = "Field.Opportunity.Name.end"
+        isActive = true
+        label = "Opportunity Name"
+        default = false
+      },
+      {
+        fullName = "Field.Opportunity.NextStep"
+        isActive = true
+        label = "Next Step"
+        default = false
+      },
+      {
+        fullName = "Field.Opportunity.NextStep.begin"
+        isActive = true
+        label = "Next Step"
+        default = false
+      },
+      {
+        fullName = "Field.Opportunity.NextStep.end"
+        isActive = true
+        label = "Next Step"
+        default = false
+      },
+      {
+        fullName = "Field.Opportunity.StageName"
+        isActive = true
+        label = "Stage"
+        default = false
+      },
+      {
+        fullName = "Field.OutgoingEmail.AttachmentIds.end"
+        isActive = true
+        label = "Attachments"
+        default = false
+      },
+      {
+        fullName = "Field.OutgoingEmail.BccAddress"
+        isActive = true
+        label = "BCC"
+        default = false
+      },
+      {
+        fullName = "Field.OutgoingEmail.BccAddress.begin"
+        isActive = true
+        label = "BCC"
+        default = false
+      },
+      {
+        fullName = "Field.OutgoingEmail.BccAddress.end"
+        isActive = true
+        label = "BCC"
+        default = false
+      },
+      {
+        fullName = "Field.OutgoingEmail.CcAddress"
+        isActive = true
+        label = "CC"
+        default = false
+      },
+      {
+        fullName = "Field.OutgoingEmail.CcAddress.begin"
+        isActive = true
+        label = "CC"
+        default = false
+      },
+      {
+        fullName = "Field.OutgoingEmail.CcAddress.end"
+        isActive = true
+        label = "CC"
+        default = false
+      },
+      {
+        fullName = "Field.OutgoingEmail.ContentDocumentIds.end"
+        isActive = true
+        label = "Attachments"
+        default = false
+      },
+      {
+        fullName = "Field.OutgoingEmail.EmailTemplateId"
+        isActive = true
+        label = "Email Template"
+        default = false
+      },
+      {
+        fullName = "Field.OutgoingEmail.HtmlBody"
+        isActive = true
+        label = "HTML Body"
+        default = false
+      },
+      {
+        fullName = "Field.OutgoingEmail.HtmlBody.begin"
+        isActive = true
+        label = "HTML Body"
+        default = false
+      },
+      {
+        fullName = "Field.OutgoingEmail.HtmlBody.cursor"
+        isActive = true
+        label = "HTML Body"
+        default = false
+      },
+      {
+        fullName = "Field.OutgoingEmail.HtmlBody.end"
+        isActive = true
+        label = "HTML Body"
+        default = false
+      },
+      {
+        fullName = "Field.OutgoingEmail.RelatedToId"
+        isActive = true
+        label = "Related To"
+        default = false
+      },
+      {
+        fullName = "Field.OutgoingEmail.Subject"
+        isActive = true
+        label = "Subject"
+        default = false
+      },
+      {
+        fullName = "Field.OutgoingEmail.Subject.begin"
+        isActive = true
+        label = "Subject"
+        default = false
+      },
+      {
+        fullName = "Field.OutgoingEmail.Subject.end"
+        isActive = true
+        label = "Subject"
+        default = false
+      },
+      {
+        fullName = "Field.OutgoingEmail.ToAddress"
+        isActive = true
+        label = "To"
+        default = false
+      },
+      {
+        fullName = "Field.OutgoingEmail.ToAddress.begin"
+        isActive = true
+        label = "To"
+        default = false
+      },
+      {
+        fullName = "Field.OutgoingEmail.ToAddress.end"
+        isActive = true
+        label = "To"
+        default = false
+      },
+      {
+        fullName = "Field.OutgoingEmail.ValidatedFromAddress"
+        isActive = true
+        label = "From"
+        default = false
+      },
+      {
+        fullName = "Field.Task.ActivityDate"
+        isActive = true
+        label = "Due Date"
+        default = false
+      },
+      {
+        fullName = "Field.Task.Description"
+        isActive = true
+        label = "Comments"
+        default = false
+      },
+      {
+        fullName = "Field.Task.Description.begin"
+        isActive = true
+        label = "Comments"
+        default = false
+      },
+      {
+        fullName = "Field.Task.Description.cursor"
+        isActive = true
+        label = "Comments"
+        default = false
+      },
+      {
+        fullName = "Field.Task.Description.end"
+        isActive = true
+        label = "Comments"
+        default = false
+      },
+      {
+        fullName = "Field.Task.OwnerId"
+        isActive = true
+        label = "Assigned To"
+        default = false
+      },
+      {
+        fullName = "Field.Task.Priority"
+        isActive = true
+        label = "Priority"
+        default = false
+      },
+      {
+        fullName = "Field.Task.Status"
+        isActive = true
+        label = "Status"
+        default = false
+      },
+      {
+        fullName = "Field.Task.Subject"
+        isActive = true
+        label = "Subject"
+        default = false
+      },
+      {
+        fullName = "Field.Task.WhatId"
+        isActive = true
+        label = "Related To"
+        default = false
+      },
+      {
+        fullName = "Field.Task.WhoId"
+        isActive = true
+        label = "Name"
+        default = false
+      },
+      {
+        fullName = "QuickAction.Case.LogACall"
+        isActive = true
+        label = "Log a Call Action"
+        default = false
+      },
+      {
+        fullName = "QuickAction.Case.NewChildCase"
+        isActive = true
+        label = "New Child Case Action"
+        default = false
+      },
+      {
+        fullName = "QuickAction.Case._LightningUpdateCase"
+        isActive = true
+        label = "Update Case Action"
+        default = false
+      },
+      {
+        fullName = "QuickAction.CollaborationGroup.NewGroupMember"
+        isActive = true
+        label = "Add Member Action"
+        default = false
+      },
+      {
+        fullName = "QuickAction.CollaborationGroup.NewGroupRecord"
+        isActive = true
+        label = "Add Record Action"
+        default = false
+      },
+      {
+        fullName = "QuickAction.Contact._LightningRelatedContact"
+        isActive = true
+        label = "Update Contact Action"
+        default = false
+      },
+      {
+        fullName = "QuickAction.FeedItem.NewTaskFromFeedItem"
+        isActive = true
+        label = "Create New Task Action"
+        default = false
+      },
+      {
+        fullName = "QuickAction.LogACall"
+        isActive = true
+        label = "Log a Call Action"
+        default = false
+      },
+      {
+        fullName = "QuickAction.MessagingEndUser._UpdateMessagingEndUser"
+        isActive = true
+        label = "Update Messaging User Action"
+        default = false
+      },
+      {
+        fullName = "QuickAction.NewAccount"
+        isActive = true
+        label = "New Account Action"
+        default = false
+      },
+      {
+        fullName = "QuickAction.NewCase"
+        isActive = true
+        label = "New Case Action"
+        default = false
+      },
+      {
+        fullName = "QuickAction.NewContact"
+        isActive = true
+        label = "New Contact Action"
+        default = false
+      },
+      {
+        fullName = "QuickAction.NewEvent"
+        isActive = true
+        label = "New Event Action"
+        default = false
+      },
+      {
+        fullName = "QuickAction.NewGroup"
+        isActive = true
+        label = "New Group Action"
+        default = false
+      },
+      {
+        fullName = "QuickAction.NewLead"
+        isActive = true
+        label = "New Lead Action"
+        default = false
+      },
+      {
+        fullName = "QuickAction.NewNote"
+        isActive = true
+        label = "New Note Action"
+        default = false
+      },
+      {
+        fullName = "QuickAction.NewOpportunity"
+        isActive = true
+        label = "New Opportunity Action"
+        default = false
+      },
+      {
+        fullName = "QuickAction.NewTask"
+        isActive = true
+        label = "New Task Action"
+        default = false
+      },
+      {
+        fullName = "QuickAction.SendEmail"
+        isActive = true
+        label = "Email Action"
+        default = false
+      },
+      {
+        fullName = "QuickAction.Task.Defer"
+        isActive = true
+        label = "Change Date Action"
+        default = false
+      },
+      {
+        fullName = "QuickAction.Task.Defer_0"
+        isActive = true
+        label = "Change Date Action"
+        default = false
+      },
+      {
+        fullName = "QuickAction.Task.EditDescription"
+        isActive = true
+        label = "Edit Comments Action"
+        default = false
+      },
+      {
+        fullName = "QuickAction.Task.EditDescription_0"
+        isActive = true
+        label = "Edit Comments Action"
+        default = false
+      },
+      {
+        fullName = "QuickAction.Task.UpdatePriority"
+        isActive = true
+        label = "Change Priority Action"
+        default = false
+      },
+      {
+        fullName = "QuickAction.Task.UpdatePriority_0"
+        isActive = true
+        label = "Change Priority Action"
+        default = false
+      },
+      {
+        fullName = "QuickAction.Task.UpdateStatus"
+        isActive = true
+        label = "Change Status Action"
+        default = false
+      },
+      {
+        fullName = "QuickAction.Task.UpdateStatus_0"
+        isActive = true
+        label = "Change Status Action"
+        default = false
+      },
+      {
+        fullName = "Tab.Account"
+        isActive = true
+        label = "Active Account Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.AlternativePaymentMethod"
+        isActive = true
+        label = "Active Alternative Payment Method Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.ApiAnomalyEventStore"
+        isActive = true
+        label = "Active API Anomaly Event Store Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.Asset"
+        isActive = true
+        label = "Active Asset Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.AssetRelationship"
+        isActive = true
+        label = "Active Asset Relationship Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.AuthorizationForm"
+        isActive = true
+        label = "Active Authorization Form Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.AuthorizationFormConsent"
+        isActive = true
+        label = "Active Authorization Form Consent Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.AuthorizationFormDataUse"
+        isActive = true
+        label = "Active Authorization Form Data Use Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.AuthorizationFormText"
+        isActive = true
+        label = "Active Authorization Form Text Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.CardPaymentMethod"
+        isActive = true
+        label = "Active Card Payment Method Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.Case"
+        isActive = true
+        label = "Active Case Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.CollaborationGroup"
+        isActive = true
+        label = "Active Group Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.CommSubscription"
+        isActive = true
+        label = "Active Communication Subscription Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.CommSubscriptionChannelType"
+        isActive = true
+        label = "Active Communication Subscription Channel Type Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.CommSubscriptionConsent"
+        isActive = true
+        label = "Active Communication Subscription Consent Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.CommSubscriptionTiming"
+        isActive = true
+        label = "Active Communication Subscription Timing Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.CommonObjectNacldljdcmhzyzer__c"
+        isActive = true
+        label = "Active CommonObjectNacldljdcmhzyzer Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.CommonObjectNacljfsqhxknzwuc__c"
+        isActive = true
+        label = "Active CommonObjectNacljfsqhxknzwuc Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.CommonObjectNaclkputlsvppigs__c"
+        isActive = true
+        label = "Active CommonObjectNaclkputlsvppigs Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.CommonObjectNaclmdkxrdehpjgg__c"
+        isActive = true
+        label = "Active CommonObjectNaclmdkxrdehpjgg Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.CommonObjectNaclxrqjglzxktcm__c"
+        isActive = true
+        label = "Active CommonObjectNaclxrqjglzxktcm Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.ConsumptionSchedule"
+        isActive = true
+        label = "Active Consumption Schedule Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.Contact"
+        isActive = true
+        label = "Active Contact Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.ContactPointAddress"
+        isActive = true
+        label = "Active Contact Point Address Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.ContactPointEmail"
+        isActive = true
+        label = "Active Contact Point Email Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.ContactPointPhone"
+        isActive = true
+        label = "Active Contact Point Phone Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.Contract"
+        isActive = true
+        label = "Active Contract Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.CredentialStuffingEventStore"
+        isActive = true
+        label = "Active Credential Stuffing Event Store Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.CreditMemo"
+        isActive = true
+        label = "Active Credit Memo Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.CreditMemoInvApplication"
+        isActive = true
+        label = "Active Credit Memo Invoice Application Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.CreditMemoLine"
+        isActive = true
+        label = "Active Credit Memo Line Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.DataUsePurpose"
+        isActive = true
+        label = "Active Data Use Purpose Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.DigitalWallet"
+        isActive = true
+        label = "Active Digital Wallet Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.EngagementChannelType"
+        isActive = true
+        label = "Active Engagement Channel Type Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.Env1ObjectNacldljdcmhzyzer__c"
+        isActive = true
+        label = "Active Env1ObjectNacldljdcmhzyzer Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.Env1ObjectNacljfsqhxknzwuc__c"
+        isActive = true
+        label = "Active Env1ObjectNacljfsqhxknzwuc Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.Env1ObjectNaclmdkxrdehpjgg__c"
+        isActive = true
+        label = "Active Env1ObjectNaclmdkxrdehpjgg Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.Env1TestObjbzzppambvbby__c"
+        isActive = true
+        label = "Active Env1TestObjbzzppambvbby Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.Env1TestObjdydpajmpjetk__c"
+        isActive = true
+        label = "Active Env1TestObjdydpajmpjetk Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.Env1TestObjesxfmctwpaga__c"
+        isActive = true
+        label = "Active Env1TestObjesxfmctwpaga Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.Env1TestObjgblmboenarnp__c"
+        isActive = true
+        label = "Active Env1TestObjgblmboenarnp Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.Env1TestObjirhdpnwbzqgg__c"
+        isActive = true
+        label = "Active Env1TestObjirhdpnwbzqgg Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.Env1TestObjjbetpwnnmshp__c"
+        isActive = true
+        label = "Active Env1TestObjjbetpwnnmshp Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.Env1TestObjjkijrppujone__c"
+        isActive = true
+        label = "Active Env1TestObjjkijrppujone Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.Env1TestObjlwegclqtfmco__c"
+        isActive = true
+        label = "Active Env1TestObjlwegclqtfmco Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.Env1TestObjmdmiynczzkss__c"
+        isActive = true
+        label = "Active Env1TestObjmdmiynczzkss Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.Env1TestObjnhkfrdawuuoz__c"
+        isActive = true
+        label = "Active Env1TestObjnhkfrdawuuoz Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.Env1TestObjnkoreokdidyo__c"
+        isActive = true
+        label = "Active Env1TestObjnkoreokdidyo Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.Env1TestObjoegjezmeiwfr__c"
+        isActive = true
+        label = "Active Env1TestObjoegjezmeiwfr Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.Env1TestObjoiiaaavotgqn__c"
+        isActive = true
+        label = "Active Env1TestObjoiiaaavotgqn Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.Env1TestObjpfvhkgeeniws__c"
+        isActive = true
+        label = "Active Env1TestObjpfvhkgeeniws Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.Env1TestObjqdswoesxncyl__c"
+        isActive = true
+        label = "Active Env1TestObjqdswoesxncyl Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.Env1TestObjtuctnctcavrf__c"
+        isActive = true
+        label = "Active Env1TestObjtuctnctcavrf Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.Env1TestObjwjrqxdldeqkw__c"
+        isActive = true
+        label = "Active Env1TestObjwjrqxdldeqkw Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.Env1TestObjzhtpousmqfwk__c"
+        isActive = true
+        label = "Active Env1TestObjzhtpousmqfwk Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.Env2ObjectNaclkputlsvppigs__c"
+        isActive = true
+        label = "Active Env2ObjectNaclkputlsvppigs Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.Env2ObjectNaclxrqjglzxktcm__c"
+        isActive = true
+        label = "Active Env2ObjectNaclxrqjglzxktcm Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.Env2TestObjacgebbgvtxat__c"
+        isActive = true
+        label = "Active Env2TestObjacgebbgvtxat Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.Env2TestObjbmtgsthmslkc__c"
+        isActive = true
+        label = "Active Env2TestObjbmtgsthmslkc Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.Env2TestObjbnkjrubosdti__c"
+        isActive = true
+        label = "Active Env2TestObjbnkjrubosdti Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.Env2TestObjbyxhrzvlynlh__c"
+        isActive = true
+        label = "Active Env2TestObjbyxhrzvlynlh Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.Env2TestObjdwgkomxzsnaz__c"
+        isActive = true
+        label = "Active Env2TestObjdwgkomxzsnaz Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.Env2TestObjexkeeurgiwhq__c"
+        isActive = true
+        label = "Active Env2TestObjexkeeurgiwhq Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.Env2TestObjffosdslglded__c"
+        isActive = true
+        label = "Active Env2TestObjffosdslglded Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.Env2TestObjhrntpgvuqxin__c"
+        isActive = true
+        label = "Active Env2TestObjhrntpgvuqxin Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.Env2TestObjhyyfzemivqkh__c"
+        isActive = true
+        label = "Active Env2TestObjhyyfzemivqkh Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.Env2TestObjiyroelmktbwv__c"
+        isActive = true
+        label = "Active Env2TestObjiyroelmktbwv Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.Env2TestObjmjwammfqyoil__c"
+        isActive = true
+        label = "Active Env2TestObjmjwammfqyoil Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.Env2TestObjotslufgqgxdb__c"
+        isActive = true
+        label = "Active Env2TestObjotslufgqgxdb Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.Env2TestObjqcxkygxrwdey__c"
+        isActive = true
+        label = "Active Env2TestObjqcxkygxrwdey Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.Env2TestObjqnllqyarunbx__c"
+        isActive = true
+        label = "Active Env2TestObjqnllqyarunbx Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.Env2TestObjrhyrfstirgpj__c"
+        isActive = true
+        label = "Active Env2TestObjrhyrfstirgpj Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.Env2TestObjsrmpsunorfkr__c"
+        isActive = true
+        label = "Active Env2TestObjsrmpsunorfkr Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.Env2TestObjvffgteaitnct__c"
+        isActive = true
+        label = "Active Env2TestObjvffgteaitnct Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.Env2TestObjwuencnvedpws__c"
+        isActive = true
+        label = "Active Env2TestObjwuencnvedpws Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.Env2TestObjxkucnylhcjfx__c"
+        isActive = true
+        label = "Active Env2TestObjxkucnylhcjfx Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.Env2TestObjxrqjglzxktcm__c"
+        isActive = true
+        label = "Active Env2TestObjxrqjglzxktcm Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.Event"
+        isActive = true
+        label = "Active Event Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.FeedItem"
+        isActive = true
+        label = "Active Feed Item Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.FinanceBalanceSnapshot"
+        isActive = true
+        label = "Active Finance Balance Snapshot Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.FinanceTransaction"
+        isActive = true
+        label = "Active Finance Transaction Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.Image"
+        isActive = true
+        label = "Active Image Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.Individual"
+        isActive = true
+        label = "Active Individual Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.Invoice"
+        isActive = true
+        label = "Active Invoice Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.InvoiceLine"
+        isActive = true
+        label = "Active Invoice Line Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.Lead"
+        isActive = true
+        label = "Active Lead Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.LegalEntity"
+        isActive = true
+        label = "Active Legal Entity Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.Location"
+        isActive = true
+        label = "Active Location Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.LocationGroup"
+        isActive = true
+        label = "Active Location Group Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.MessagingEndUser"
+        isActive = true
+        label = "Active Messaging User Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.MessagingSession"
+        isActive = true
+        label = "Active Messaging Session Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.NewInstanceNamewkgfcascdcwq__c"
+        isActive = true
+        label = "Active NewInstanceNamewkgfcascdcwq Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.NewInstanceNamezawznhpfznsq__c"
+        isActive = true
+        label = "Active NewInstanceNamezawznhpfznsq Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.NewObjectNameabfgiehawpmx__c"
+        isActive = true
+        label = "Active NewObjectNameabfgiehawpmx Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.NewObjectNamebnyacugcvovl__c"
+        isActive = true
+        label = "Active NewObjectNamebnyacugcvovl Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.NewObjectNamecfbiuyzjptyb__c"
+        isActive = true
+        label = "Active NewObjectNamecfbiuyzjptyb Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.NewObjectNamecfjniytvjwty__c"
+        isActive = true
+        label = "Active NewObjectNamecfjniytvjwty Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.NewObjectNamecuympfunnkyb__c"
+        isActive = true
+        label = "Active NewObjectNamecuympfunnkyb Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.NewObjectNamefyuyjkkrcgbr__c"
+        isActive = true
+        label = "Active NewObjectNamefyuyjkkrcgbr Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.NewObjectNamegqhkrrfhrnrh__c"
+        isActive = true
+        label = "Active NewObjectNamegqhkrrfhrnrh Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.NewObjectNameicssulymmmgi__c"
+        isActive = true
+        label = "Active NewObjectNameicssulymmmgi Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.NewObjectNameifzwforfinxi__c"
+        isActive = true
+        label = "Active NewObjectNameifzwforfinxi Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.NewObjectNameijiaiwomtydu__c"
+        isActive = true
+        label = "Active NewObjectNameijiaiwomtydu Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.NewObjectNameinpkfvcvxxzy__c"
+        isActive = true
+        label = "Active NewObjectNameinpkfvcvxxzy Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.NewObjectNamelinfybkemylp__c"
+        isActive = true
+        label = "Active NewObjectNamelinfybkemylp Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.NewObjectNamenshdlgggefmz__c"
+        isActive = true
+        label = "Active NewObjectNamenshdlgggefmz Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.NewObjectNamevdlecpucvpua__c"
+        isActive = true
+        label = "Active NewObjectNamevdlecpucvpua Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.NewObjectNamewbcgpbyuvpbq__c"
+        isActive = true
+        label = "Active NewObjectNamewbcgpbyuvpbq Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.NewObjectNamewudbdbeknwjt__c"
+        isActive = true
+        label = "Active NewObjectNamewudbdbeknwjt Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.NewObjectNamezujmboebrlou__c"
+        isActive = true
+        label = "Active NewObjectNamezujmboebrlou Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.Opportunity"
+        isActive = true
+        label = "Active Opportunity Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.OpportunityContactRole"
+        isActive = true
+        label = "Active Opportunity Contact Role Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.Order"
+        isActive = true
+        label = "Active Order Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.PartyConsent"
+        isActive = true
+        label = "Active Party Consent Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.Payment"
+        isActive = true
+        label = "Active Payment Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.PaymentAuthAdjustment"
+        isActive = true
+        label = "Active Payment Authorization Adjustment Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.PaymentAuthorization"
+        isActive = true
+        label = "Active Payment Authorization Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.PaymentGateway"
+        isActive = true
+        label = "Active Payment Gateway Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.PaymentGatewayLog"
+        isActive = true
+        label = "Active Payment Gateway Log Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.PaymentLineInvoice"
+        isActive = true
+        label = "Active Payment Line Invoice Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.Product2"
+        isActive = true
+        label = "Active Product Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.Refund"
+        isActive = true
+        label = "Active Refund Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.RefundLinePayment"
+        isActive = true
+        label = "Active Refund Line Payment Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.ReportAnomalyEventStore"
+        isActive = true
+        label = "Active Report Anomaly Event Store Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.SessionHijackingEventStore"
+        isActive = true
+        label = "Active Session Hijacking Event Store Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.Task"
+        isActive = true
+        label = "Active Task Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestAddDefaultTopicsForObjects__c"
+        isActive = true
+        label = "Active test label Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestAddElementTopicsForObjects__c"
+        isActive = true
+        label = "Active test label Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestDiffObjacgebbgvtxat__c"
+        isActive = true
+        label = "Active TestDiffObjacgebbgvtxat Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestDiffObjbmtgsthmslkc__c"
+        isActive = true
+        label = "Active TestDiffObjbmtgsthmslkc Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestDiffObjbnkjrubosdti__c"
+        isActive = true
+        label = "Active TestDiffObjbnkjrubosdti Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestDiffObjbyxhrzvlynlh__c"
+        isActive = true
+        label = "Active TestDiffObjbyxhrzvlynlh Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestDiffObjbzzppambvbby__c"
+        isActive = true
+        label = "Active TestDiffObjbzzppambvbby Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestDiffObjdwgkomxzsnaz__c"
+        isActive = true
+        label = "Active TestDiffObjdwgkomxzsnaz Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestDiffObjdydpajmpjetk__c"
+        isActive = true
+        label = "Active TestDiffObjdydpajmpjetk Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestDiffObjesxfmctwpaga__c"
+        isActive = true
+        label = "Active TestDiffObjesxfmctwpaga Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestDiffObjexkeeurgiwhq__c"
+        isActive = true
+        label = "Active TestDiffObjexkeeurgiwhq Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestDiffObjffosdslglded__c"
+        isActive = true
+        label = "Active TestDiffObjffosdslglded Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestDiffObjgblmboenarnp__c"
+        isActive = true
+        label = "Active TestDiffObjgblmboenarnp Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestDiffObjhrntpgvuqxin__c"
+        isActive = true
+        label = "Active TestDiffObjhrntpgvuqxin Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestDiffObjhyyfzemivqkh__c"
+        isActive = true
+        label = "Active TestDiffObjhyyfzemivqkh Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestDiffObjirhdpnwbzqgg__c"
+        isActive = true
+        label = "Active TestDiffObjirhdpnwbzqgg Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestDiffObjiyroelmktbwv__c"
+        isActive = true
+        label = "Active TestDiffObjiyroelmktbwv Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestDiffObjjbetpwnnmshp__c"
+        isActive = true
+        label = "Active TestDiffObjjbetpwnnmshp Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestDiffObjjkijrppujone__c"
+        isActive = true
+        label = "Active TestDiffObjjkijrppujone Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestDiffObjlwegclqtfmco__c"
+        isActive = true
+        label = "Active TestDiffObjlwegclqtfmco Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestDiffObjmdmiynczzkss__c"
+        isActive = true
+        label = "Active TestDiffObjmdmiynczzkss Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestDiffObjmjwammfqyoil__c"
+        isActive = true
+        label = "Active TestDiffObjmjwammfqyoil Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestDiffObjnhkfrdawuuoz__c"
+        isActive = true
+        label = "Active TestDiffObjnhkfrdawuuoz Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestDiffObjnkoreokdidyo__c"
+        isActive = true
+        label = "Active TestDiffObjnkoreokdidyo Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestDiffObjoegjezmeiwfr__c"
+        isActive = true
+        label = "Active TestDiffObjoegjezmeiwfr Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestDiffObjoiiaaavotgqn__c"
+        isActive = true
+        label = "Active TestDiffObjoiiaaavotgqn Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestDiffObjotslufgqgxdb__c"
+        isActive = true
+        label = "Active TestDiffObjotslufgqgxdb Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestDiffObjpfvhkgeeniws__c"
+        isActive = true
+        label = "Active TestDiffObjpfvhkgeeniws Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestDiffObjqcxkygxrwdey__c"
+        isActive = true
+        label = "Active TestDiffObjqcxkygxrwdey Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestDiffObjqdswoesxncyl__c"
+        isActive = true
+        label = "Active TestDiffObjqdswoesxncyl Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestDiffObjrhyrfstirgpj__c"
+        isActive = true
+        label = "Active TestDiffObjrhyrfstirgpj Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestDiffObjsrmpsunorfkr__c"
+        isActive = true
+        label = "Active TestDiffObjsrmpsunorfkr Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestDiffObjtuctnctcavrf__c"
+        isActive = true
+        label = "Active TestDiffObjtuctnctcavrf Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestDiffObjvffgteaitnct__c"
+        isActive = true
+        label = "Active TestDiffObjvffgteaitnct Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestDiffObjwjrqxdldeqkw__c"
+        isActive = true
+        label = "Active TestDiffObjwjrqxdldeqkw Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestDiffObjwuencnvedpws__c"
+        isActive = true
+        label = "Active TestDiffObjwuencnvedpws Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestDiffObjxkucnylhcjfx__c"
+        isActive = true
+        label = "Active TestDiffObjxkucnylhcjfx Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestDiffObjxrqjglzxktcm__c"
+        isActive = true
+        label = "Active TestDiffObjxrqjglzxktcm Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestDiffObjzhtpousmqfwk__c"
+        isActive = true
+        label = "Active TestDiffObjzhtpousmqfwk Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestModifyCustomAnnotations__c"
+        isActive = true
+        label = "Active test label 2 Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestModifyCustom__c"
+        isActive = true
+        label = "Active test label Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestModifyFieldAndAnnotation__c"
+        isActive = true
+        label = "Active Object Updated Label Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestModifyObjectPermissions__c"
+        isActive = true
+        label = "Active test label Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestObjacgebbgvtxat__c"
+        isActive = true
+        label = "Active TestObjacgebbgvtxat Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestObjbmtgsthmslkc__c"
+        isActive = true
+        label = "Active TestObjbmtgsthmslkc Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestObjbnkjrubosdti__c"
+        isActive = true
+        label = "Active TestObjbnkjrubosdti Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestObjbyxhrzvlynlh__c"
+        isActive = true
+        label = "Active TestObjbyxhrzvlynlh Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestObjbzzppambvbby__c"
+        isActive = true
+        label = "Active TestObjbzzppambvbby Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestObjdwgkomxzsnaz__c"
+        isActive = true
+        label = "Active TestObjdwgkomxzsnaz Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestObjdydpajmpjetk__c"
+        isActive = true
+        label = "Active TestObjdydpajmpjetk Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestObjesxfmctwpaga__c"
+        isActive = true
+        label = "Active TestObjesxfmctwpaga Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestObjexkeeurgiwhq__c"
+        isActive = true
+        label = "Active TestObjexkeeurgiwhq Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestObjffosdslglded__c"
+        isActive = true
+        label = "Active TestObjffosdslglded Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestObjgblmboenarnp__c"
+        isActive = true
+        label = "Active TestObjgblmboenarnp Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestObjhrntpgvuqxin__c"
+        isActive = true
+        label = "Active TestObjhrntpgvuqxin Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestObjhyyfzemivqkh__c"
+        isActive = true
+        label = "Active TestObjhyyfzemivqkh Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestObjirhdpnwbzqgg__c"
+        isActive = true
+        label = "Active TestObjirhdpnwbzqgg Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestObjiyroelmktbwv__c"
+        isActive = true
+        label = "Active TestObjiyroelmktbwv Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestObjjbetpwnnmshp__c"
+        isActive = true
+        label = "Active TestObjjbetpwnnmshp Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestObjjkijrppujone__c"
+        isActive = true
+        label = "Active TestObjjkijrppujone Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestObjlwegclqtfmco__c"
+        isActive = true
+        label = "Active TestObjlwegclqtfmco Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestObjmdmiynczzkss__c"
+        isActive = true
+        label = "Active TestObjmdmiynczzkss Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestObjmjwammfqyoil__c"
+        isActive = true
+        label = "Active TestObjmjwammfqyoil Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestObjnhkfrdawuuoz__c"
+        isActive = true
+        label = "Active TestObjnhkfrdawuuoz Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestObjnkoreokdidyo__c"
+        isActive = true
+        label = "Active TestObjnkoreokdidyo Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestObjoegjezmeiwfr__c"
+        isActive = true
+        label = "Active TestObjoegjezmeiwfr Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestObjoiiaaavotgqn__c"
+        isActive = true
+        label = "Active TestObjoiiaaavotgqn Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestObjotslufgqgxdb__c"
+        isActive = true
+        label = "Active TestObjotslufgqgxdb Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestObjpfvhkgeeniws__c"
+        isActive = true
+        label = "Active TestObjpfvhkgeeniws Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestObjqcxkygxrwdey__c"
+        isActive = true
+        label = "Active TestObjqcxkygxrwdey Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestObjqdswoesxncyl__c"
+        isActive = true
+        label = "Active TestObjqdswoesxncyl Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestObjrhyrfstirgpj__c"
+        isActive = true
+        label = "Active TestObjrhyrfstirgpj Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestObjsrmpsunorfkr__c"
+        isActive = true
+        label = "Active TestObjsrmpsunorfkr Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestObjtuctnctcavrf__c"
+        isActive = true
+        label = "Active TestObjtuctnctcavrf Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestObjvffgteaitnct__c"
+        isActive = true
+        label = "Active TestObjvffgteaitnct Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestObjwjrqxdldeqkw__c"
+        isActive = true
+        label = "Active TestObjwjrqxdldeqkw Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestObjwuencnvedpws__c"
+        isActive = true
+        label = "Active TestObjwuencnvedpws Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestObjxkucnylhcjfx__c"
+        isActive = true
+        label = "Active TestObjxkucnylhcjfx Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestObjzhtpousmqfwk__c"
+        isActive = true
+        label = "Active TestObjzhtpousmqfwk Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestSyncFromAccountObjdydpajmpjetk__c"
+        isActive = true
+        label = "Active TestSyncFromAccountObjdydpajmpjetk Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestSyncFromServiceObjeyelkkyjdxtv__c"
+        isActive = true
+        label = "Active TestSyncFromServiceObjeyelkkyjdxtv Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestSyncFromServiceObjgblmboenarnp__c"
+        isActive = true
+        label = "Active TestSyncFromServiceObjgblmboenarnp Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestSyncFromServiceObjkhbggockjnok__c"
+        isActive = true
+        label = "Active TestSyncFromServiceObjkhbggockjnok Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestSyncFromServiceObjlwegclqtfmco__c"
+        isActive = true
+        label = "Active TestSyncFromServiceObjlwegclqtfmco Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestSyncFromServiceObjmdmiynczzkss__c"
+        isActive = true
+        label = "Active TestSyncFromServiceObjmdmiynczzkss Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestSyncFromServiceObjmjwammfqyoil__c"
+        isActive = true
+        label = "Active TestSyncFromServiceObjmjwammfqyoil Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestSyncFromServiceObjnfhjjjtavvdc__c"
+        isActive = true
+        label = "Active TestSyncFromServiceObjnfhjjjtavvdc Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestSyncFromServiceObjuybwdxoflmcc__c"
+        isActive = true
+        label = "Active TestSyncFromServiceObjuybwdxoflmcc Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.TestSyncFromServiceObjwszykpitjnqc__c"
+        isActive = true
+        label = "Active TestSyncFromServiceObjwszykpitjnqc Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.ThreatDetectionFeedback"
+        isActive = true
+        label = "Active Threat Detection Feedback Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.User"
+        isActive = true
+        label = "Active User Tab"
+        default = false
+      },
+    ]
+  }
+}

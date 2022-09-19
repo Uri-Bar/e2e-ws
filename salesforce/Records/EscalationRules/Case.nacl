@@ -1,0 +1,8 @@
+salesforce.EscalationRules Case {
+  fullName = "Case"
+  escalationRule = {
+    fullName = "Standard"
+    active = true
+    
+  }
+}

@@ -1,0 +1,1314 @@
+type salesforce.Macro {
+  salesforce.Picklist StartingContext {
+    valueSet = [
+      {
+        fullName = "Account"
+        isActive = true
+        label = "Account"
+        default = false
+      },
+      {
+        fullName = "AlternativePaymentMethod"
+        isActive = true
+        label = "Alternative Payment Method"
+        default = false
+      },
+      {
+        fullName = "ApiAnomalyEventStore"
+        isActive = true
+        label = "API Anomaly Event Store"
+        default = false
+      },
+      {
+        fullName = "Asset"
+        isActive = true
+        label = "Asset"
+        default = false
+      },
+      {
+        fullName = "AssetRelationship"
+        isActive = true
+        label = "Asset Relationship"
+        default = false
+      },
+      {
+        fullName = "AuthorizationForm"
+        isActive = true
+        label = "Authorization Form"
+        default = false
+      },
+      {
+        fullName = "AuthorizationFormConsent"
+        isActive = true
+        label = "Authorization Form Consent"
+        default = false
+      },
+      {
+        fullName = "AuthorizationFormDataUse"
+        isActive = true
+        label = "Authorization Form Data Use"
+        default = false
+      },
+      {
+        fullName = "AuthorizationFormText"
+        isActive = true
+        label = "Authorization Form Text"
+        default = false
+      },
+      {
+        fullName = "CardPaymentMethod"
+        isActive = true
+        label = "Card Payment Method"
+        default = false
+      },
+      {
+        fullName = "Case"
+        isActive = true
+        label = "Case"
+        default = false
+      },
+      {
+        fullName = "CommonObjectNacldljdcmhzyzer__c"
+        isActive = true
+        label = "CommonObjectNacldljdcmhzyzer"
+        default = false
+      },
+      {
+        fullName = "CommonObjectNacljfsqhxknzwuc__c"
+        isActive = true
+        label = "CommonObjectNacljfsqhxknzwuc"
+        default = false
+      },
+      {
+        fullName = "CommonObjectNaclkputlsvppigs__c"
+        isActive = true
+        label = "CommonObjectNaclkputlsvppigs"
+        default = false
+      },
+      {
+        fullName = "CommonObjectNaclmdkxrdehpjgg__c"
+        isActive = true
+        label = "CommonObjectNaclmdkxrdehpjgg"
+        default = false
+      },
+      {
+        fullName = "CommonObjectNaclxrqjglzxktcm__c"
+        isActive = true
+        label = "CommonObjectNaclxrqjglzxktcm"
+        default = false
+      },
+      {
+        fullName = "CommSubscription"
+        isActive = true
+        label = "Communication Subscription"
+        default = false
+      },
+      {
+        fullName = "CommSubscriptionChannelType"
+        isActive = true
+        label = "Communication Subscription Channel Type"
+        default = false
+      },
+      {
+        fullName = "CommSubscriptionConsent"
+        isActive = true
+        label = "Communication Subscription Consent"
+        default = false
+      },
+      {
+        fullName = "CommSubscriptionTiming"
+        isActive = true
+        label = "Communication Subscription Timing"
+        default = false
+      },
+      {
+        fullName = "ConsumptionSchedule"
+        isActive = true
+        label = "Consumption Schedule"
+        default = false
+      },
+      {
+        fullName = "Contact"
+        isActive = true
+        label = "Contact"
+        default = false
+      },
+      {
+        fullName = "ContactPointAddress"
+        isActive = true
+        label = "Contact Point Address"
+        default = false
+      },
+      {
+        fullName = "ContactPointEmail"
+        isActive = true
+        label = "Contact Point Email"
+        default = false
+      },
+      {
+        fullName = "ContactPointPhone"
+        isActive = true
+        label = "Contact Point Phone"
+        default = false
+      },
+      {
+        fullName = "Contract"
+        isActive = true
+        label = "Contract"
+        default = false
+      },
+      {
+        fullName = "CredentialStuffingEventStore"
+        isActive = true
+        label = "Credential Stuffing Event Store"
+        default = false
+      },
+      {
+        fullName = "CreditMemo"
+        isActive = true
+        label = "Credit Memo"
+        default = false
+      },
+      {
+        fullName = "CreditMemoInvApplication"
+        isActive = true
+        label = "Credit Memo Invoice Application"
+        default = false
+      },
+      {
+        fullName = "CreditMemoLine"
+        isActive = true
+        label = "Credit Memo Line"
+        default = false
+      },
+      {
+        fullName = "DataUsePurpose"
+        isActive = true
+        label = "Data Use Purpose"
+        default = false
+      },
+      {
+        fullName = "DigitalWallet"
+        isActive = true
+        label = "Digital Wallet"
+        default = false
+      },
+      {
+        fullName = "EngagementChannelType"
+        isActive = true
+        label = "Engagement Channel Type"
+        default = false
+      },
+      {
+        fullName = "Env1ObjectNacldljdcmhzyzer__c"
+        isActive = true
+        label = "Env1ObjectNacldljdcmhzyzer"
+        default = false
+      },
+      {
+        fullName = "Env1ObjectNacljfsqhxknzwuc__c"
+        isActive = true
+        label = "Env1ObjectNacljfsqhxknzwuc"
+        default = false
+      },
+      {
+        fullName = "Env1ObjectNaclmdkxrdehpjgg__c"
+        isActive = true
+        label = "Env1ObjectNaclmdkxrdehpjgg"
+        default = false
+      },
+      {
+        fullName = "Env1TestObjbzzppambvbby__c"
+        isActive = true
+        label = "Env1TestObjbzzppambvbby"
+        default = false
+      },
+      {
+        fullName = "Env1TestObjdydpajmpjetk__c"
+        isActive = true
+        label = "Env1TestObjdydpajmpjetk"
+        default = false
+      },
+      {
+        fullName = "Env1TestObjesxfmctwpaga__c"
+        isActive = true
+        label = "Env1TestObjesxfmctwpaga"
+        default = false
+      },
+      {
+        fullName = "Env1TestObjgblmboenarnp__c"
+        isActive = true
+        label = "Env1TestObjgblmboenarnp"
+        default = false
+      },
+      {
+        fullName = "Env1TestObjirhdpnwbzqgg__c"
+        isActive = true
+        label = "Env1TestObjirhdpnwbzqgg"
+        default = false
+      },
+      {
+        fullName = "Env1TestObjjbetpwnnmshp__c"
+        isActive = true
+        label = "Env1TestObjjbetpwnnmshp"
+        default = false
+      },
+      {
+        fullName = "Env1TestObjjkijrppujone__c"
+        isActive = true
+        label = "Env1TestObjjkijrppujone"
+        default = false
+      },
+      {
+        fullName = "Env1TestObjlwegclqtfmco__c"
+        isActive = true
+        label = "Env1TestObjlwegclqtfmco"
+        default = false
+      },
+      {
+        fullName = "Env1TestObjmdmiynczzkss__c"
+        isActive = true
+        label = "Env1TestObjmdmiynczzkss"
+        default = false
+      },
+      {
+        fullName = "Env1TestObjnhkfrdawuuoz__c"
+        isActive = true
+        label = "Env1TestObjnhkfrdawuuoz"
+        default = false
+      },
+      {
+        fullName = "Env1TestObjnkoreokdidyo__c"
+        isActive = true
+        label = "Env1TestObjnkoreokdidyo"
+        default = false
+      },
+      {
+        fullName = "Env1TestObjoegjezmeiwfr__c"
+        isActive = true
+        label = "Env1TestObjoegjezmeiwfr"
+        default = false
+      },
+      {
+        fullName = "Env1TestObjoiiaaavotgqn__c"
+        isActive = true
+        label = "Env1TestObjoiiaaavotgqn"
+        default = false
+      },
+      {
+        fullName = "Env1TestObjpfvhkgeeniws__c"
+        isActive = true
+        label = "Env1TestObjpfvhkgeeniws"
+        default = false
+      },
+      {
+        fullName = "Env1TestObjqdswoesxncyl__c"
+        isActive = true
+        label = "Env1TestObjqdswoesxncyl"
+        default = false
+      },
+      {
+        fullName = "Env1TestObjtuctnctcavrf__c"
+        isActive = true
+        label = "Env1TestObjtuctnctcavrf"
+        default = false
+      },
+      {
+        fullName = "Env1TestObjwjrqxdldeqkw__c"
+        isActive = true
+        label = "Env1TestObjwjrqxdldeqkw"
+        default = false
+      },
+      {
+        fullName = "Env1TestObjzhtpousmqfwk__c"
+        isActive = true
+        label = "Env1TestObjzhtpousmqfwk"
+        default = false
+      },
+      {
+        fullName = "Env2ObjectNaclkputlsvppigs__c"
+        isActive = true
+        label = "Env2ObjectNaclkputlsvppigs"
+        default = false
+      },
+      {
+        fullName = "Env2ObjectNaclxrqjglzxktcm__c"
+        isActive = true
+        label = "Env2ObjectNaclxrqjglzxktcm"
+        default = false
+      },
+      {
+        fullName = "Env2TestObjacgebbgvtxat__c"
+        isActive = true
+        label = "Env2TestObjacgebbgvtxat"
+        default = false
+      },
+      {
+        fullName = "Env2TestObjbmtgsthmslkc__c"
+        isActive = true
+        label = "Env2TestObjbmtgsthmslkc"
+        default = false
+      },
+      {
+        fullName = "Env2TestObjbnkjrubosdti__c"
+        isActive = true
+        label = "Env2TestObjbnkjrubosdti"
+        default = false
+      },
+      {
+        fullName = "Env2TestObjbyxhrzvlynlh__c"
+        isActive = true
+        label = "Env2TestObjbyxhrzvlynlh"
+        default = false
+      },
+      {
+        fullName = "Env2TestObjdwgkomxzsnaz__c"
+        isActive = true
+        label = "Env2TestObjdwgkomxzsnaz"
+        default = false
+      },
+      {
+        fullName = "Env2TestObjexkeeurgiwhq__c"
+        isActive = true
+        label = "Env2TestObjexkeeurgiwhq"
+        default = false
+      },
+      {
+        fullName = "Env2TestObjffosdslglded__c"
+        isActive = true
+        label = "Env2TestObjffosdslglded"
+        default = false
+      },
+      {
+        fullName = "Env2TestObjhrntpgvuqxin__c"
+        isActive = true
+        label = "Env2TestObjhrntpgvuqxin"
+        default = false
+      },
+      {
+        fullName = "Env2TestObjhyyfzemivqkh__c"
+        isActive = true
+        label = "Env2TestObjhyyfzemivqkh"
+        default = false
+      },
+      {
+        fullName = "Env2TestObjiyroelmktbwv__c"
+        isActive = true
+        label = "Env2TestObjiyroelmktbwv"
+        default = false
+      },
+      {
+        fullName = "Env2TestObjmjwammfqyoil__c"
+        isActive = true
+        label = "Env2TestObjmjwammfqyoil"
+        default = false
+      },
+      {
+        fullName = "Env2TestObjotslufgqgxdb__c"
+        isActive = true
+        label = "Env2TestObjotslufgqgxdb"
+        default = false
+      },
+      {
+        fullName = "Env2TestObjqcxkygxrwdey__c"
+        isActive = true
+        label = "Env2TestObjqcxkygxrwdey"
+        default = false
+      },
+      {
+        fullName = "Env2TestObjqnllqyarunbx__c"
+        isActive = true
+        label = "Env2TestObjqnllqyarunbx"
+        default = false
+      },
+      {
+        fullName = "Env2TestObjrhyrfstirgpj__c"
+        isActive = true
+        label = "Env2TestObjrhyrfstirgpj"
+        default = false
+      },
+      {
+        fullName = "Env2TestObjsrmpsunorfkr__c"
+        isActive = true
+        label = "Env2TestObjsrmpsunorfkr"
+        default = false
+      },
+      {
+        fullName = "Env2TestObjvffgteaitnct__c"
+        isActive = true
+        label = "Env2TestObjvffgteaitnct"
+        default = false
+      },
+      {
+        fullName = "Env2TestObjwuencnvedpws__c"
+        isActive = true
+        label = "Env2TestObjwuencnvedpws"
+        default = false
+      },
+      {
+        fullName = "Env2TestObjxkucnylhcjfx__c"
+        isActive = true
+        label = "Env2TestObjxkucnylhcjfx"
+        default = false
+      },
+      {
+        fullName = "Env2TestObjxrqjglzxktcm__c"
+        isActive = true
+        label = "Env2TestObjxrqjglzxktcm"
+        default = false
+      },
+      {
+        fullName = "Event"
+        isActive = true
+        label = "Event"
+        default = false
+      },
+      {
+        fullName = "FeedItem"
+        isActive = true
+        label = "Feed Item"
+        default = false
+      },
+      {
+        fullName = "FinanceBalanceSnapshot"
+        isActive = true
+        label = "Finance Balance Snapshot"
+        default = false
+      },
+      {
+        fullName = "FinanceTransaction"
+        isActive = true
+        label = "Finance Transaction"
+        default = false
+      },
+      {
+        fullName = "CollaborationGroup"
+        isActive = true
+        label = "Group"
+        default = false
+      },
+      {
+        fullName = "Image"
+        isActive = true
+        label = "Image"
+        default = false
+      },
+      {
+        fullName = "Individual"
+        isActive = true
+        label = "Individual"
+        default = false
+      },
+      {
+        fullName = "Invoice"
+        isActive = true
+        label = "Invoice"
+        default = false
+      },
+      {
+        fullName = "InvoiceLine"
+        isActive = true
+        label = "Invoice Line"
+        default = false
+      },
+      {
+        fullName = "Lead"
+        isActive = true
+        label = "Lead"
+        default = false
+      },
+      {
+        fullName = "LegalEntity"
+        isActive = true
+        label = "Legal Entity"
+        default = false
+      },
+      {
+        fullName = "Location"
+        isActive = true
+        label = "Location"
+        default = false
+      },
+      {
+        fullName = "LocationGroup"
+        isActive = true
+        label = "Location Group"
+        default = false
+      },
+      {
+        fullName = "MessagingSession"
+        isActive = true
+        label = "Messaging Session"
+        default = false
+      },
+      {
+        fullName = "MessagingEndUser"
+        isActive = true
+        label = "Messaging User"
+        default = false
+      },
+      {
+        fullName = "NewInstanceNamewkgfcascdcwq__c"
+        isActive = true
+        label = "NewInstanceNamewkgfcascdcwq"
+        default = false
+      },
+      {
+        fullName = "NewInstanceNamezawznhpfznsq__c"
+        isActive = true
+        label = "NewInstanceNamezawznhpfznsq"
+        default = false
+      },
+      {
+        fullName = "NewObjectNameabfgiehawpmx__c"
+        isActive = true
+        label = "NewObjectNameabfgiehawpmx"
+        default = false
+      },
+      {
+        fullName = "NewObjectNamebnyacugcvovl__c"
+        isActive = true
+        label = "NewObjectNamebnyacugcvovl"
+        default = false
+      },
+      {
+        fullName = "NewObjectNamecfbiuyzjptyb__c"
+        isActive = true
+        label = "NewObjectNamecfbiuyzjptyb"
+        default = false
+      },
+      {
+        fullName = "NewObjectNamecfjniytvjwty__c"
+        isActive = true
+        label = "NewObjectNamecfjniytvjwty"
+        default = false
+      },
+      {
+        fullName = "NewObjectNamecuympfunnkyb__c"
+        isActive = true
+        label = "NewObjectNamecuympfunnkyb"
+        default = false
+      },
+      {
+        fullName = "NewObjectNamefyuyjkkrcgbr__c"
+        isActive = true
+        label = "NewObjectNamefyuyjkkrcgbr"
+        default = false
+      },
+      {
+        fullName = "NewObjectNamegqhkrrfhrnrh__c"
+        isActive = true
+        label = "NewObjectNamegqhkrrfhrnrh"
+        default = false
+      },
+      {
+        fullName = "NewObjectNameicssulymmmgi__c"
+        isActive = true
+        label = "NewObjectNameicssulymmmgi"
+        default = false
+      },
+      {
+        fullName = "NewObjectNameifzwforfinxi__c"
+        isActive = true
+        label = "NewObjectNameifzwforfinxi"
+        default = false
+      },
+      {
+        fullName = "NewObjectNameijiaiwomtydu__c"
+        isActive = true
+        label = "NewObjectNameijiaiwomtydu"
+        default = false
+      },
+      {
+        fullName = "NewObjectNameinpkfvcvxxzy__c"
+        isActive = true
+        label = "NewObjectNameinpkfvcvxxzy"
+        default = false
+      },
+      {
+        fullName = "NewObjectNamelinfybkemylp__c"
+        isActive = true
+        label = "NewObjectNamelinfybkemylp"
+        default = false
+      },
+      {
+        fullName = "NewObjectNamenshdlgggefmz__c"
+        isActive = true
+        label = "NewObjectNamenshdlgggefmz"
+        default = false
+      },
+      {
+        fullName = "NewObjectNamevdlecpucvpua__c"
+        isActive = true
+        label = "NewObjectNamevdlecpucvpua"
+        default = false
+      },
+      {
+        fullName = "NewObjectNamewbcgpbyuvpbq__c"
+        isActive = true
+        label = "NewObjectNamewbcgpbyuvpbq"
+        default = false
+      },
+      {
+        fullName = "NewObjectNamewudbdbeknwjt__c"
+        isActive = true
+        label = "NewObjectNamewudbdbeknwjt"
+        default = false
+      },
+      {
+        fullName = "NewObjectNamezujmboebrlou__c"
+        isActive = true
+        label = "NewObjectNamezujmboebrlou"
+        default = false
+      },
+      {
+        fullName = "TestModifyFieldAndAnnotation__c"
+        isActive = true
+        label = "Object Updated Label"
+        default = false
+      },
+      {
+        fullName = "Opportunity"
+        isActive = true
+        label = "Opportunity"
+        default = false
+      },
+      {
+        fullName = "OpportunityContactRole"
+        isActive = true
+        label = "Opportunity Contact Role"
+        default = false
+      },
+      {
+        fullName = "Order"
+        isActive = true
+        label = "Order"
+        default = false
+      },
+      {
+        fullName = "PartyConsent"
+        isActive = true
+        label = "Party Consent"
+        default = false
+      },
+      {
+        fullName = "Payment"
+        isActive = true
+        label = "Payment"
+        default = false
+      },
+      {
+        fullName = "PaymentAuthorization"
+        isActive = true
+        label = "Payment Authorization"
+        default = false
+      },
+      {
+        fullName = "PaymentAuthAdjustment"
+        isActive = true
+        label = "Payment Authorization Adjustment"
+        default = false
+      },
+      {
+        fullName = "PaymentGateway"
+        isActive = true
+        label = "Payment Gateway"
+        default = false
+      },
+      {
+        fullName = "PaymentGatewayLog"
+        isActive = true
+        label = "Payment Gateway Log"
+        default = false
+      },
+      {
+        fullName = "PaymentLineInvoice"
+        isActive = true
+        label = "Payment Line Invoice"
+        default = false
+      },
+      {
+        fullName = "Product2"
+        isActive = true
+        label = "Product"
+        default = false
+      },
+      {
+        fullName = "ContentDocumentListViewMapping"
+        isActive = true
+        label = "Quip Document from List View"
+        default = false
+      },
+      {
+        fullName = "Refund"
+        isActive = true
+        label = "Refund"
+        default = false
+      },
+      {
+        fullName = "RefundLinePayment"
+        isActive = true
+        label = "Refund Line Payment"
+        default = false
+      },
+      {
+        fullName = "ReportAnomalyEventStore"
+        isActive = true
+        label = "Report Anomaly Event Store"
+        default = false
+      },
+      {
+        fullName = "SessionHijackingEventStore"
+        isActive = true
+        label = "Session Hijacking Event Store"
+        default = false
+      },
+      {
+        fullName = "Task"
+        isActive = true
+        label = "Task"
+        default = false
+      },
+      {
+        fullName = "TestDiffObjacgebbgvtxat__c"
+        isActive = true
+        label = "TestDiffObjacgebbgvtxat"
+        default = false
+      },
+      {
+        fullName = "TestDiffObjbmtgsthmslkc__c"
+        isActive = true
+        label = "TestDiffObjbmtgsthmslkc"
+        default = false
+      },
+      {
+        fullName = "TestDiffObjbnkjrubosdti__c"
+        isActive = true
+        label = "TestDiffObjbnkjrubosdti"
+        default = false
+      },
+      {
+        fullName = "TestDiffObjbyxhrzvlynlh__c"
+        isActive = true
+        label = "TestDiffObjbyxhrzvlynlh"
+        default = false
+      },
+      {
+        fullName = "TestDiffObjbzzppambvbby__c"
+        isActive = true
+        label = "TestDiffObjbzzppambvbby"
+        default = false
+      },
+      {
+        fullName = "TestDiffObjdwgkomxzsnaz__c"
+        isActive = true
+        label = "TestDiffObjdwgkomxzsnaz"
+        default = false
+      },
+      {
+        fullName = "TestDiffObjdydpajmpjetk__c"
+        isActive = true
+        label = "TestDiffObjdydpajmpjetk"
+        default = false
+      },
+      {
+        fullName = "TestDiffObjesxfmctwpaga__c"
+        isActive = true
+        label = "TestDiffObjesxfmctwpaga"
+        default = false
+      },
+      {
+        fullName = "TestDiffObjexkeeurgiwhq__c"
+        isActive = true
+        label = "TestDiffObjexkeeurgiwhq"
+        default = false
+      },
+      {
+        fullName = "TestDiffObjffosdslglded__c"
+        isActive = true
+        label = "TestDiffObjffosdslglded"
+        default = false
+      },
+      {
+        fullName = "TestDiffObjgblmboenarnp__c"
+        isActive = true
+        label = "TestDiffObjgblmboenarnp"
+        default = false
+      },
+      {
+        fullName = "TestDiffObjhrntpgvuqxin__c"
+        isActive = true
+        label = "TestDiffObjhrntpgvuqxin"
+        default = false
+      },
+      {
+        fullName = "TestDiffObjhyyfzemivqkh__c"
+        isActive = true
+        label = "TestDiffObjhyyfzemivqkh"
+        default = false
+      },
+      {
+        fullName = "TestDiffObjirhdpnwbzqgg__c"
+        isActive = true
+        label = "TestDiffObjirhdpnwbzqgg"
+        default = false
+      },
+      {
+        fullName = "TestDiffObjiyroelmktbwv__c"
+        isActive = true
+        label = "TestDiffObjiyroelmktbwv"
+        default = false
+      },
+      {
+        fullName = "TestDiffObjjbetpwnnmshp__c"
+        isActive = true
+        label = "TestDiffObjjbetpwnnmshp"
+        default = false
+      },
+      {
+        fullName = "TestDiffObjjkijrppujone__c"
+        isActive = true
+        label = "TestDiffObjjkijrppujone"
+        default = false
+      },
+      {
+        fullName = "TestDiffObjlwegclqtfmco__c"
+        isActive = true
+        label = "TestDiffObjlwegclqtfmco"
+        default = false
+      },
+      {
+        fullName = "TestDiffObjmdmiynczzkss__c"
+        isActive = true
+        label = "TestDiffObjmdmiynczzkss"
+        default = false
+      },
+      {
+        fullName = "TestDiffObjmjwammfqyoil__c"
+        isActive = true
+        label = "TestDiffObjmjwammfqyoil"
+        default = false
+      },
+      {
+        fullName = "TestDiffObjnhkfrdawuuoz__c"
+        isActive = true
+        label = "TestDiffObjnhkfrdawuuoz"
+        default = false
+      },
+      {
+        fullName = "TestDiffObjnkoreokdidyo__c"
+        isActive = true
+        label = "TestDiffObjnkoreokdidyo"
+        default = false
+      },
+      {
+        fullName = "TestDiffObjoegjezmeiwfr__c"
+        isActive = true
+        label = "TestDiffObjoegjezmeiwfr"
+        default = false
+      },
+      {
+        fullName = "TestDiffObjoiiaaavotgqn__c"
+        isActive = true
+        label = "TestDiffObjoiiaaavotgqn"
+        default = false
+      },
+      {
+        fullName = "TestDiffObjotslufgqgxdb__c"
+        isActive = true
+        label = "TestDiffObjotslufgqgxdb"
+        default = false
+      },
+      {
+        fullName = "TestDiffObjpfvhkgeeniws__c"
+        isActive = true
+        label = "TestDiffObjpfvhkgeeniws"
+        default = false
+      },
+      {
+        fullName = "TestDiffObjqcxkygxrwdey__c"
+        isActive = true
+        label = "TestDiffObjqcxkygxrwdey"
+        default = false
+      },
+      {
+        fullName = "TestDiffObjqdswoesxncyl__c"
+        isActive = true
+        label = "TestDiffObjqdswoesxncyl"
+        default = false
+      },
+      {
+        fullName = "TestDiffObjrhyrfstirgpj__c"
+        isActive = true
+        label = "TestDiffObjrhyrfstirgpj"
+        default = false
+      },
+      {
+        fullName = "TestDiffObjsrmpsunorfkr__c"
+        isActive = true
+        label = "TestDiffObjsrmpsunorfkr"
+        default = false
+      },
+      {
+        fullName = "TestDiffObjtuctnctcavrf__c"
+        isActive = true
+        label = "TestDiffObjtuctnctcavrf"
+        default = false
+      },
+      {
+        fullName = "TestDiffObjvffgteaitnct__c"
+        isActive = true
+        label = "TestDiffObjvffgteaitnct"
+        default = false
+      },
+      {
+        fullName = "TestDiffObjwjrqxdldeqkw__c"
+        isActive = true
+        label = "TestDiffObjwjrqxdldeqkw"
+        default = false
+      },
+      {
+        fullName = "TestDiffObjwuencnvedpws__c"
+        isActive = true
+        label = "TestDiffObjwuencnvedpws"
+        default = false
+      },
+      {
+        fullName = "TestDiffObjxkucnylhcjfx__c"
+        isActive = true
+        label = "TestDiffObjxkucnylhcjfx"
+        default = false
+      },
+      {
+        fullName = "TestDiffObjxrqjglzxktcm__c"
+        isActive = true
+        label = "TestDiffObjxrqjglzxktcm"
+        default = false
+      },
+      {
+        fullName = "TestDiffObjzhtpousmqfwk__c"
+        isActive = true
+        label = "TestDiffObjzhtpousmqfwk"
+        default = false
+      },
+      {
+        fullName = "TestModifyObjectPermissions__c"
+        isActive = true
+        label = "test label"
+        default = false
+      },
+      {
+        fullName = "TestAddDefaultTopicsForObjects__c"
+        isActive = true
+        label = "test label"
+        default = false
+      },
+      {
+        fullName = "TestAddElementTopicsForObjects__c"
+        isActive = true
+        label = "test label"
+        default = false
+      },
+      {
+        fullName = "TestModifyCustom__c"
+        isActive = true
+        label = "test label"
+        default = false
+      },
+      {
+        fullName = "TestModifyCustomAnnotations__c"
+        isActive = true
+        label = "test label 2"
+        default = false
+      },
+      {
+        fullName = "TestObjacgebbgvtxat__c"
+        isActive = true
+        label = "TestObjacgebbgvtxat"
+        default = false
+      },
+      {
+        fullName = "TestObjbmtgsthmslkc__c"
+        isActive = true
+        label = "TestObjbmtgsthmslkc"
+        default = false
+      },
+      {
+        fullName = "TestObjbnkjrubosdti__c"
+        isActive = true
+        label = "TestObjbnkjrubosdti"
+        default = false
+      },
+      {
+        fullName = "TestObjbyxhrzvlynlh__c"
+        isActive = true
+        label = "TestObjbyxhrzvlynlh"
+        default = false
+      },
+      {
+        fullName = "TestObjbzzppambvbby__c"
+        isActive = true
+        label = "TestObjbzzppambvbby"
+        default = false
+      },
+      {
+        fullName = "TestObjdwgkomxzsnaz__c"
+        isActive = true
+        label = "TestObjdwgkomxzsnaz"
+        default = false
+      },
+      {
+        fullName = "TestObjdydpajmpjetk__c"
+        isActive = true
+        label = "TestObjdydpajmpjetk"
+        default = false
+      },
+      {
+        fullName = "TestObjesxfmctwpaga__c"
+        isActive = true
+        label = "TestObjesxfmctwpaga"
+        default = false
+      },
+      {
+        fullName = "TestObjexkeeurgiwhq__c"
+        isActive = true
+        label = "TestObjexkeeurgiwhq"
+        default = false
+      },
+      {
+        fullName = "TestObjffosdslglded__c"
+        isActive = true
+        label = "TestObjffosdslglded"
+        default = false
+      },
+      {
+        fullName = "TestObjgblmboenarnp__c"
+        isActive = true
+        label = "TestObjgblmboenarnp"
+        default = false
+      },
+      {
+        fullName = "TestObjhrntpgvuqxin__c"
+        isActive = true
+        label = "TestObjhrntpgvuqxin"
+        default = false
+      },
+      {
+        fullName = "TestObjhyyfzemivqkh__c"
+        isActive = true
+        label = "TestObjhyyfzemivqkh"
+        default = false
+      },
+      {
+        fullName = "TestObjirhdpnwbzqgg__c"
+        isActive = true
+        label = "TestObjirhdpnwbzqgg"
+        default = false
+      },
+      {
+        fullName = "TestObjiyroelmktbwv__c"
+        isActive = true
+        label = "TestObjiyroelmktbwv"
+        default = false
+      },
+      {
+        fullName = "TestObjjbetpwnnmshp__c"
+        isActive = true
+        label = "TestObjjbetpwnnmshp"
+        default = false
+      },
+      {
+        fullName = "TestObjjkijrppujone__c"
+        isActive = true
+        label = "TestObjjkijrppujone"
+        default = false
+      },
+      {
+        fullName = "TestObjlwegclqtfmco__c"
+        isActive = true
+        label = "TestObjlwegclqtfmco"
+        default = false
+      },
+      {
+        fullName = "TestObjmdmiynczzkss__c"
+        isActive = true
+        label = "TestObjmdmiynczzkss"
+        default = false
+      },
+      {
+        fullName = "TestObjmjwammfqyoil__c"
+        isActive = true
+        label = "TestObjmjwammfqyoil"
+        default = false
+      },
+      {
+        fullName = "TestObjnhkfrdawuuoz__c"
+        isActive = true
+        label = "TestObjnhkfrdawuuoz"
+        default = false
+      },
+      {
+        fullName = "TestObjnkoreokdidyo__c"
+        isActive = true
+        label = "TestObjnkoreokdidyo"
+        default = false
+      },
+      {
+        fullName = "TestObjoegjezmeiwfr__c"
+        isActive = true
+        label = "TestObjoegjezmeiwfr"
+        default = false
+      },
+      {
+        fullName = "TestObjoiiaaavotgqn__c"
+        isActive = true
+        label = "TestObjoiiaaavotgqn"
+        default = false
+      },
+      {
+        fullName = "TestObjotslufgqgxdb__c"
+        isActive = true
+        label = "TestObjotslufgqgxdb"
+        default = false
+      },
+      {
+        fullName = "TestObjpfvhkgeeniws__c"
+        isActive = true
+        label = "TestObjpfvhkgeeniws"
+        default = false
+      },
+      {
+        fullName = "TestObjqcxkygxrwdey__c"
+        isActive = true
+        label = "TestObjqcxkygxrwdey"
+        default = false
+      },
+      {
+        fullName = "TestObjqdswoesxncyl__c"
+        isActive = true
+        label = "TestObjqdswoesxncyl"
+        default = false
+      },
+      {
+        fullName = "TestObjrhyrfstirgpj__c"
+        isActive = true
+        label = "TestObjrhyrfstirgpj"
+        default = false
+      },
+      {
+        fullName = "TestObjsrmpsunorfkr__c"
+        isActive = true
+        label = "TestObjsrmpsunorfkr"
+        default = false
+      },
+      {
+        fullName = "TestObjtuctnctcavrf__c"
+        isActive = true
+        label = "TestObjtuctnctcavrf"
+        default = false
+      },
+      {
+        fullName = "TestObjvffgteaitnct__c"
+        isActive = true
+        label = "TestObjvffgteaitnct"
+        default = false
+      },
+      {
+        fullName = "TestObjwjrqxdldeqkw__c"
+        isActive = true
+        label = "TestObjwjrqxdldeqkw"
+        default = false
+      },
+      {
+        fullName = "TestObjwuencnvedpws__c"
+        isActive = true
+        label = "TestObjwuencnvedpws"
+        default = false
+      },
+      {
+        fullName = "TestObjxkucnylhcjfx__c"
+        isActive = true
+        label = "TestObjxkucnylhcjfx"
+        default = false
+      },
+      {
+        fullName = "TestObjzhtpousmqfwk__c"
+        isActive = true
+        label = "TestObjzhtpousmqfwk"
+        default = false
+      },
+      {
+        fullName = "TestSyncFromAccountObjdydpajmpjetk__c"
+        isActive = true
+        label = "TestSyncFromAccountObjdydpajmpjetk"
+        default = false
+      },
+      {
+        fullName = "TestSyncFromServiceObjeyelkkyjdxtv__c"
+        isActive = true
+        label = "TestSyncFromServiceObjeyelkkyjdxtv"
+        default = false
+      },
+      {
+        fullName = "TestSyncFromServiceObjgblmboenarnp__c"
+        isActive = true
+        label = "TestSyncFromServiceObjgblmboenarnp"
+        default = false
+      },
+      {
+        fullName = "TestSyncFromServiceObjkhbggockjnok__c"
+        isActive = true
+        label = "TestSyncFromServiceObjkhbggockjnok"
+        default = false
+      },
+      {
+        fullName = "TestSyncFromServiceObjlwegclqtfmco__c"
+        isActive = true
+        label = "TestSyncFromServiceObjlwegclqtfmco"
+        default = false
+      },
+      {
+        fullName = "TestSyncFromServiceObjmdmiynczzkss__c"
+        isActive = true
+        label = "TestSyncFromServiceObjmdmiynczzkss"
+        default = false
+      },
+      {
+        fullName = "TestSyncFromServiceObjmjwammfqyoil__c"
+        isActive = true
+        label = "TestSyncFromServiceObjmjwammfqyoil"
+        default = false
+      },
+      {
+        fullName = "TestSyncFromServiceObjnfhjjjtavvdc__c"
+        isActive = true
+        label = "TestSyncFromServiceObjnfhjjjtavvdc"
+        default = false
+      },
+      {
+        fullName = "TestSyncFromServiceObjuybwdxoflmcc__c"
+        isActive = true
+        label = "TestSyncFromServiceObjuybwdxoflmcc"
+        default = false
+      },
+      {
+        fullName = "TestSyncFromServiceObjwszykpitjnqc__c"
+        isActive = true
+        label = "TestSyncFromServiceObjwszykpitjnqc"
+        default = false
+      },
+      {
+        fullName = "ThreatDetectionFeedback"
+        isActive = true
+        label = "Threat Detection Feedback"
+        default = false
+      },
+      {
+        fullName = "User"
+        isActive = true
+        label = "User"
+        default = false
+      },
+    ]
+  }
+}

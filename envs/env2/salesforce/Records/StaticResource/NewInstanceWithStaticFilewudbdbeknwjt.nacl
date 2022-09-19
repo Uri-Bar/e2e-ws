@@ -1,0 +1,7 @@
+salesforce.StaticResource NewInstanceWithStaticFilewudbdbeknwjt {
+  cacheControl = "Public"
+  contentType = "application/json"
+  description = "Some static resource"
+  fullName = "NewInstanceWithStaticFilewudbdbeknwjt"
+  content = file("salesforce/Records/StaticResource/NewInstanceWithStaticFilewudbdbeknwjt.json")
+}

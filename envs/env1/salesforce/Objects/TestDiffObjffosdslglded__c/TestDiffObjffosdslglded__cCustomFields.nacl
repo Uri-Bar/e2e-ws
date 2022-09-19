@@ -1,0 +1,10 @@
+type salesforce.TestDiffObjffosdslglded__c {
+  salesforce.Text alpha__c {
+    label = "alpha1"
+  }
+}
+type salesforce.TestDiffObjffosdslglded__c {
+  salesforce.Text beta__c {
+    label = "beta1"
+  }
+}

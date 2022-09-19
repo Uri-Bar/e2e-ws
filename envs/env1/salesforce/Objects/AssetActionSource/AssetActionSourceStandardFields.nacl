@@ -1,0 +1,8 @@
+type salesforce.AssetActionSource {
+  salesforce.Lookup ReferenceEntityItemId {
+    referenceTo = [
+      salesforce.OrderItem,
+      salesforce.WorkOrderLineItem,
+    ]
+  }
+}

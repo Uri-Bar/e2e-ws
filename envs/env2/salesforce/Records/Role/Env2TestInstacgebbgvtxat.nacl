@@ -1,0 +1,9 @@
+salesforce.Role Env2TestInstacgebbgvtxat {
+  fullName = "Env2TestInstacgebbgvtxat"
+  caseAccessLevel = "Edit"
+  contactAccessLevel = "Edit"
+  description = "Common instance"
+  mayForecastManagerShare = false
+  name = "Env2TestInstacgebbgvtxat"
+  opportunityAccessLevel = "Edit"
+}

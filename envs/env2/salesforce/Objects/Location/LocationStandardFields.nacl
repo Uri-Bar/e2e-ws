@@ -1,0 +1,55 @@
+type salesforce.Location {
+  salesforce.Picklist LocationType {
+    valueSet = [
+      {
+        fullName = "Building"
+        isActive = true
+        label = "Building"
+        default = false
+      },
+      {
+        fullName = "Warehouse"
+        isActive = true
+        label = "Warehouse"
+        default = false
+      },
+      {
+        fullName = "Site"
+        isActive = true
+        label = "Site"
+        default = false
+      },
+      {
+        fullName = "Plant"
+        isActive = true
+        label = "Plant"
+        default = false
+      },
+      {
+        fullName = "Store"
+        isActive = true
+        label = "Store"
+        default = false
+      },
+      {
+        fullName = "Campus"
+        isActive = true
+        label = "Campus"
+        default = false
+      },
+      {
+        fullName = "Floor"
+        isActive = true
+        label = "Floor"
+        default = false
+      },
+      {
+        fullName = "Space"
+        isActive = true
+        label = "Space"
+        default = false
+      },
+    ]
+    restricted = false
+  }
+}

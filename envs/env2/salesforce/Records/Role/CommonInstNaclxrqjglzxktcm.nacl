@@ -1,0 +1,9 @@
+salesforce.Role CommonInstNaclxrqjglzxktcm {
+  fullName = "CommonInstNaclxrqjglzxktcm"
+  caseAccessLevel = "Edit"
+  contactAccessLevel = "Edit"
+  description = "Common from Nacl"
+  mayForecastManagerShare = false
+  name = "CommonInstNaclxrqjglzxktcm"
+  opportunityAccessLevel = "Edit"
+}

@@ -1,0 +1,36 @@
+type salesforce.Task {
+  salesforce.Lookup WhatId {
+    referenceTo = [
+      salesforce.Account,
+      salesforce.Asset,
+      salesforce.AssetRelationship,
+      salesforce.Campaign,
+      salesforce.Case,
+      salesforce.CommSubscriptionConsent,
+      salesforce.ContactRequest,
+      salesforce.Contract,
+      salesforce.CreditMemo,
+      salesforce.Image,
+      salesforce.Invoice,
+      salesforce.LegalEntity,
+      "ListEmail",
+      salesforce.Location,
+      salesforce.Opportunity,
+      salesforce.Order,
+      salesforce.PartyConsent,
+      salesforce.ProcessException,
+      salesforce.Product2,
+      salesforce.Solution,
+    ]
+  }
+}
+type salesforce.Task {
+  salesforce.Picklist Type {
+    restricted = false
+    label = "Type"
+    createable = true
+    updateable = true
+    queryable = true
+    valueSetName = salesforce.StandardValueSet.instance.TaskType
+  }
+}

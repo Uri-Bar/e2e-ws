@@ -1,0 +1,20 @@
+type salesforce.Lead {
+  salesforce.Unknown DoNotCall {
+    apiName = "Lead.DoNotCall"
+    trackFeedHistory = false
+    _hidden_value = true
+  }
+}
+type salesforce.Lead {
+  salesforce.Unknown HasOptedOutOfFax {
+    apiName = "Lead.HasOptedOutOfFax"
+    trackFeedHistory = false
+    _hidden_value = true
+  }
+}
+type salesforce.Lead {
+  salesforce.Unknown LastTransferDate {
+    apiName = "Lead.LastTransferDate"
+    _hidden_value = true
+  }
+}

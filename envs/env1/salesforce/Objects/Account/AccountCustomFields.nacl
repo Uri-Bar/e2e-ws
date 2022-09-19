@@ -1,0 +1,5 @@
+type salesforce.Account {
+  salesforce.Picklist CustomerPriority__c {
+    label = "1662923393211"
+  }
+}

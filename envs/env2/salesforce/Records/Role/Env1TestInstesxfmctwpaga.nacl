@@ -1,0 +1,9 @@
+salesforce.Role Env1TestInstesxfmctwpaga {
+  fullName = "Env1TestInstesxfmctwpaga"
+  caseAccessLevel = "Edit"
+  contactAccessLevel = "Edit"
+  description = "Common instance"
+  mayForecastManagerShare = false
+  name = "Env1TestInstesxfmctwpaga"
+  opportunityAccessLevel = "Edit"
+}
